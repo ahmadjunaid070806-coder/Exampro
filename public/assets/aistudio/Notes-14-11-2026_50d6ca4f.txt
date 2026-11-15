@@ -1,0 +1,130 @@
+"Build and upgrade my 'ExamPro' EdTech platform as a 100% responsive, mobile-first Website + Progressive Web App (PWA) so it works seamlessly on mobile browsers, desktops/laptops, and can be installed as an Android App/APK (include a manifest.json, service worker, and a clean '📲 Install ExamPro App' banner/button). Match my existing dark UI theme in Admin and clean modern UI in Student Portal, with real-time database sync across all screens:
+=== PART 1: AUTHENTICATION, SINGLE-DEVICE LOCK & ADMIN ACCESS ===
+1. Unified WhatsApp OTP & Google Login:
+	• Show a clean login screen with +91 10-digit mobile number input + 'Send OTP on WhatsApp' (6-digit backend OTP valid for 5 mins, ready for Meta Cloud API / UltraMsg / Baileys env keys, with 30s resend timer) and a secondary 'Continue with Google' button.
+	• Smart New vs Returning Flow: If the user already exists, load their saved profile and go straight to Home. If new, show a 1-step 'Complete Your Profile' screen asking only for Full Name, District (20 J&K Districts Dropdown: Srinagar, Budgam, Baramulla, Anantnag, Jammu, etc.), and Target Exam (free-text input).
+2. Strict Single-Device Login (Students Only):
+	• Generate a unique session_token on each student login, overwriting any previous token. If a student logs in on a second device, immediately log out the old device with an alert: '⚠️ You have been logged out because your account was signed in on another device.' Exempt Admin accounts so Admin can stay logged in simultaneously on Mobile and Laptop.
+3. Dynamic Admin Credentials:
+	• Set default Admin credentials to Phone: 9906101048 and Email: JUMEE89@GMAIL.COM (role = 'admin'). When logged in with Admin credentials, automatically show a '🛡️ Open Admin Dashboard' button in Profile (hidden for students) and allow desktop web access at /admin. Allow Admin to update the Admin Phone & Email anytime from Admin Settings.
+=== PART 2: STUDENT PORTAL ===
+1. Clean Profile & YouTube/Hotstar-Style Premium Status:
+	• Remove State, Qualification, and School/College fields from Profile.
+	• Show ExamPro 👑 PRO badge on Home top-left for paid users, and a 👑 Upgrade button on Home top-right for free users.
+	• In Profile header, show ✅ Paid or Free badge beside the name and a highlight banner card below the photo: Free users see "Unlock JKSSB & JKPSC Mock Tests" + [ Buy Now ]; Paid users see "X Mock Tests Unlocked" + [ Start / View Receipt ].
+2. Home Categories, Card Badges & Test Bundles:
+	• Organize Home tests into sections: 🔥 Latest Mock Tests, 📅 Upcoming, 🎁 Free Mocks, 📜 Previous Year Papers (PYQs), 🔥 Most Attempted / Popular, 🏔️ J&K Special & Current Affairs, 🧩 Sectional & Subject Tests, 🏆 All-J&K Live Mega Mocks, and 📦 Test Series Bundles.
+	• Show editable badges on test cards: Syllabus/Topics tag, Attempt count (👥 1.2k attempts), Language & Negative Marking (🌐 English, ⚠️ -0.25 Neg), and a Preview button on paid cards allowing 2 free sample questions.
+	• Clicking a Test Series Bundle opens a Bundle Detail screen with 'Unlock Full Bundle' and two tabs: 'Full-Length Mocks' and 'Sectional Tests' (with subject filter pills: All, History, English, Math, Reasoning, etc.).
+3. Daily 10-Question Quiz & J&K Exam Updates:
+	• Show a 'Daily 10-Question J&K Current Affairs' hero card on Home with a 🔥 Daily Streak counter, 10 Qs • 5 Min • Free pills, and an interactive quiz screen with instant explanations.
+	• Add an '📢 J&K Updates / Alerts' tab for exam dates, admit cards, and real-time bell notifications (🔔).
+4. Profile Menu Rows & Bottom Social Share Bar:
+	• Inside Profile menu (matching 💳 My Payments row style), add:
+		• 📕 My Mistake Notebook (with live count e.g. 18 ›): 100% automated—saves wrong answers across tests/quizzes for re-practice and auto-removes them once solved correctly.
+		• 🏆 District Rank (e.g. #3 in Budgam ›): Auto-calculates district rank and displays it in Profile and on the Result screen alongside All-J&K Rank, percentile, topper comparison, and subject-wise accuracy.
+		• 📊 My Test Attempts, 🔖 Saved / Bookmarked Questions, and 📄 Exam Syllabus (view/download official PDFs uploaded by Admin, highlighting their target exam).
+		• ❓ Help & Support & 💬 WhatsApp Support: Submit support tickets (with optional Order ID) or open Admin's editable WhatsApp support link directly.
+	• Bottom Social Share Bar: At the very bottom of Profile (near Log Out), show a 'Share ExamPro' row with round icons for WhatsApp, Facebook, Instagram, YouTube, and Copy Link—displaying only icons toggled ON in Admin, using Admin's editable share text/link (plus share buttons on tests and result scorecards).
+5. Test Reliability, Report Button & Razorpay Checkout:
+	• Auto-Save & Resume: Save answers and remaining timer locally on every click to resume smoothly after network drops.
+	• Report Question: Add a '🚩 Report Question' button inside test and solution screens sending flagged questions to Admin.
+	• Razorpay + Coupons + My Payments: Integrate Razorpay checkout with webhook verification and 'Apply Coupon' (flat ₹, %, or 100% free—if ₹0, bypass Razorpay, mark ₹0 PAID, and unlock immediately). Buying a single test or Bundle auto-unlocks all included tests and logs in My Payments as a 2-column card (Test/Bundle Name + ₹Amount, Date/Time + PAID/REFUNDED, Order #XXXX • UPI + [ Start / Open Bundle → ]).
+=== PART 3: ADMIN PANEL ===
+1. Left Sidebar Navigation:
+	• Below 'Exams', add 6 dark-themed menu tabs: '📦 Test Bundles', '💳 Payments & Coupons', '📅 Daily Quiz & Updates', '📄 Syllabus', '🎧 Support & Reports' (with a live red pending count badge), and '🔗 Sharing & Settings'.
+2. 'New Mock Test' & 'Test Bundles' Manager:
+	• In 'New Mock Test', add 'Test Type' (Full-Length or Sectional—if Sectional, show Subject dropdown with History, English, Math, Reasoning, J&K GK, Computer, plus + Add New Subject), editable card tags (Syllabus tag, Language, Negative Marking, Attempt Count), and 'Bundle (Optional)'.
+	• In '📦 Test Bundles', allow creating purchasable Bundles (Price, strikethrough MRP, validity, individual vs bundle-only toggle) grouping Full-Length and Subject-wise Sectional mocks.
+	• Question Builder Upgrades: Add '📤 Bulk Import (CSV / JSON)' button beside 'Upload PDF & generate with AI' (with '📥 Download Sample CSV', CSV upload, and JSON paste), increase PDF/AI extraction limit from 50 to 120 questions (10, 25, 50, 100, 120), and enforce a strict no-duplicate check across AI, CSV/JSON, and manual questions.
+3. Unified '💳 Payments & Coupons' Page:
+	• Show 4 dark stat cards (Total Revenue, Today's Sales, Paid Orders, Active Coupons) and 2 tabs: Transactions (searchable list with Student Name, Phone, Test/Bundle, Paid Amount, Coupon Used, Order ID, Status, Date, and manual 'Unlock' button) and Coupons (create % / Flat ₹ / 100% Free coupons with usage limits, expiry, and Active/Off toggles).
+4. '📅 Daily Quiz & Updates', '📄 Syllabus' & '🔗 Sharing & Settings' Managers:
+	• Daily 10 Qs: Schedule 10 daily J&K Current Affairs MCQs by date (with bulk-paste) that auto-publish to Student Home.
+	• Exam Dates & Updates: Manage official exam countdown dates and post J&K Exam Alerts.
+	• Syllabus Manager: Upload official syllabus PDFs by Exam Category and Title.
+	• Sharing, WhatsApp Support & Admin Settings: Provide individual ON/OFF toggles for WhatsApp, Facebook, Instagram, YouTube, and Copy Link, editable Share Message & App Link, editable WhatsApp Support Number/Message, and editable Admin Phone & Email credentials.
+5. Unified '🎧 Support & Reports' Popup/Page (Card Layout):
+	• Show an alert banner on the Dashboard when new items arrive. Display items as clean cards under two tabs: Student Support / Payment Issues (with '💬 Reply on WhatsApp' and '✅ Mark Resolved' buttons) and Reported Questions (with '✏️ Edit Question' and '✅ Mark Resolved' buttons)."**
+
+"Add a complete, responsive Website Footer and informational pages to the Student Portal (visible at the bottom of Home, Login, and Profile screens):
+1. Structured Footer Grid (Above Copyright Bar):
+• Column 1 — Exam Categories: Clickable links for JKSSB Mock Tests, JKPSC KAS Prelims, J&K Police (JKP), JKBOSE & Entrances, and Free Daily Quizzes (clicking filters the Home tests directly).
+• Column 2 — Explore ExamPro: Clickable links opening clean, dedicated pages/modals for:
+	• About Us: Story and mission of ExamPro to help Jammu & Kashmir aspirants crack competitive exams with affordable, real-exam mock tests.
+	• What We Offer: Highlighting Full-Length Mocks, Subject-Wise Sectional Tests, Daily 10-Min J&K Current Affairs, Mistake Notebook, District-Wise Rank, and Official Syllabus PDFs.
+	• Contact & Support: Direct link to WhatsApp Support and Support Ticket form.
+• Column 3 — Legal & Policies (Required for Razorpay): Clean pages/modals for Privacy Policy, Terms & Conditions, and Cancellation & Refund Policy.
+2. Dynamic Brand & Copyright Bar (At the Very Bottom):
+• Display two centered lines in subtle, clean typography:
+	1. Made with love ❤️ by Ahmad Junaid
+	2. © {new Date().getFullYear()} ExamPro. All rights reserved. (using dynamic JavaScript new Date().getFullYear() so the year updates automatically every year)."**
+"Replace Razorpay with a Direct UPI ID & QR Code Payment System in ExamPro, fully manageable from the Admin Panel (keeping Coupon Code support intact):
+1. Admin Panel — UPI & QR Settings (Under '💳 Payments & Coupons'):
+• Add a '⚙️ UPI & QR Payment Settings' card where Admin can upload/change the Payment QR Code Image, enter/update the UPI ID (e.g., exampro@upi), and set the Merchant/Payee Name.
+2. Student Checkout Popup (QR + Copy UPI + UTR Submission):
+• When a student clicks to buy a Mock Test or Test Bundle, show the checkout modal with 'Apply Coupon' support (if a 100% free coupon makes the price ₹0, unlock immediately without payment).
+• For paid amounts, display Admin's live QR Code Image, the UPI ID with a '📋 Copy UPI' button, a direct mobile 'Pay via UPI App' link (upi://pay?... pre-filled with the exact final amount), and a required input box for the 12-digit UPI UTR / Transaction ID (plus optional payment screenshot upload).
+• Submitting saves the order in payments with status PENDING_VERIFICATION and shows it in the student's 'My Payments' screen with a '⏳ Verification Pending' badge.
+3. Admin Instant Approval Flow:
+• In the Admin Panel's 'Transactions' tab (and Dashboard alert banner), highlight PENDING_VERIFICATION orders with the student's submitted UTR Number, screenshot preview, and two one-click buttons: ✅ Approve & Unlock (which changes status to PAID and automatically unlocks the test/bundle for the student) and ❌ Reject."**
+"Add an automated '🏆 District Toppers' Hall of Fame & Shareable Topper Poster feature to ExamPro (100% auto-calculated from test results, zero manual admin work):
+1. Student Home & Leaderboard ('🏆 J&K District Toppers' Card):
+	• On the Student Home screen (and inside the Test Result / Leaderboard screen), add a clean '🏆 District Toppers' showcase card with a district selector dropdown (All Districts, Srinagar, Budgam, Baramulla, Anantnag, Jammu, etc.) automatically showing the Rank #1 Topper for each J&K district along with their score and target exam.
+2. '🏆 #1 District Topper' Badge & Shareable Poster:
+	• Whenever a student achieves Rank #1 in their District on any mock test or Sunday Mega Mock, display a special golden 🏆 #1 District Topper (e.g., Budgam) badge on their Result Screen and Profile, along with a 📤 Share Topper Poster button that generates a clean, Instagram/WhatsApp-ready certificate card with their Name, District, Rank #1, Score, and ExamPro branding.
+3. Admin Panel ('📥 Download District Toppers Poster/List'):
+	• In the Admin 'Results' page, add a one-click '🏆 View & Export District Toppers' button that lists the #1 scorer from every J&K district so Admin can easily download and share the winners list on Telegram and WhatsApp."**
+
+"Add an optional 'Previous Exam Reference Tag' feature (max 3 exam tags per question, e.g., JKSSB 2024, JKPSC 2025, JKP SI 2026) across both the Admin Panel and Student Test/Solution screens:
+1. Student Test & Solution Screen UI:
+	• If a question has exam reference tags saved, display them as subtle, clean pill badges right above or below the question text (e.g., 📌 Asked in: JKSSB 2024 • JKP 2025 — maximum 3 tags per question).
+	• If a question has no reference tags (empty), hide the badge completely so the UI stays clean.
+2. Admin Panel (Manual, Bulk Import & AI PDF Auto-Detection):
+	• Manual Question Form: Add an optional 'Exam Reference Tags (Optional, Max 3)' input where Admin can add up to 3 tags (e.g., JKSSB 2024, JKPSC 2026).
+	• CSV / JSON Bulk Import: Support an optional examRef column/field (e.g., "JKSSB 2024, JKP 2025" — capped at 3 tags).
+	• AI PDF Extractor: Instruct the AI PDF question generator to automatically detect if a question in the PDF mentions past exam names/years (like [JKSSB 2024]) and auto-fill up to 3 reference tags (leaving it blank if none are mentioned)."**
+"Add an optional 'Previous Exam Reference Tag' feature (max 3 exam tags per question, e.g., JKSSB 2024, JKPSC 2025, JKP SI 2026) across both the Admin Panel and Student Test/Solution screens:
+1. Student Test & Solution Screen UI:
+	• If a question has exam reference tags saved, display them as subtle, clean pill badges right above or below the question text (e.g., 📌 Asked in: JKSSB 2024 • JKP 2025 — maximum 3 tags per question).
+	• If a question has no reference tags (empty), hide the badge completely so the UI stays clean.
+2. Admin Panel (Manual, Bulk Import & AI PDF Auto-Detection):
+	• Manual Question Form: Add an optional 'Exam Reference Tags (Optional, Max 3)' input where Admin can add up to 3 tags (e.g., JKSSB 2024, JKPSC 2026).
+	• CSV / JSON Bulk Import: Support an optional examRef column/field (e.g., "JKSSB 2024, JKP 2025" — capped at 3 tags).
+	• AI PDF Extractor: Instruct the AI PDF question generator to automatically detect if a question in the PDF mentions past exam names/years (like [JKSSB 2024]) and auto-fill up to 3 reference tags (leaving it blank if none are mentioned)."**
+
+
+"Add a real-time 'Total Website Visitors' and 'Today's Active Students' stat card on the Admin Dashboard so Admin can track daily traffic."
+
+"Add smooth, modern hover effects and subtle micro-animations across the entire ExamPro platform (Student Portal, Mock Test Engine, Login, and Admin Panel) using clean CSS transitions (transition-all duration-200 ease-out):
+1. Cards & Bundles: On hover, lift Mock Test Cards, Bundle Cards, and Admin Stat Cards slightly upward (-translate-y-1) with a subtle glow/shadow and highlighted border accent.
+2. Buttons & Action Pills: Add smooth scale feedback (hover:scale-[1.02] and active:scale-[0.98]), gentle brightness/color shifts on primary buttons (Unlock, Start Test, Submit), and smooth arrow slide (group-hover:translate-x-1) on '→' buttons.
+3. Navigation, Tabs & Social Icons: Add smooth background highlight transitions on Admin sidebar items, filter pills, Profile menu rows, and scale-up + brand-color glow on the bottom Social Share icons (WhatsApp, Facebook, Instagram, YouTube, Copy Link).
+4. Test Options & Question Palette: Add crisp border/background hover states on MCQ answer options and Question Palette number boxes, while keeping touch feedback clean on mobile devices."**
+"Ensure the entire ExamPro platform (Student Portal, Mock Test Engine, Login, and Admin Panel) is 100% responsive across Mobile phones (360px+), Tablets (768px+), and Laptops/Desktops (1024px+):
+1. Mobile View (<768px): Use single-column stacked cards, touch-friendly buttons (min 44px height), a clean bottom navigation bar for Student Portal, and a collapsible hamburger drawer for the Admin sidebar. Ensure zero horizontal overflow.
+2. Tablet View (768px–1023px): Use a balanced 2-column grid for Mock Test Cards, Bundles, and Admin stat cards.
+3. Laptop / Desktop View (1024px+): Use a clean 3-column grid for Mock Tests & Bundles with a centered max-width container (1280px) so cards don't stretch too wide. Inside the Mock Test Screen on Laptop/Tablet, show the Question area on the left (70% width) and the CBT Question Palette (1–120 boxes) fixed on the right (30% width) for a real exam-hall experience."**
+
+"Add a clean, responsive Social Sharing Icon Bar at the very bottom of the ExamPro app (inside the global website footer right above the 'Made with love ❤️ by Ahmad Junaid' copyright line, AND at the bottom of the Student Profile screen):
+1. Icons Included: Display crisp, circular hover-animated icons for WhatsApp, Facebook, Instagram, YouTube, and Copy Link (with brand-color hover glow and subtle scale-up animation).
+2. Admin Toggle Sync: Respect the individual ON/OFF switches from the Admin Panel's '🔗 Sharing' settings so only the icons enabled by Admin are shown.
+3. Functional Share Actions: Clicking Copy Link copies the website URL with a 'Link Copied!' toast notification, while clicking the social icons shares Admin's editable invite message and app link."**
+
+"Update the Authentication and Profile Setup system in my 'ExamPro' web & PWA app to use a 100% Free, zero-server-cost '1-Tap Google Sign-In + Mandatory Mobile Number' flow (compatible with standard Hostinger hosting and Firebase/Supabase Auth):
+1. Clean Login Screen (Zero OTP Cost):
+• Remove all paid SMS/WhatsApp OTP API dependencies and display a clean, prominent 'Continue with Google' 1-tap sign-in button (plus a simple Email/Password option as a fallback).
+2. Smart New vs Returning User Routing:
+• Once Google Sign-In succeeds, check if the user already exists in the database:
+	• Returning User: Load their saved profile immediately and take them straight to the Home screen (never ask returning users to re-fill details).
+	• New User: Show a mandatory 1-step 'Complete Your Profile' screen before allowing access to the Home screen.
+3. Mandatory Mobile Number & Strict No-Duplicate Validation:
+• In the 1-step 'Complete Your Profile' screen, keep their Google Email locked/read-only and require:
+	1. 10-Digit Mobile / WhatsApp Number (strictly mandatory, validated as 10 digits starting with 6–9—cannot skip or proceed to Home without saving a valid number).
+	2. Full Name (auto-filled from Google, editable).
+	3. District (20 J&K Districts Dropdown: Srinagar, Budgam, Baramulla, Anantnag, Jammu, etc.).
+	4. Target Exam (free-text input).
+• Zero Duplicates: Enforce UNIQUE constraints on both email and phone in the database. Before saving a profile (or editing), verify that the 10-digit mobile number or email is not already used by another account. If a duplicate is found, block saving and show a clear alert: '⚠️ This mobile number is already registered with another account. Please login with your original Google account.'
+4. Strict Single-Device Login & Dynamic Admin Access:
+• Keep the Single-Device Login lock (session_token) active for all Student accounts so logging in on a second phone automatically logs out the older device.
+• Exempt Admin accounts from the single-device limit and automatically grant Admin access ('🛡️ Open Admin Dashboard' button in Profile + /admin desktop web access) whenever the logged-in email matches JUMEE89@GMAIL.COM or the saved phone matches 9906101048 (both editable anytime from Admin Settings)."**

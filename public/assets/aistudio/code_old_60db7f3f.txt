@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ExamPro – App Preview</title>
+<style>
+:root{--bg:#e9e8f3;--surface:#fbfaff;--card:#f1effa;--text:#1c1b22;--muted:#6b6980;--pri:#4f46e5;--onpri:#fff;--pc:#e0deff;--ok:#2e9e5b;--bad:#d64545;--warn:#e69a1f;--line:#cfcde0;color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121218;--surface:#1b1a22;--card:#25242f;--text:#ecebf4;--muted:#a09eb5;--pri:#a8a4ff;--onpri:#1a1650;--pc:#35327a;--line:#45434f;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121218;--surface:#1b1a22;--card:#25242f;--text:#ecebf4;--muted:#a09eb5;--pri:#a8a4ff;--onpri:#1a1650;--pc:#35327a;--line:#45434f;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{background:var(--bg);color:var(--text);font-family:Roboto,system-ui,-apple-system,"Segoe UI",sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:12px;padding:12px}
+.note{font-size:13px;color:var(--muted);text-align:center;max-width:380px}
+.note button{background:none;border:1px solid var(--line);color:var(--text);border-radius:14px;padding:3px 10px;cursor:pointer;margin-left:6px}
+.phone{width:min(100%,360px);height:min(720px,calc(100vh - 80px));min-height:560px;background:var(--surface);border-radius:36px;border:8px solid #222;overflow:hidden;display:flex;flex-direction:column;position:relative;box-shadow:0 10px 40px rgba(0,0,0,.25)}
+.status{height:24px;display:flex;justify-content:space-between;align-items:center;padding:0 18px;font-size:11px;color:var(--muted);flex:none}
+.appbar{min-height:52px;display:flex;align-items:center;padding:0 16px;gap:10px;font-size:20px;flex:none}
+.appbar .sp{flex:1}
+.body{flex:1;overflow-y:auto;padding:0 14px 14px}
+.nav{height:64px;display:flex;border-top:1px solid var(--line);flex:none;background:var(--surface)}
+.nav div{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:11px;color:var(--muted);cursor:pointer;gap:2px}
+.nav div span{font-size:18px;padding:2px 20px;border-radius:14px}
+.nav div.on{color:var(--text);font-weight:600}.nav div.on span{background:var(--pc)}
+.card{background:var(--card);border-radius:14px;padding:14px;margin:8px 0;cursor:pointer}
+.row{display:flex;align-items:center;gap:8px}.sp{flex:1}
+.chip{font-size:11px;padding:3px 9px;border-radius:9px;background:var(--pc);font-weight:600;white-space:nowrap}
+.chip.paid{background:#ffd9e2;color:#7a1d38}
+.meta{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:var(--muted);margin-top:8px}
+h2{font-size:22px;margin:6px 0}h3{font-size:16px;margin:0}
+.muted{color:var(--muted);font-size:13px}
+.sh{display:flex;align-items:center;gap:8px;font-weight:700;font-size:16px;margin:18px 0 4px}
+.empty{padding:14px;border:1px dashed var(--line);border-radius:12px;text-align:center}
+.lb{display:block;font-size:12px;color:var(--muted);margin:12px 0 4px}
+input{width:100%;padding:13px;border:1px solid var(--line);border-radius:8px;background:transparent;color:var(--text);font-size:15px;margin:0}
+input:disabled{opacity:.6}
+.dd{position:relative}
+.ddv{display:flex;justify-content:space-between;padding:13px;border:1px solid var(--line);border-radius:8px;cursor:pointer;font-size:15px}
+.ddl{margin-top:4px;border:1px solid var(--line);border-radius:10px;background:var(--card);max-height:190px;overflow-y:auto}
+.ddo{padding:12px 14px;font-size:14px;cursor:pointer;color:var(--text);border-bottom:1px solid var(--line)}
+.ddo:last-child{border:0}.ddo:hover{background:var(--pc)}.ddo.on{background:var(--pc);font-weight:700;color:var(--text)}
+.chips{display:flex;gap:8px}.chips div{flex:1;text-align:center;padding:11px 0;border:1px solid var(--line);border-radius:8px;cursor:pointer;font-size:14px}
+.chips div.on{background:var(--pc);border-color:var(--pri);font-weight:700}
+.btn{width:100%;padding:14px;border:0;border-radius:24px;background:var(--pri);color:var(--onpri);font-size:15px;font-weight:600;cursor:pointer;margin-top:14px}
+.btn.o{background:transparent;border:1px solid var(--line);color:var(--text);margin-top:8px}
+.btn:disabled{opacity:.45;cursor:default}
+.ctr{text-align:center}.big{font-size:44px}
+.opt{display:flex;gap:10px;align-items:center;padding:12px;border-radius:12px;background:var(--card);margin:8px 0;cursor:pointer;font-size:14px;border:2px solid transparent}
+.opt b{width:26px;height:26px;border-radius:50%;background:var(--line);display:flex;align-items:center;justify-content:center;font-size:12px;flex:none}
+.opt.sel{background:var(--pc);border-color:var(--pri)}.opt.sel b{background:var(--pri);color:var(--onpri)}
+.opt.good{background:#d6f1e1;color:#12361f}.opt.wrong{background:#fbdada;color:#4a1212}
+.timer{background:var(--pc);padding:4px 10px;border-radius:14px;font-size:14px;font-weight:700}.timer.low{background:#fbdada;color:#b00}
+.ex{display:flex;gap:8px;padding:8px 12px;border-top:1px solid var(--line);flex:none;align-items:center}
+.ex button{border:1px solid var(--line);background:transparent;color:var(--text);border-radius:20px;padding:10px 12px;cursor:pointer;font-size:13px}
+.ex button:disabled{opacity:.4}.ex .go{background:var(--pri);color:var(--onpri);border:0;width:42px}
+.pal{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:12px}
+.pal div{aspect-ratio:1;border-radius:8px;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;background:#9a98a8;cursor:pointer}
+.pal .a{background:var(--ok)}.pal .m{background:var(--warn)}.pal .c{outline:3px solid var(--text)}
+.stat{flex:1;background:var(--card);border-radius:14px;padding:14px 0;text-align:center;font-size:12px}.stat b{display:block;font-size:24px}
+.sheet{position:absolute;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:flex-end;z-index:5}
+.sheet>div{background:var(--surface);width:100%;border-radius:22px 22px 0 0;padding:18px}
+.sheet .pm{display:flex;align-items:center;gap:10px;padding:13px;border:1px solid var(--line);border-radius:10px;margin:8px 0;cursor:pointer}
+.toast{position:absolute;left:14px;right:14px;bottom:76px;background:#2f2e38;color:#fff;border-radius:8px;padding:12px;font-size:13px;z-index:9}
+.pill{font-size:11px;font-weight:700}
+.av{width:56px;height:56px;border-radius:50%;background:var(--pri);color:var(--onpri);display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:700;flex:none}
+.kv{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px}.kv span:first-child{color:var(--muted)}.kv span:last-child{text-align:right}
+.menu{display:flex;align-items:center;gap:12px;padding:15px 4px;border-bottom:1px solid var(--line);cursor:pointer}
+.sw{display:flex;gap:6px;background:var(--card);padding:4px;border-radius:24px;flex:none;position:sticky;top:6px;z-index:50;box-shadow:0 2px 12px rgba(0,0,0,.2);border:1px solid var(--line)}.sw button{border:0;background:transparent;color:var(--text);padding:8px 16px;border-radius:20px;cursor:pointer;font-size:13px}.sw button.on{background:var(--pri);color:var(--onpri);font-weight:700}
+.adm{display:none;width:min(100%,1100px);height:calc(100vh - 140px);min-height:520px;background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;position:relative}
+.sb{width:220px;flex:none;border-right:1px solid var(--line);padding:12px;background:var(--surface);z-index:20}
+.logo{font-weight:800;font-size:17px;padding:10px 8px 16px}.logo small{font-weight:500;color:var(--muted)}
+.si{padding:12px;border-radius:12px;cursor:pointer;font-size:14px;margin:2px 0}.si.on{background:var(--pc);font-weight:700}
+.main{flex:1;display:flex;flex-direction:column;min-width:0}
+.top{height:54px;display:flex;align-items:center;gap:10px;padding:0 16px;border-bottom:1px solid var(--line);flex:none;font-size:17px}
+.ham{display:none;cursor:pointer;font-size:20px}
+.content{flex:1;overflow:auto;padding:16px}
+.bn{display:none;height:60px;border-top:1px solid var(--line);flex:none}
+.bn div{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:11px;color:var(--muted);cursor:pointer}.bn div.on{color:var(--text);font-weight:700}
+.g{display:grid;gap:12px;grid-template-columns:repeat(4,1fr)}
+.g .t{background:var(--card);border-radius:14px;padding:16px;font-size:13px;color:var(--muted)}.g .t b{font-size:26px;display:block;color:var(--text)}
+.tbl{width:100%;border-collapse:collapse;font-size:13px}.tbl th{text-align:left;color:var(--muted);font-weight:600;padding:8px;border-bottom:1px solid var(--line)}.tbl td{padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
+.cg{display:none;gap:12px;grid-template-columns:repeat(2,1fr)}
+.b{border:1px solid var(--line);background:transparent;color:var(--text);border-radius:18px;padding:7px 12px;cursor:pointer;font-size:12px;margin:2px}.b.p{background:var(--pri);color:var(--onpri);border:0;font-weight:700}.b.d{color:var(--bad)}.b:disabled{opacity:.4}
+.st{font-size:11px;font-weight:700;padding:3px 9px;border-radius:9px;text-transform:capitalize}.st.live,.st.ok{background:#d6f1e1;color:#12361f}.st.scheduled{background:#fff0cf;color:#5c3d00}.st.draft,.st.pend{background:var(--line)}.st.no{background:#fbdada;color:#4a1212}
+.fg{display:grid;grid-template-columns:repeat(2,1fr);gap:0 14px}.fg .f2{grid-column:1/-1}
+textarea{width:100%;min-height:70px;padding:12px;border:1px solid var(--line);border-radius:8px;background:transparent;color:var(--text);font:inherit;font-size:14px}
+select.s{width:100%;padding:13px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--text);font-size:15px}
+.pn{border:1px solid var(--line);border-radius:14px;padding:14px;margin:12px 0;background:var(--card)}
+.err{color:var(--bad);font-size:13px;margin:8px 0}.okm{color:var(--ok);font-size:13px;margin:8px 0}
+.ov{position:absolute;inset:0;background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;z-index:30}.ov>div{background:var(--surface);border-radius:16px;padding:20px;width:min(92%,460px)}
+.opc{border:1px solid var(--line);border-radius:12px;padding:14px;margin:10px 0;cursor:pointer;background:var(--card)}.opc:hover{border-color:var(--pri)}
+.hb{height:10px;border-radius:5px;background:var(--pri)}
+@media(max-width:1023px){.sb{position:absolute;inset:0 auto 0 0;transform:translateX(-100%);transition:.2s;box-shadow:4px 0 20px rgba(0,0,0,.3)}.sb.open{transform:none}.ham{display:block}.tw{display:none}.cg{display:grid}.g{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:639px){.bn{display:flex}.cg{grid-template-columns:1fr}.fg{grid-template-columns:1fr}.ham{display:none}.adm{height:calc(100vh - 120px)}}
+.ti{width:38px;height:38px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:19px;margin-bottom:10px;color:#222}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:14px}.g2 .pn{margin:0}
+.seg{display:flex;border:1px solid var(--line);border-radius:10px;overflow:hidden}.seg button{flex:1;padding:12px 6px;border:0;background:transparent;color:var(--text);cursor:pointer;font-size:14px}.seg button.on{background:var(--pri);color:var(--onpri);font-weight:700}
+.hr{display:flex;align-items:center;gap:8px;font-size:13px;margin:7px 0}.hr .hb{flex:none}
+@media(max-width:1023px){.g2{grid-template-columns:1fr}}
+.gbtn{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;padding:13px;border:1px solid var(--line);border-radius:24px;background:#fff;color:#1f1f1f;font-size:15px;font-weight:600;cursor:pointer;margin-top:12px}.gl{font-weight:800;color:#4285f4;font-size:18px}
+.or{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:12px;margin:16px 0 10px}.or:before,.or:after{content:"";flex:1;height:1px;background:var(--line)}
+.pro{font-size:11px;background:linear-gradient(90deg,#f5b301,#ff8a00);color:#3a2500;padding:3px 8px;border-radius:10px;font-weight:800;vertical-align:middle}
+.bdg{font-size:11px;font-weight:700;padding:3px 9px;border-radius:9px}.bdg.pd{background:#d6f1e1;color:#12361f}.bdg.fr{background:var(--line);color:var(--text)}
+.ban{display:flex;align-items:center;gap:10px;background:linear-gradient(120deg,var(--pc),var(--card));border:1px solid var(--pri);border-radius:14px;padding:14px;margin:8px 0 12px;flex-wrap:wrap}.ban>div:first-child{flex:1;min-width:140px}.ban.ok{border-color:var(--ok)}
+.ft{border-top:1px solid var(--line);margin-top:22px;padding-top:14px}.fg3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.fg3 h4{margin:0 0 6px;font-size:11px}.fg3 a{display:block;font-size:11px;color:var(--muted);padding:3px 0;cursor:pointer}.fg3 a:hover{color:var(--pri)}
+.soc{display:flex;justify-content:center;gap:12px;margin:16px 0 10px}.soc .s{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;text-decoration:none;cursor:pointer;transition:transform .2s,box-shadow .2s;font-size:16px}.soc .s:hover{transform:translateY(-4px) scale(1.12);box-shadow:0 6px 14px rgba(0,0,0,.3)}.s.wa{background:#25d366}.s.fb{background:#1877f2}.s.ig{background:linear-gradient(45deg,#f09433,#dc2743,#bc1888)}.s.yt{background:#f00}.s.cp{background:#6b6980}
+.tg{width:44px;height:24px;border-radius:12px;background:var(--line);position:relative;cursor:pointer;flex:none}.tg i{position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#fff;transition:.2s}.tg.on{background:var(--ok)}.tg.on i{left:23px}
+.mb{font-size:11px;font-weight:700;background:var(--pc);padding:2px 8px;border-radius:9px}
+</style>
+</head>
+<body>
+<div class="note">Interactive preview of the Flutter app (mock data). Sign in with a demo Google account. Admin: add <b>#admin</b> to the URL.
+<button id="themeBtn">Light/Dark</button><button onclick="otherDevice()">📲 Simulate login on another device</button></div>
+<div class="phone" id="phone"></div>
+<div class="adm" id="admin"></div>
+
+<script>
+const $=id=>document.getElementById(id);
+const SAMPLE=[
+ {t:'Which river is known as the lifeline of the Kashmir Valley?',o:['Chenab','Jhelum','Ravi','Tawi'],c:1,e:'The Jhelum (Vitasta) flows through the valley and is its principal river.',subj:'Geography of J&K',src:'manual'},
+ {t:'Dal Lake is located in which city?',o:['Jammu','Srinagar','Leh','Baramulla'],c:1,e:'Dal Lake is a famous lake in Srinagar.',subj:'Geography of J&K',src:'manual'},
+ {t:'Which pass connects Srinagar with Leh?',o:['Banihal Pass','Zoji La','Khardung La','Pir Panjal Pass'],c:1,e:'Zoji La connects the Kashmir Valley with Ladakh.',subj:'Geography of J&K',src:'manual'},
+ {t:'Shalimar Bagh near Dal Lake was built by:',o:['Akbar','Jahangir','Shah Jahan','Aurangzeb'],c:1,e:'Shalimar Bagh was built by Mughal emperor Jahangir in 1619.',subj:'History of J&K',src:'manual'},
+ {t:'Article 370 was abrogated in which year?',o:['2017','2019','2020','2021'],c:1,e:'Article 370 was abrogated in August 2019.',subj:'Indian Polity',src:'manual'}];
+const S={scr:'login',exams:['JKSSB Junior Assistant','JKSSB Naib Tehsildar','JKSSB Constable','JKSSB Accounts Assistant','JKP Sub-Inspector','JKPSC CCE (KAS)','JK Bank','JKBOSE Class 12','NEET','JEE Main','CUET','Other'],results:{},tab:0,sent:false,id:'',edit:false,dd:'',prof:{},
+ tests:[
+ {id:1,cat:'latest',exam:'JKSSB Junior Assistant',title:'JKSSB Junior Assistant Mock 1',paid:true,price:99,own:false,dur:30,neg:0.25,sched:'2026-11-14T09:00',status:'live',desc:'Full-length mock on J&K GK, English, Maths and Reasoning as per JKSSB pattern.',qs:SAMPLE},
+ {id:2,cat:'latest',exam:'JKSSB Constable',title:'JKP Constable Mock Test 3',paid:true,price:79,own:false,dur:25,neg:0.25,sched:'2026-11-13T18:00',status:'live',desc:'Constable exam practice paper with J&K special paper questions.',qs:SAMPLE.slice(0,4)},
+ {id:3,cat:'upcoming',exam:'JKPSC CCE (KAS)',title:'JKPSC KAS Prelims Mock 1',paid:true,price:149,own:false,dur:60,neg:0.33,sched:'2026-11-22T10:00',status:'scheduled',desc:'General Studies Paper 1 practice test with J&K focus.',qs:SAMPLE},
+ {id:4,cat:'upcoming',exam:'JKSSB Naib Tehsildar',title:'JKSSB Naib Tehsildar Mock 1',paid:true,price:99,own:false,dur:45,neg:0.25,sched:'2026-11-25T11:00',status:'scheduled',desc:'Revenue department exam mock, JKSSB pattern.',qs:SAMPLE},
+ {id:5,cat:'free',exam:'JKSSB Junior Assistant',title:'J&K GK Practice Quiz',paid:false,price:0,own:false,dur:15,neg:0,sched:'2026-11-10T09:00',status:'live',desc:'Free quiz on Jammu & Kashmir general knowledge.',qs:SAMPLE},
+ {id:6,cat:'free',exam:'JKBOSE Class 12',title:'JKBOSE Class 12 Quick Test',paid:false,price:0,own:false,dur:10,neg:0,sched:'2026-11-12T09:00',status:'live',desc:'Free quick revision test for JKBOSE Class 12.',qs:SAMPLE.slice(0,3)},
+ {id:7,cat:'latest',exam:'JKSSB Accounts Assistant',title:'JKSSB Accounts Assistant Mock 1',paid:true,price:99,own:false,dur:45,neg:0.25,sched:'2026-11-28T10:00',status:'draft',desc:'Draft — questions still being added.',qs:[]}],
+ pays:[{t:'SSC Reasoning Basics',a:29,s:'refunded',d:'2 Nov, 4:10 PM'},{t:'Banking GK Test',a:99,s:'paid',d:'28 Oct, 8:45 PM'}],
+ cur:null,q:0,ans:{},mark:{},left:1800,timer:null,sheet:false,toast:'',pal:false};
+let Q=[];
+const fd=x=>new Date(x).toLocaleString('en-IN',{day:'numeric',month:'short',hour:'numeric',minute:'2-digit'});
+const when=t=>t.status==='live'?'Live now':fd(t.sched);
+const NAMES=['Aarif Mir','Sana Bhat','Rohit Sharma','Mehvish Qadri','Tanveer Ahmad','Anjali Gupta','Ishfaq Wani','Simran Kour','Zubair Dar','Priya Raina','Umar Lone','Neha Kumari','Faizan Malik','Pooja Devi'],SC=[20,19,16,16,15,12,12,11,8,8,7,4,4,0];
+[1,2,5,6].forEach(n=>S.results[n]=NAMES.map((_,i)=>({name:NAMES[(i+n)%NAMES.length],score:SC[i],c:Math.round(SC[i]/4),w:i%3,time:(8+i*2)*60+i*13})));
+const DS=['Budgam','Srinagar','Anantnag','Baramulla','Jammu','Pulwama'],slug=n=>n.toLowerCase().replace(/[^a-z]+/g,'.'),mkU=o=>({token:null,own:[],pays:[],mistakes:[],attempts:[],bm:[],...o});
+S.users=[mkU({id:1,email:'JUMEE89@GMAIL.COM',phone:'9906101048',name:'Admin',district:'Srinagar',exam:'—',role:'admin',pw:'12345',joined:'—'})].concat(NAMES.concat(['Nusrat Jan','Vikas Mehta','Adil Rather','Shazia Akhter']).map((n,i)=>mkU({id:i+2,email:slug(n)+'@gmail.com',phone:'9'+String(800000000+i*7234567).padStart(9,'0'),name:n,district:DS[i%6],exam:S.exams[i%8],role:'student',pw:'student123',joined:((i*3)%14+1)+' Nov 2026'})));
+Object.assign(S.users[1],{own:[2],pays:[{t:'JKP Constable Mock Test 3',a:79,s:'paid',d:'10 Nov, 6:20 PM'}]});
+const STU=()=>S.users.filter(u=>u.role==='student');
+S.me=null;S.sess=null;S.f={mode:'in',email:'',pw:''};S.social={wa:{on:true,url:'https://wa.me/919906101048'},fb:{on:true,url:'https://facebook.com/'},ig:{on:true,url:'https://instagram.com/'},yt:{on:true,url:'https://youtube.com/'},cp:{on:true}};
+const rankOf=(t,sc)=>(S.results[t.id]||[]).map(r=>r.score).sort((x,y)=>y-x).indexOf(sc)+1;
+const L='ABCD',inr=v=>'₹'+v,T=()=>S.tests.find(t=>t.id===S.cur);
+const QUAL=['Class 10','Class 12','Undergraduate','Graduate','Post-graduate','Working professional'];
+const STATES=['Jammu & Kashmir','Ladakh','Delhi','Punjab','Himachal Pradesh','Haryana','Other'];
+const YEARS=['2026','2027','2028','2029'];
+function toast(m){S.toast=m;render();setTimeout(()=>{S.toast='';render()},2200)}
+function go(s){S.scr=s;S.dd='';render()}
+function fmt(s){return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')}
+function bar(title,back,extra=''){return `<div class="appbar">${back?`<span style="cursor:pointer" onclick="${back}">←</span>`:''}<span>${title}</span><span class="sp"></span>${extra}</div>`}
+function status(){return `<div class="status"><span>9:41</span><span>▂▄▆ 5G ▮</span></div>`}
+function nav(){return `<div class="nav">${['🏠|Home','👤|Profile'].map((x,i)=>{const[a,l]=x.split('|');return `<div class="${S.tab===i?'on':''}" onclick="S.tab=${i};go('home')"><span>${a}</span>${l}</div>`}).join('')}</div>`}
+const inp=(l,k,type='text',ph='')=>`<label class="lb">${l}</label><input type="${type}" placeholder="${ph}" value="${S.prof[k]||''}" oninput="S.prof['${k}']=this.value">`;
+const dd=(l,k,opts)=>`<label class="lb">${l}</label><div class="dd"><div class="ddv" onclick="S.dd=S.dd==='${k}'?'':'${k}';render()"><span style="color:${S.prof[k]?'var(--text)':'var(--muted)'}">${S.prof[k]||'Select'}</span><span>▾</span></div>${S.dd===k?`<div class="ddl">${opts.map(o=>`<div class="ddo ${S.prof[k]===o?'on':''}" onclick="S.prof['${k}']='${o}';S.dd='';render()">${o}</div>`).join('')}</div>`:''}</div>`;
+const chips=(l,k,opts)=>`<label class="lb">${l}</label><div class="chips">${opts.map(o=>`<div class="${S.prof[k]===o?'on':''}" onclick="S.prof['${k}']='${o}';render()">${o}</div>`).join('')}</div>`;
+function card(t){return `<div class="card" onclick="S.cur=${t.id};go('detail')"><div class="row"><h3 class="sp">${t.title}</h3><span class="chip ${t.paid&&!t.own?'paid':''}">${!t.paid?'FREE':t.own?'Purchased':inr(t.price)}</span></div>
+ <div class="meta"><span>⏱ ${t.dur} min</span><span>❓ ${t.qs.length} Qs</span><span>☆ ${t.qs.length*4} marks</span><span>📅 ${when(t)}</span></div></div>`}
+
+const V={
+login(){const f=S.f;return `<div class="body" style="display:flex;flex-direction:column"><div style="margin:auto 0;padding:8px 0"><div class="ctr big">🎓</div><h2 class="ctr">ExamPro</h2><p class="muted ctr">Mock tests for Jammu &amp; Kashmir exams</p>
+ <button class="gbtn" onclick="S.gs=true;render()"><span class="gl">G</span> Continue with Google</button>
+ <div class="or">or use email &amp; password</div>
+ <div class="seg" style="margin-bottom:8px"><button class="${f.mode==='in'?'on':''}" onclick="S.f.mode='in';S.ferr='';render()">Sign in</button><button class="${f.mode==='up'?'on':''}" onclick="S.f.mode='up';S.ferr='';render()">Create account</button></div>
+ <input type="email" placeholder="Email address" value="${E(f.email)}" oninput="S.f.email=this.value" style="margin-bottom:8px"><input type="password" placeholder="Password" value="${E(f.pw)}" oninput="S.f.pw=this.value">
+ ${S.ferr?`<div class="err">${S.ferr}</div>`:''}<button class="btn" onclick="emailAuth()">${f.mode==='in'?'Sign in':'Continue'}</button></div>${footer()}</div>${S.gs?gSheet():''}${S.kicked?kickModal():''}`},
+profile(){const P=S.prof,ed=S.edit;
+ return `${bar(ed?'Edit profile':'Complete Your Profile',ed?"S.edit=false;S.prof=S.me;S.tab=1;go('home')":'')}<div class="body">
+ <p class="muted" style="margin:0">${ed?'Update your details.':'One last step before you start. All fields are required.'}</p>
+ <label class="lb">Email (from Google, cannot be changed)</label><input value="${E(P.email)}" disabled>
+ <label class="lb">Mobile / WhatsApp number *</label><div class="row"><span class="chip" style="padding:13px 10px;border-radius:8px">+91</span><input type="tel" inputmode="numeric" maxlength="10" placeholder="10-digit number" value="${E(P.phone)}" oninput="this.value=this.value.replace(/\\D/g,'');S.prof.phone=this.value"></div>
+ ${inp('Full name *','name','text','Your full name')}
+ ${dd('District *','district',DIST)}
+ <label class="lb">Target exam *</label><input placeholder="e.g. JKSSB Naib Tehsildar" value="${E(P.exam)}" oninput="S.prof.exam=this.value">
+ ${ed?inp('Date of birth (optional)','dob','date')+chips('Gender (optional)','gender',['Male','Female','Other']):''}
+ ${S.perr?`<div class="err">${S.perr}</div>`:''}<button class="btn" onclick="saveProfile()">${ed?'Save changes':'Save & Continue'}</button>${ed?'':'<button class="btn o" onclick="logout()">Use a different account</button>'}</div>`},
+home(){const first=(S.prof.name||'').split(' ')[0]||'there';
+ const sec=(c,ico,title)=>{const l=S.tests.filter(t=>t.cat===c&&t.status!=='draft');return `<div class="sh">${ico} <span class="sp">${title}</span><span class="chip">${l.length}</span></div>`+(l.length?l.map(card).join(''):'<div class="muted empty">No tests added by admin yet</div>')};
+ if(S.tab===1)return V.account();
+ return `${bar('ExamPro'+(isPaid()?' <span class="pro">👑 PRO</span>':''),'',isPaid()?'':'<button class="b p" onclick="upgrade()">👑 Upgrade</button>')}<div class="body"><p class="muted" style="margin:0">Hi ${first}! Pick a Jammu &amp; Kashmir exam mock test and start practising. Tests are added and managed by the ExamPro admin.</p>
+ ${Object.keys(CAT).filter(k=>IC[k]||S.tests.some(t=>t.cat===k&&t.status!=='draft')).map(k=>sec(k,IC[k]||'📚',E(CAT[k]))).join('')}${footer()}</div>${nav()}`},
+account(){const u=S.me,paid=isPaid(),n=S.tests.filter(t=>t.own).length,mi=(ic,l,r,fn)=>`<div class="menu" onclick="${fn}"><span>${ic}</span><span class="sp">${l}</span><span class="muted">${r}</span></div>`;
+ const rows=[['Email',u.email],['Mobile','+91 '+u.phone],['District',u.district],['Target exam',u.exam]].concat(u.dob?[['Date of birth',u.dob]]:[],u.gender?[['Gender',u.gender]]:[]);
+ return `${bar('Profile')}<div class="body"><div class="row" style="padding:8px 0 6px"><div class="av">${E(u.name[0].toUpperCase())}</div><div class="sp"><div class="row" style="flex-wrap:wrap"><h3>${E(u.name)}</h3><span class="bdg ${paid?'pd':'fr'}">${paid?'✅ Paid':'Free'}</span></div><div class="muted">${E(u.email)}</div></div></div>
+ ${paid?`<div class="ban ok"><div><b>${n} Mock Test${n>1?'s':''} Unlocked</b><div class="muted">Your premium tests are ready</div></div><div><button class="b p" onclick="S.tab=0;go('home')">Start</button><button class="b" onclick="go('payments')">View Receipt</button></div></div>`:`<div class="ban"><div><b>Unlock JKSSB &amp; JKPSC Mock Tests</b><div class="muted">Full-length paid mocks with ranks</div></div><button class="b p" onclick="upgrade()">Buy Now</button></div>`}
+ ${u.role==='admin'?`<button class="btn" style="margin:0 0 8px;background:#0f766e;color:#fff" onclick="setMode('admin')">🛡️ Open Admin Dashboard</button>`:''}
+ ${rows.map(r=>`<div class="kv"><span>${r[0]}</span><span>${E(r[1])}</span></div>`).join('')}
+ <div class="sh" style="font-size:14px;color:var(--muted)">MENU</div>
+ ${mi('💳','My Payments',u.pays.length+' ›',"go('payments')")}${mi('📕','My Mistake Notebook',u.mistakes.length+' ›',"go('mist')")}${mi('🏆','District Rank',myRank()+(u.role==='admin'?'':' in '+u.district)+' ›',"go('rank')")}${mi('📊','My Test Attempts',u.attempts.length+' ›',"go('atts')")}${mi('🔖','Saved / Bookmarked Questions',u.bm.length+' ›',"go('bms')")}${mi('📄','Exam Syllabus','›',"go('syl')")}${mi('❓','Help &amp; Support','›',"go('help')")}
+ <a class="menu" style="text-decoration:none;color:inherit" href="https://wa.me/919906101048?text=Hi%20ExamPro" target="_blank" rel="noopener"><span>💬</span><span class="sp">WhatsApp Support</span><span class="muted">›</span></a>
+ ${mi('✏️','Edit profile','›',"editProfile()")}${mi('⎋','Log out','',"logout()")}${footer()}</div>${nav()}`},
+mist(){const l=S.me.mistakes;return `${bar('My Mistake Notebook',"S.tab=1;go('home')")}<div class="body">${l.map((m,i)=>`<div class="card" style="cursor:default"><b style="font-size:14px">${E(m.t)}</b><div style="margin-top:6px;font-size:13px"><span style="color:var(--bad)">✖ Your answer: ${L[m.sel]}. ${E(m.o[m.sel])}</span><br><span style="color:var(--ok)">✔ Correct: ${L[m.c]}. ${E(m.o[m.c])}</span></div><div class="muted" style="margin-top:6px">💡 ${E(m.e)}</div><div class="muted">${E(m.test)}</div><button class="b d" onclick="S.me.mistakes.splice(${i},1);render()">Remove</button></div>`).join('')||'<div class="muted empty" style="margin-top:14px">No mistakes saved yet. Wrong answers from your tests appear here automatically.</div>'}</div>`},
+rank(){const u=S.me,b=board(u.district);return `${bar('District Rank',"S.tab=1;go('home')")}<div class="body"><div class="card ctr" style="cursor:default;background:var(--pc)"><div class="muted">Your rank in ${E(u.district)}</div><div style="font-size:38px;font-weight:700">${myRank()}</div></div>${b.map((x,i)=>`<div class="kv" style="${x.u.id===u.id?'font-weight:700':''}"><span style="color:var(--text)">${['🥇','🥈','🥉'][i]||i+1} ${E(x.u.name)}${x.u.id===u.id?' (you)':''}</span><span>${x.p} pts</span></div>`).join('')||'<div class="muted empty">No students in this district yet</div>'}</div>`},
+atts(){const l=S.me.attempts;return `${bar('My Test Attempts',"S.tab=1;go('home')")}<div class="body">${l.map(a=>`<div class="kv"><span style="color:var(--text)"><b>${E(a.test)}</b><div class="muted">${a.date}</div></span><span><b>${a.score}/${a.max}</b></span></div>`).join('')||'<div class="muted empty" style="margin-top:14px">You have not attempted any test yet</div>'}</div>`},
+bms(){const l=S.me.bm;return `${bar('Saved Questions',"S.tab=1;go('home')")}<div class="body">${l.map((m,i)=>`<div class="card" style="cursor:default"><b style="font-size:14px">${E(m.t)}</b>${m.o.map((o,j)=>`<div style="font-size:13px;padding:2px 0;${j===m.c?'color:var(--ok);font-weight:700':''}">${L[j]}. ${E(o)}${j===m.c?' ✔':''}</div>`).join('')}<div class="muted" style="margin-top:4px">💡 ${E(m.e)}</div><button class="b d" onclick="S.me.bm.splice(${i},1);render()">Remove</button></div>`).join('')||'<div class="muted empty" style="margin-top:14px">Tap ☆ during a test to save a question here</div>'}</div>`},
+syl(){return `${bar('Exam Syllabus',"S.tab=1;go('home')")}<div class="body"><p class="muted">Indicative topics. Always check the official notification.</p>${SYL.map(s=>`<div class="card" style="cursor:default"><b>${s[0]}</b><div class="muted" style="margin-top:6px">${s[1]}</div></div>`).join('')}</div>`},
+help(){return `${bar('Help & Support',"S.tab=1;go('home')")}<div class="body"><div class="card" style="cursor:default"><b>Contact us</b><div class="muted" style="margin-top:6px">📧 JUMEE89@gmail.com<br>📱 +91 9906101048 (call / WhatsApp)</div></div>${[['I paid but the test is locked','Open Profile → My Payments. If it still shows locked after a few minutes, message us on WhatsApp with your payment ID.'],['I was logged out suddenly','Your account works on one device at a time. Signing in on another device logs out the old one.'],['Can I change my mobile number?','Yes, from Profile → Edit profile. A mobile number can belong to one account only.']].map(x=>`<div class="card" style="cursor:default"><b style="font-size:14px">${x[0]}</b><div class="muted" style="margin-top:6px">${x[1]}</div></div>`).join('')}</div>`},
+page(){const p=PAGES[S.page];return `${bar(p.t,"go(S.prev||'login')")}<div class="body">${p.b.map(x=>`<p style="font-size:14px;line-height:1.55">${x}</p>`).join('')}</div>`},
+payments(){const tot=S.pays.filter(p=>p.s==='paid').reduce((a,p)=>a+p.a,0);
+ return `${bar('My Payments',"S.tab=1;go('home')")}<div class="body"><div class="card" style="cursor:default;background:var(--pc)"><div class="muted">Total paid</div><div style="font-size:28px;font-weight:700">${inr(tot)}</div></div>
+ ${S.pays.map(p=>`<div class="row" style="padding:14px 4px;border-bottom:1px solid var(--line)"><div class="sp"><div>${p.t}</div><div class="muted">${p.d}</div></div><div style="text-align:right"><b>${inr(p.a)}</b><div class="pill" style="color:${p.s==='paid'?'var(--ok)':'var(--warn)'}">${p.s.toUpperCase()}</div></div></div>`).join('')}</div>`},
+detail(){const t=T(),ok=!t.paid||t.own,up=t.status!=='live';
+ return `${bar('Test details',"S.tab=0;go('home')")}<div class="body"><h2>${t.title}</h2><p class="muted">${t.desc}</p>
+ ${[['⏱','Duration',t.dur+' minutes'],['❓','Questions',t.qs.length],['☆','Total marks',t.qs.length*4],['⊖','Negative marking','-'+t.neg+' per wrong answer'],['📅','Schedule',when(t)],['💳','Price',t.paid?inr(t.price):'Free']].map(r=>`<div class="row" style="padding:10px 0"><span>${r[0]}</span><span>${r[1]}</span><span class="sp"></span><b>${r[2]}</b></div>`).join('')}</div>
+ <div style="padding:12px 14px"><button class="btn" style="margin:0;padding:16px" ${ok&&up?'disabled':''} onclick="${ok?'startTest()':'S.sheet=true;render()'}">${!ok?'Buy for '+inr(t.price):up?'Starts '+when(t):'Start test'}</button></div>
+ ${S.sheet?`<div class="sheet"><div><h3>Razorpay · ExamPro</h3><p class="muted">${t.title} — ${inr(t.price)}</p>
+ ${['📱 UPI','💳 Cards','🏦 NetBanking'].map(m=>`<div class="pm" onclick="pay()">${m}</div>`).join('')}<button class="btn o" onclick="S.sheet=false;render()">Cancel</button></div></div>`:''}`},
+exam(){const q=Q[S.q],sel=S.ans[S.q];
+ return `${bar('Q '+(S.q+1)+'/'+Q.length,'',`<span class="timer ${S.left<=300?'low':''}">⏱ ${fmt(S.left)}</span><span style="cursor:pointer;font-size:18px" onclick="bm()">${S.me&&S.me.bm.some(b=>b.t===q.t)?'★':'☆'}</span><span style="cursor:pointer" onclick="S.pal=!S.pal;render()">▦</span><span style="cursor:pointer;font-size:14px;color:var(--pri);font-weight:600" onclick="S.sheet=true;render()">Submit</span>`)}
+ <div class="body"><p class="muted">Marks: 4</p><h3 style="font-weight:500;line-height:1.4">${q.t}</h3>
+ ${q.o.map((o,i)=>`<div class="opt ${sel===i?'sel':''}" onclick="pick(${i})"><b>${L[i]}</b>${o}</div>`).join('')}
+ ${S.pal?`<h3 style="margin-top:16px">Question palette</h3><div class="muted">Green answered · Orange marked · Grey not answered</div><div class="pal">${Q.map((_,i)=>`<div class="${S.mark[i]?'m':S.ans[i]!==undefined?'a':''} ${i===S.q?'c':''}" onclick="S.q=${i};S.pal=false;render()">${i+1}</div>`).join('')}</div>`:''}</div>
+ <div class="ex"><button onclick="step(-1)" ${S.q?'':'disabled'}>‹</button><button class="sp" onclick="S.mark[S.q]=!S.mark[S.q];render()">${S.mark[S.q]?'🔖 Unmark':'🔖 Review'}</button><button class="sp" onclick="delete S.ans[S.q];render()" ${sel===undefined?'disabled':''}>Clear</button><button class="go" onclick="step(1)">›</button></div>
+ ${S.sheet?`<div class="sheet"><div><h3>Submit test?</h3><p class="muted">Answered: ${Object.keys(S.ans).length}<br>Unanswered: ${Q.length-Object.keys(S.ans).length}<br>Marked for review: ${Object.values(S.mark).filter(Boolean).length}</p><button class="btn" onclick="finish()">Submit</button><button class="btn o" onclick="S.sheet=false;render()">Cancel</button></div></div>`:''}`},
+result(){const c=Q.filter((q,i)=>S.ans[i]===q.c).length,a=Object.keys(S.ans).length,w=a-c,u=Q.length-a,t=T(),sc=Math.max(0,c*4-w*t.neg);
+ return `${bar('Result')}<div class="body"><div class="card ctr" style="background:var(--pc);cursor:default"><div class="muted">Your score</div><div style="font-size:38px;font-weight:700">${sc} / ${Q.length*4}</div><div class="row" style="justify-content:center;gap:20px;margin-top:8px"><span>Rank: #${rankOf(t,sc)} of ${(S.results[t.id]||[]).length}</span></div></div>
+ <div class="row"><div class="stat"><b style="color:var(--ok)">${c}</b>Correct</div><div class="stat"><b style="color:var(--bad)">${w}</b>Wrong</div><div class="stat"><b style="color:var(--muted)">${u}</b>Skipped</div></div>
+ <button class="btn" onclick="go('sol')">✔ View solutions</button><button class="btn o" onclick="S.tab=0;go('home')">Back to home</button></div>`},
+sol(){return `${bar('Solutions',"go('result')")}<div class="body">${Q.map((q,i)=>`<div class="card" style="cursor:default"><b style="font-size:14px">Q${i+1}. ${q.t}</b>
+ ${q.o.map((o,j)=>`<div class="opt ${j===q.c?'good':j===S.ans[i]?'wrong':''}" style="cursor:default;margin:5px 0"><b>${L[j]}</b><span class="sp">${o}</span>${j===q.c?'✔':j===S.ans[i]?'✖':''}</div>`).join('')}
+ ${S.ans[i]===undefined?'<div class="muted">Not attempted</div>':''}<div class="muted" style="margin-top:8px"><b>Explanation:</b> ${q.e}</div></div>`).join('')}</div>`}};
+
+function render(){const b=document.querySelector('.body'),y=b?b.scrollTop:0;
+ $('phone').innerHTML=status()+V[S.scr]()+(S.toast?`<div class="toast">${S.toast}</div>`:'');
+ const nb=document.querySelector('.body');if(nb)nb.scrollTop=y}
+const DIST=['Srinagar','Budgam','Baramulla','Anantnag','Ganderbal','Bandipora','Kupwara','Pulwama','Shopian','Kulgam','Jammu','Samba','Kathua','Udhampur','Reasi','Doda','Kishtwar','Ramban','Rajouri','Poonch'];
+const SYL=[['JKSSB Junior Assistant','J&K GK and current affairs, English, Mathematics, Reasoning, Basic computer knowledge'],['JKPSC KAS Prelims','History, geography and polity of India and J&K, economy, environment, science, current affairs'],['JKP Constable / SI','General knowledge, J&K special paper, reasoning, numerical ability, English'],['JKBOSE Class 12','Subject-wise chapters as per the current JKBOSE syllabus']];
+const PAGES={
+about:{t:'About Us',b:['ExamPro is an online mock-test platform for aspirants in Jammu &amp; Kashmir.','We help students prepare for JKSSB, JKPSC KAS, JKP and JKBOSE exams with exam-pattern tests, instant results, solutions with explanations and district-wise ranking.']},
+offer:{t:'What We Offer',b:['📝 Latest, upcoming and free mock tests','🎯 J&amp;K-focused questions with short explanations','🏆 Instant score, rank and percentile','📕 Mistake notebook and saved questions','📍 District-wise leaderboard']},
+contact:{t:'Contact &amp; Support',b:['📧 JUMEE89@gmail.com','📱 +91 9906101048 (call / WhatsApp)','For payment issues, share your payment ID so we can help faster.']},
+privacy:{t:'Privacy Policy',b:['Sample text — please get this reviewed before launch.','We collect your Google email, name, mobile number, district and target exam to create your account and show your results.','We do not sell your personal data. Payments are processed by Razorpay; we never store your card or UPI details.','You can ask us to update or delete your data by contacting support.']},
+terms:{t:'Terms &amp; Conditions',b:['Sample text — please get this reviewed before launch.','One account per person. Each mobile number and email can be linked to one account only.','Your account can be signed in on one device at a time.','Test content is for personal preparation only and must not be copied or resold.']},
+refund:{t:'Cancellation &amp; Refund Policy',b:['Sample text — please get this reviewed before launch.','Paid tests can be refunded by the admin through Razorpay in case of failed access or duplicate payment.','Approved refunds go back to the original payment method.','To request a refund, contact support with your payment ID.']}};
+const rnd=()=>Math.random().toString(36).slice(2)+Date.now().toString(36);
+const isPaid=()=>S.tests.some(t=>t.own);
+const ptsOf=u=>Object.values(S.results).flat().filter(r=>r.uid?r.uid===u.id:r.name===u.name).reduce((a,r)=>a+r.score,0);
+const board=d=>STU().filter(u=>u.district===d).map(u=>({u,p:ptsOf(u)})).sort((a,b)=>b.p-a.p);
+const myRank=()=>{const i=board(S.me.district).findIndex(x=>x.u.id===S.me.id);return i<0?'—':'#'+(i+1)};
+function footer(){const so=S.social,ic=[['wa','💬','WhatsApp'],['fb','f','Facebook'],['ig','📸','Instagram'],['yt','▶','YouTube']],ln=(k,l)=>`<a onclick="pg('${k}')">${l}</a>`;
+ return `<div class="ft"><div class="fg3"><div><h4>Exam Categories</h4>${['JKSSB','JKPSC KAS','JKP','JKBOSE','Free Quizzes'].map(x=>`<a onclick="catGo('${x}')">${x}</a>`).join('')}</div><div><h4>Explore ExamPro</h4>${ln('about','About Us')}${ln('offer','What We Offer')}${ln('contact','Contact &amp; Support')}</div><div><h4>Legal &amp; Policies</h4>${ln('privacy','Privacy Policy')}${ln('terms','Terms &amp; Conditions')}${ln('refund','Cancellation &amp; Refund Policy')}</div></div>
+ <div class="soc">${ic.filter(x=>so[x[0]].on).map(x=>`<a class="s ${x[0]}" href="${E(so[x[0]].url)}" target="_blank" rel="noopener" title="${x[2]}">${x[1]}</a>`).join('')}${so.cp.on?`<a class="s cp" onclick="copyLink()" title="Copy Link">🔗</a>`:''}</div>
+ <div class="ctr muted" style="font-size:12px">Made with love ❤️ by Ahmad Junaid</div><div class="ctr muted" style="font-size:11px;margin-top:2px">© ${new Date().getFullYear()} ExamPro. All rights reserved.</div></div>`}
+function pg(k){S.prev=S.scr;S.page=k;go('page')}
+function catGo(x){if(S.me){S.tab=0;go('home');toast('Browse '+x+' tests on Home')}else toast('Sign in to view '+x+' tests')}
+function copyLink(){try{navigator.clipboard.writeText(location.href).catch(()=>{})}catch(e){}toast('Link Copied!')}
+function gSheet(){return `<div class="sheet" onclick="S.gs=false;render()"><div onclick="event.stopPropagation()"><h3>Choose an account</h3><p class="muted">to continue to ExamPro</p>${[['aarif.mir@gmail.com','Aarif Mir'],['sameer.ahmad@gmail.com','Sameer Ahmad'],['JUMEE89@GMAIL.COM','Admin']].map(a=>`<div class="pm" onclick="gPick('${a[0]}','${a[1]}')"><span class="av" style="width:36px;height:36px;font-size:16px">${a[1][0]}</span><span class="sp"><b>${a[1]}</b><div class="muted">${a[0]}</div></span></div>`).join('')}<div class="row" style="margin-top:8px"><input id="gem" placeholder="Another Google account (email)"><button class="b p" onclick="gOther()">Go</button></div></div></div>`}
+function kickModal(){return `<div class="sheet" style="align-items:center;justify-content:center"><div style="border-radius:16px;width:88%;text-align:center"><p><b>⚠️ You have been logged out because your account was signed in on another device.</b></p><button class="btn" onclick="S.kicked=false;render()">OK</button></div></div>`}
+function gPick(e,n){S.gs=false;signin(e,n)}
+function gOther(){const em=$('gem').value.trim();if(!/^\S+@\S+\.\S+$/.test(em))return;S.gs=false;signin(em,em.split('@')[0].replace(/[._]+/g,' ').replace(/\b\w/g,c=>c.toUpperCase()))}
+function signin(email,name){const u=S.users.find(x=>x.email.toLowerCase()===email.toLowerCase());if(u)return login(u);S.pend={email,name,phone:'',district:'',exam:'',pw:''};S.prof=S.pend;S.edit=false;S.perr='';go('profile')}
+function login(u){u.token=u.role==='admin'?null:rnd();S.sess=u.token;S.me=u;S.prof=u;S.pend=null;S.tests.forEach(t=>t.own=u.own.includes(t.id));S.pays=u.pays;S.tab=0;S.kicked=false;go('home')}
+function logout(){S.me=null;S.prof={};S.sess=null;S.f={mode:'in',email:'',pw:''};S.ferr='';S.edit=false;S.pend=null;S.tab=0;S.tests.forEach(t=>t.own=false);go('login')}
+function kick(){S.me=null;S.prof={};S.sess=null;S.kicked=true;S.sheet=false;clearInterval(S.timer);S.scr='login';render()}
+function otherDevice(){if(!S.me)return toast('Sign in first, then simulate a second device');if(S.me.role==='admin')return toast('Admins can stay signed in on many devices');S.me.token=rnd()}
+function emailAuth(){const f=S.f,em=f.email.trim().toLowerCase();S.ferr='';
+ if(!/^\S+@\S+\.\S+$/.test(em))S.ferr='Enter a valid email address.';
+ else if(f.pw.length<5)S.ferr='Password must be at least 5 characters.';
+ else{const u=S.users.find(x=>x.email.toLowerCase()===em);
+  if(f.mode==='in'){if(u&&u.pw===f.pw){f.pw='';return login(u)}S.ferr='Invalid email or password.'}
+  else if(u)S.ferr='⚠️ This email is already registered. Please sign in instead.';
+  else{S.pend={email:em,name:'',phone:'',district:'',exam:'',pw:f.pw};S.prof=S.pend;S.edit=false;S.perr='';f.pw='';return go('profile')}}
+ render()}
+function editProfile(){S.edit=true;S.prof={...S.me};S.perr='';go('profile')}
+function saveProfile(){const P=S.prof;S.perr='';P.name=(P.name||'').trim();
+ const bad=!/^[6-9]\d{9}$/.test(P.phone||'')?'⚠️ Enter a valid 10-digit mobile number starting with 6, 7, 8 or 9.':
+ S.users.some(u=>u.phone===P.phone&&u.email.toLowerCase()!==P.email.toLowerCase())?'⚠️ This mobile number is already registered with another account. Please login with your original Google account.':
+ P.name.length<2?'Enter your full name.':!P.district?'Select your district.':!(P.exam||'').trim()?'Enter your target exam.':'';
+ if(bad){S.perr=bad;return render()}
+ P.exam=P.exam.trim();
+ if(S.edit){Object.assign(S.me,P);S.prof=S.me;S.edit=false;S.tab=1;go('home');toast('Profile updated')}
+ else{const u={id:S.users.length+1,email:P.email,phone:P.phone,name:P.name,district:P.district,exam:P.exam,role:'student',pw:P.pw||'',token:null,own:[],pays:[],mistakes:[],attempts:[],bm:[],joined:'Today'};S.users.push(u);login(u);toast('Welcome to ExamPro, '+u.name.split(' ')[0]+'!')}}
+function upgrade(){const t=S.tests.find(x=>x.paid&&!x.own&&x.status!=='draft');if(t){S.cur=t.id;go('detail')}else toast('All paid tests are unlocked')}
+function bm(){const q=Q[S.q],u=S.me;if(!u)return;const i=u.bm.findIndex(b=>b.t===q.t);i>=0?u.bm.splice(i,1):u.bm.push({t:q.t,o:[...q.o],c:q.c,e:q.e,test:T().title});render()}
+
+function pay(){S.sheet=false;T().own=true;if(S.me)S.me.own.push(T().id);S.pays.unshift({t:T().title,a:T().price,s:'paid',d:'Just now'});render();toast('Payment successful. Test unlocked!')}
+function startTest(){Q=T().qs;S.q=0;S.ans={};S.mark={};S.left=T().dur*60;S.pal=false;S.sheet=false;go('exam');clearInterval(S.timer);
+ S.timer=setInterval(()=>{if(S.scr!=='exam')return clearInterval(S.timer);if(--S.left<=0)return finish();const el=document.querySelector('.timer');if(el){el.textContent='⏱ '+fmt(S.left);el.classList.toggle('low',S.left<=300)}},1000)}
+function pick(i){S.ans[S.q]===i?delete S.ans[S.q]:S.ans[S.q]=i;render()}
+function step(d){S.q=Math.min(Q.length-1,Math.max(0,S.q+d));render()}
+function finish(){clearInterval(S.timer);S.sheet=false;const t=T(),u=S.me;let c=0,w=0;Q.forEach((q,i)=>{if(S.ans[i]===q.c)c++;else if(S.ans[i]!==undefined){w++;if(u&&!u.mistakes.some(m=>m.t===q.t))u.mistakes.push({t:q.t,o:[...q.o],c:q.c,sel:S.ans[i],e:q.e,test:t.title})}});
+ const sc=Math.max(0,c*4-w*t.neg);(S.results[t.id]=S.results[t.id]||[]).push({name:u?u.name:'Student',uid:u?u.id:0,score:sc,c,w,time:Math.max(1,t.dur*60-S.left)});if(u)u.attempts.unshift({test:t.title,score:sc,max:Q.length*4,date:'Just now'});go('result')}
+$('themeBtn').onclick=()=>{const r=document.documentElement,d=matchMedia('(prefers-color-scheme:dark)').matches;const cur=r.dataset.theme||(d?'dark':'light');r.dataset.theme=cur==='dark'?'light':'dark'};
+let MODE='app';
+const SUBJ=['J&K General Knowledge','History of J&K','Geography of J&K','Indian Polity','Quantitative Aptitude','Reasoning','English','General Science','Current Affairs'];
+const POOL=[
+ {t:'Which is the largest freshwater lake in Jammu & Kashmir?',o:['Dal Lake','Wular Lake','Manasbal Lake','Nigeen Lake'],c:1,e:'Wular Lake in Bandipora is the largest freshwater lake of J&K.'},
+ {t:'Which range separates the Kashmir Valley from the Jammu region?',o:['Zanskar','Pir Panjal','Karakoram','Shivalik'],c:1,e:'The Pir Panjal range lies between the Kashmir Valley and Jammu.'},
+ {t:'Who wrote the chronicle Rajatarangini?',o:['Kalhana','Bilhana','Kalidasa','Banabhatta'],c:0,e:'Kalhana wrote Rajatarangini in the 12th century, a chronicle of Kashmir’s kings.'},
+ {t:'The Hangul (Kashmir stag) is found in which national park?',o:['Dachigam National Park','Kishtwar National Park','Hemis National Park','Salim Ali National Park'],c:0,e:'Dachigam National Park near Srinagar is the habitat of the Hangul.'},
+ {t:'Pashmina fibre comes mainly from which animal?',o:['Sheep','Changthangi goat','Yak','Camel'],c:1,e:'Pashmina is obtained from the Changthangi goat of Ladakh.'},
+ {t:'Which city of J&K is called the City of Temples?',o:['Srinagar','Jammu','Anantnag','Udhampur'],c:1,e:'Jammu is known as the City of Temples.'},
+ {t:'The Amarnath cave shrine is dedicated to which deity?',o:['Vishnu','Shiva','Ganesh','Hanuman'],c:1,e:'The cave houses a natural ice lingam of Lord Shiva.'},
+ {t:'Saffron in J&K is mainly grown at:',o:['Pampore','Gulmarg','Pahalgam','Sonamarg'],c:0,e:'Pampore in Pulwama district is famous for saffron.'},
+ {t:'The river Jhelum rises from which spring?',o:['Verinag','Chashme Shahi','Achabal','Kokernag'],c:0,e:'The Jhelum originates at Verinag in Anantnag.'},
+ {t:'Which place in J&K is famous for skiing?',o:['Gulmarg','Kochi','Ooty','Mount Abu'],c:0,e:'Gulmarg is a well-known skiing destination.'}];
+const CAT={latest:'Latest Mock Tests',upcoming:'Upcoming Mock Tests',free:'Free Mock Tests'},IC={latest:'🔥',upcoming:'📅',free:'🎁'},cn=k=>(CAT[k]||k).replace(/ Mock Tests$/,'');
+const A={sec:'dash',drawer:false,ed:null,panel:null,qf:null,ai:null,del:null,rt:1,pick:false,msg:'',ok:'',err:'',nx:10};
+const E=s=>String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+const blankQ=()=>({t:'',o:['','','',''],c:0,e:'',subj:SUBJ[0],idx:null,ai:null});
+const dur=s=>Math.floor(s/60)+'m '+String(s%60).padStart(2,'0')+'s';
+function setMode(m){MODE=m;if(m==='admin'&&S.me&&S.me.role==='admin')A.auth=true;try{const h=m==='admin'?'#admin':'';if(location.hash!==h)location.hash=h}catch(e){}$('phone').style.display=m==='app'?'flex':'none';$('admin').style.display=m==='admin'?'flex':'none';m==='app'?render():renderA()}
+
+function acts(t){return `<button class="b" onclick="editTest(${t.id})">✏️ Edit</button><button class="b" onclick="A.sec='results';A.rt=${t.id};renderA()">🏆 Results</button><button class="b" onclick="togg(${t.id})">${t.status==='draft'?'Publish':'Unpublish'}</button><button class="b d" onclick="${A.del===t.id?`delTest(${t.id})`:`A.del=${t.id};renderA()`}">${A.del===t.id?'Confirm delete':'🗑'}</button>`}
+function tcard(t){return `<div class="card" style="cursor:default"><div class="row"><b class="sp">${E(t.title)}</b><span class="st ${t.status}">${t.status}</span></div><div class="meta"><span>${cn(t.cat)}</span><span>❓ ${t.qs.length} Qs</span><span>${t.paid?inr(t.price):'Free'}</span><span>📅 ${when(t)}</span></div><div style="margin-top:10px">${acts(t)}</div></div>`}
+
+const P={
+dash(){const T=S.tests,n=s=>T.filter(t=>t.status===s).length,att=Object.values(S.results).reduce((a,r)=>a+r.length,0),
+ rev=T.filter(t=>t.paid).reduce((a,t)=>a+t.price*((S.results[t.id]||[]).length),0),free=T.filter(t=>!t.paid&&t.status!=='draft').length,
+ tile=(i,v,l,c)=>`<div class="t"><div class="ti" style="background:${c}">${i}</div><b>${v}</b>${l}</div>`,
+ up=T.filter(t=>t.status==='scheduled').sort((a,b)=>a.sched.localeCompare(b.sched)),
+ cats=Object.keys(CAT).map(k=>[cn(k),T.filter(t=>t.cat===k).length]),mxc=Math.max(1,...cats.map(c=>c[1])),
+ top=[...(S.results[1]||[])].sort((a,b)=>b.score-a.score||a.time-b.time).slice(0,3);
+ return `<div class="row" style="flex-wrap:wrap;margin-bottom:14px"><div class="sp"><h2 style="margin:0">Welcome back, Admin 👋</h2><div class="muted">${new Date().toLocaleDateString('en-IN',{weekday:'long',day:'numeric',month:'long',year:'numeric'})} · ExamPro overview</div></div><button class="b p" style="padding:11px 18px;font-size:14px" onclick="A.pick=true;renderA()">➕ Add new mock test</button></div>
+ <div class="g">${tile('📝',T.length,'Total mock tests','#e0deff')}${tile('📅',n('scheduled'),'Upcoming mock tests','#fff0cf')}${tile('🎓',STU().length,'Total students','#d6f1e1')}${tile('🟢',n('live'),'Live now','#c6ecd6')}
+ ${tile('🎁',free,'Free mock tests','#ffd9e2')}${tile('📄',n('draft'),'Drafts (hidden)','#e4e2ee')}${tile('🧪',att,'Total attempts','#e0deff')}${tile('💰',inr(rev),'Revenue (estimated)','#fff0cf')}</div>
+ <div class="g2" style="margin-top:16px">
+ <div class="pn"><b>📅 Upcoming mock tests</b>${up.map(t=>`<div class="kv"><span style="color:var(--text)"><b>${E(t.title)}</b><div class="muted">${E(t.exam)}</div></span><span>${fd(t.sched)}<div class="muted">${t.paid?inr(t.price):'Free'}</div></span></div>`).join('')||'<div class="muted empty" style="margin-top:10px">Nothing scheduled</div>'}</div>
+ <div class="pn"><b>📊 Tests by category</b><div style="margin-top:8px">${cats.map(c=>`<div class="hr"><span style="width:90px;flex:none">${E(c[0])}</span><div class="hb" style="width:${Math.max(4,c[1]/mxc*100)}%"></div><b>${c[1]}</b></div>`).join('')}</div></div>
+ <div class="pn"><b>🏆 Toppers · ${E((S.tests.find(t=>t.id===1)||{}).title||'')}</b>${top.map((x,i)=>`<div class="kv"><span style="color:var(--text)">${['🥇','🥈','🥉'][i]} ${E(x.name)}</span><span>${x.score}/20</span></div>`).join('')||'<div class="muted empty" style="margin-top:10px">No attempts yet</div>'}<button class="b" style="margin-top:8px" onclick="A.sec='results';renderA()">View full Top 10 →</button></div>
+ <div class="pn"><b>⚡ Quick actions</b><div style="margin-top:8px"><button class="b p" onclick="A.pick=true;renderA()">➕ New mock test</button><button class="b" onclick="A.sec='tests';renderA()">📝 Manage tests</button><button class="b" onclick="A.sec='students';renderA()">🎓 Students</button><button class="b" onclick="A.sec='exams';renderA()">🎯 Exams &amp; categories</button></div></div></div>`},
+
+tests(){const nt=A.note?`<div class="err">${A.note}</div>`:'';A.note='';return nt+`<div class="row" style="margin-bottom:12px"><div class="sp muted">Everything students see is managed here.</div><button class="b p" style="padding:10px 16px;font-size:13px" onclick="A.pick=true;renderA()">➕ Add new mock test</button></div>
+ <div class="tw"><table class="tbl"><tr><th>Test</th><th>Category</th><th>Status</th><th>Qs</th><th>Schedule</th><th>Price</th><th></th></tr>
+ ${S.tests.map(t=>`<tr><td><b>${E(t.title)}</b><div class="muted">${E(t.exam)}</div></td><td>${cn(t.cat)}</td><td><span class="st ${t.status}">${t.status}</span></td><td>${t.qs.length}</td><td>${when(t)}</td><td>${t.paid?inr(t.price):'Free'}</td><td>${acts(t)}</td></tr>`).join('')}</table></div>
+ <div class="cg">${S.tests.map(tcard).join('')}</div>`},
+results(){const t=S.tests.find(x=>x.id===A.rt)||S.tests[0];A.rt=t.id;
+ const r=[...(S.results[t.id]||[])].sort((a,b)=>b.score-a.score||a.time-b.time),top=r.slice(0,10),mx=t.qs.length*4||1,
+ avg=r.length?(r.reduce((a,x)=>a+x.score,0)/r.length).toFixed(1):0,pass=r.length?Math.round(r.filter(x=>x.score>=mx*.4).length/r.length*100):0;
+ return `<label class="lb" style="margin-top:0">Select mock test</label><select class="s" onchange="A.rt=+this.value;renderA()">${S.tests.map(x=>`<option value="${x.id}" ${x.id===t.id?'selected':''}>${E(x.title)}</option>`).join('')}</select>
+ <div class="g" style="margin-top:14px"><div class="t"><b>${r.length}</b>Attempts</div><div class="t"><b>${r.length?r[0].score:0}/${mx}</b>Highest score</div><div class="t"><b>${avg}</b>Average score</div><div class="t"><b>${pass}%</b>Pass rate (≥40%)</div></div>
+ <div class="sh">🏆 Top 10 students</div>
+ ${top.length?`<table class="tbl"><tr><th>#</th><th>Student</th><th>Score</th><th>✔</th><th>✖</th><th>Time</th></tr>${top.map((x,i)=>`<tr><td>${['🥇','🥈','🥉'][i]||i+1}</td><td><b>${E(x.name)}</b><div class="hb" style="width:${Math.max(4,x.score/mx*100)}%;margin-top:4px;opacity:.7"></div></td><td>${x.score}/${mx}</td><td>${x.c}</td><td>${x.w}</td><td>${dur(x.time)}</td></tr>`).join('')}</table>`:'<div class="muted empty">No attempts yet for this test</div>'}`},
+students(){return `<p class="muted" style="margin-top:0">${STU().length} registered students · email and mobile are unique per student</p><div style="overflow-x:auto"><table class="tbl"><tr><th>Student</th><th>Email</th><th>Mobile</th><th>District</th><th>Target exam</th><th>Plan</th></tr>${STU().map(x=>`<tr><td><b>${E(x.name)}</b></td><td>${E(x.email)}</td><td>${x.phone}</td><td>${E(x.district)}</td><td>${E(x.exam)}</td><td><span class="st ${x.own.length?'live':'draft'}">${x.own.length?'Paid':'Free'}</span></td></tr>`).join('')}</table></div>`},
+settings(){return `<p class="muted" style="margin-top:0">Turn social icons ON or OFF in the student app footer and set their links.</p>${[['wa','WhatsApp'],['fb','Facebook'],['ig','Instagram'],['yt','YouTube'],['cp','Copy Link']].map(x=>`<div class="kv" style="align-items:center"><span style="color:var(--text);flex:1"><b>${x[1]}</b>${x[0]==='cp'?'':`<input value="${E(S.social[x[0]].url)}" oninput="S.social.${x[0]}.url=this.value" style="margin-top:6px;font-size:13px;padding:9px">`}</span><span class="tg ${S.social[x[0]].on?'on':''}" onclick="S.social.${x[0]}.on=!S.social.${x[0]}.on;renderA()"><i></i></span></div>`).join('')}
+ <div class="sh">🛡️ Admin account</div><div class="kv"><span>Email</span><span>JUMEE89@GMAIL.COM</span></div><div class="kv"><span>Phone</span><span>9906101048</span></div><div class="kv"><span>Role</span><span>admin (stays signed in on many devices)</span></div>`},
+exams(){const nt=A.note?`<div class="err">${A.note}</div>`:'';A.note='';return nt+`<p class="muted" style="margin-top:0">Exams and categories you add here appear in the student app and in the test form.</p>
+ <div class="sh" style="margin-top:0">🎯 Exams</div><div class="row"><input id="nex" placeholder="Add exam e.g. JKSSB Forester"><button class="b p" style="padding:12px 18px" onclick="addEx()">Add</button></div>
+ ${S.exams.map((x,i)=>`<div class="kv"><span style="color:var(--text)">${E(x)}</span><span>${x==='Other'?'<span class="muted">default</span>':`<button class="b d" onclick="S.exams.splice(${i},1);renderA()">Remove</button>`}</span></div>`).join('')}
+ <div class="sh">🗂 Test categories</div><div class="row"><input id="ncx" placeholder="Add category e.g. J&amp;K Special Series"><button class="b p" style="padding:12px 18px" onclick="addCatPage()">Add</button></div>
+ ${Object.keys(CAT).map(k=>`<div class="kv"><span style="color:var(--text)">${E(CAT[k])}</span><span>${['latest','upcoming','free'].includes(k)?'<span class="muted">default</span>':`<button class="b d" onclick="delCat('${k}')">Remove</button>`}</span></div>`).join('')}`}};
+
+function renderA(){if(!A.auth)return adminLoginView();const y=(document.querySelector('.content')||{}).scrollTop||0;
+ const nav=[['dash','📊','Dashboard'],['tests','📝','Mock Tests'],['results','🏆','Results'],['students','🎓','Students'],['exams','🎯','Exams'],['settings','⚙️','Settings']],go=k=>`A.sec='${k}';A.drawer=false;A.ed=null;A.panel=null;A.del=null;renderA()`,
+ title=(nav.find(n=>n[0]===A.sec)||[])[2];
+ $('admin').innerHTML=`<div class="sb ${A.drawer?'open':''}"><div class="logo">🎓 ExamPro <small>Admin</small></div>${nav.map(n=>`<div class="si ${A.sec===n[0]&&!A.ed?'on':''}" onclick="${go(n[0])}">${n[1]} ${n[2]}</div>`).join('')}</div>
+ <div class="main"><div class="top"><span class="ham" onclick="A.drawer=!A.drawer;renderA()">☰</span><b class="sp">${A.ed?(A.ed.isNew?'New mock test':'Edit mock test'):title}</b><button class="b" onclick="${S.me&&S.me.role==='admin'?`A.ed=null;setMode('app')`:`A.auth=false;A.lerr='';A.ed=null;setMode('app')`}">${S.me&&S.me.role==='admin'?'📱 Student app':'Logout'}</button></div>
+ <div class="content">${A.ed?editor():P[A.sec]()}</div>
+ <div class="bn">${nav.map(n=>`<div class="${A.sec===n[0]&&!A.ed?'on':''}" onclick="${go(n[0])}"><span style="font-size:18px">${n[1]}</span>${n[2]}</div>`).join('')}</div></div>
+ ${A.pick?`<div class="ov" onclick="A.pick=false;renderA()"><div onclick="event.stopPropagation()"><h3>Add new mock test</h3><p class="muted">How do you want to add questions?</p>
+ <div class="opc" onclick="newTest('ai')"><b>📄 Upload PDF &amp; generate questions with AI</b><div class="muted">AI creates questions with 4 options and a short explanation. You review and approve each one.</div></div>
+ <div class="opc" onclick="newTest('manual')"><b>✍️ Add questions manually</b><div class="muted">Write question, 4 options, correct answer and explanation yourself.</div></div>
+ <button class="b" onclick="A.pick=false;renderA()">Cancel</button></div></div>`:''}`;
+ const c=document.querySelector('.content');if(c)c.scrollTop=y}
+
+function newTest(mode){A.pick=false;A.ed={isNew:true,id:A.nx++,title:'',exam:S.exams[0],cat:'latest',paid:true,price:99,dur:60,neg:0.25,sched:'2026-11-20T10:00',status:'draft',desc:'',qs:[]};A.panel=mode;A.qf=blankQ();A.ai={file:'',busy:false,items:[],n:10};A.msg=A.ok=A.err='';A.sec='tests';renderA()}
+function editTest(id){A.ed=JSON.parse(JSON.stringify(S.tests.find(t=>t.id===id)));A.panel=null;A.qf=blankQ();A.ai={file:'',busy:false,items:[],n:10};A.msg=A.ok=A.err='';renderA()}
+function togg(id){const t=S.tests.find(x=>x.id===id);if(t.status==='draft'){if(!t.qs.length)return alertA('Add questions before publishing.');t.status=t.cat==='upcoming'?'scheduled':'live'}else t.status='draft';renderA()}
+function alertA(m){A.note=m;A.sec='tests';renderA()}
+function delTest(id){S.tests=S.tests.filter(t=>t.id!==id);A.del=null;renderA()}
+function addExamName(v){v=v.trim();if(!v||S.exams.includes(v))return v;const i=S.exams.indexOf('Other');i<0?S.exams.push(v):S.exams.splice(i,0,v);return v}
+function addEx(){const v=$('nex').value.trim();if(v){addExamName(v);renderA()}}
+function addCatName(v){v=v.trim();const x=Object.keys(CAT).find(k=>CAT[k].toLowerCase()===v.toLowerCase());if(x)return x;const k='c'+Date.now();CAT[k]=v;return k}
+function addCatPage(){const v=$('ncx').value.trim();if(v){addCatName(v);renderA()}}
+function delCat(k){if(S.tests.some(t=>t.cat===k))A.note='Move or delete the tests in this category first.';else delete CAT[k];renderA()}
+function newExamAdd(){const v=$('nexam').value.trim();if(!v)return;A.ed.exam=addExamName(v);renderA()}
+function newCatAdd(){const v=$('ncat').value.trim();if(!v)return;A.ed.cat=addCatName(v);renderA()}
+
+function editor(){const e=A.ed,ST={draft:['Draft','Hidden from students'],scheduled:['Scheduled','Students see the date and time'],live:['Live','Students can start now']},
+ exs=S.exams.filter(x=>x!=='Other'),exl=exs.includes(e.exam)||e.exam==='__new'?exs:[...exs,e.exam],
+ num=(l,k,st='1')=>`<div><label class="lb">${l}</label><input type="number" step="${st}" value="${e[k]}" oninput="A.ed['${k}']=+this.value"></div>`;
+ return `<div class="fg">
+ <div class="f2"><label class="lb">Test title *</label><input value="${E(e.title)}" oninput="A.ed.title=this.value" placeholder="e.g. JKSSB Junior Assistant Mock 2"></div>
+ <div><label class="lb">Exam</label><select class="s" onchange="A.ed.exam=this.value;renderA()">${exl.map(x=>`<option ${x===e.exam?'selected':''}>${E(x)}</option>`).join('')}<option value="__new" ${e.exam==='__new'?'selected':''}>➕ Other — write new exam…</option></select>
+ ${e.exam==='__new'?`<div class="row" style="margin-top:8px"><input id="nexam" placeholder="Type new exam name"><button class="b p" onclick="newExamAdd()">Add</button></div>`:''}</div>
+ <div><label class="lb">Category (section in student app)</label><select class="s" onchange="A.ed.cat=this.value;if(this.value==='free'){A.ed.paid=false;A.ed.price=0}renderA()">${Object.keys(CAT).map(k=>`<option value="${k}" ${e.cat===k?'selected':''}>${E(CAT[k])}</option>`).join('')}<option value="__new" ${e.cat==='__new'?'selected':''}>➕ Other — write new category…</option></select>
+ ${e.cat==='__new'?`<div class="row" style="margin-top:8px"><input id="ncat" placeholder="Type new category name"><button class="b p" onclick="newCatAdd()">Add</button></div>`:''}</div>
+ ${num('Duration (minutes)','dur')}${num('Negative marks per wrong answer','neg','0.01')}
+ <div><label class="lb">Price</label><div class="seg"><button class="${e.paid?'':'on'}" onclick="A.ed.paid=false;A.ed.price=0;renderA()">Free</button><button class="${e.paid?'on':''}" onclick="A.ed.paid=true;if(!A.ed.price)A.ed.price=99;renderA()">Paid</button></div>
+ ${e.paid?`<input type="number" min="1" placeholder="Enter price in ₹" value="${e.price||''}" oninput="A.ed.price=+this.value" style="margin-top:8px"><div class="muted">Students pay ₹${e.price||0} via Razorpay.</div>`:'<div class="muted" style="margin-top:6px">Students can take this test for free.</div>'}</div>
+ <div><label class="lb">Schedule (date and time)</label><input type="datetime-local" value="${e.sched}" oninput="A.ed.sched=this.value"></div>
+ <div class="f2"><label class="lb">Status</label><div class="seg">${Object.keys(ST).map(k=>`<button class="${e.status===k?'on':''}" onclick="A.ed.status='${k}';renderA()">${ST[k][0]}</button>`).join('')}</div><div class="muted" style="margin-top:6px">${ST[e.status][1]}</div></div>
+ <div class="f2"><label class="lb">Description</label><textarea style="min-height:110px" maxlength="300" placeholder="Tell students what this test covers — syllabus, pattern, difficulty…" oninput="A.ed.desc=this.value;document.getElementById('dc').textContent=this.value.length+'/300'">${E(e.desc)}</textarea><div class="muted" id="dc" style="text-align:right">${e.desc.length}/300</div></div></div>
+ <div class="sh" style="margin-top:22px">❓ Questions <span class="chip">${e.qs.length}</span></div>
+ ${e.qs.length?e.qs.map((x,i)=>`<div class="card" style="cursor:default"><div class="row"><b class="sp" style="font-size:14px">Q${i+1}. ${E(x.t)}</b><span class="chip">${x.src==='ai'?'AI':'Manual'}</span></div><div class="muted" style="margin-top:6px">${E(x.subj||'')} · Correct: ${L[x.c]} (${E(x.o[x.c])})</div><div style="margin-top:8px"><button class="b" onclick="editQ(${i})">✏️ Edit</button><button class="b d" onclick="A.ed.qs.splice(${i},1);renderA()">🗑 Remove</button></div></div>`).join(''):'<div class="muted empty">No questions yet — add them below.</div>'}
+ <div class="row" style="flex-wrap:wrap;margin-top:10px"><button class="b p" onclick="A.panel='ai';renderA()">📄 Upload PDF &amp; generate with AI</button><button class="b p" onclick="A.panel='manual';A.qf=blankQ();A.ok='';renderA()">✍️ Add questions manually</button></div>
+ ${A.panel==='manual'?manual():A.panel==='ai'?aiPanel():''}
+ ${A.err?`<div class="err">${A.err}</div>`:''}
+ <div class="row" style="margin:20px 0;flex-wrap:wrap"><button class="b p" style="padding:12px 22px;font-size:14px" onclick="saveTest()">💾 Save test</button><button class="b" style="padding:12px 18px" onclick="A.ed=null;A.panel=null;renderA()">Cancel</button></div>`}
+
+function manual(){const q=A.qf,upd=q.idx!=null||q.ai!=null;
+ return `<div class="pn"><b>${upd?'Edit question':'New question'}</b>
+ <label class="lb">Subject / topic</label><select class="s" onchange="A.qf.subj=this.value">${SUBJ.map(s=>`<option ${s===q.subj?'selected':''}>${E(s)}</option>`).join('')}</select>
+ <label class="lb">Question *</label><textarea oninput="A.qf.t=this.value" placeholder="Type the question here">${E(q.t)}</textarea>
+ ${q.o.map((o,i)=>`<label class="lb">Option ${L[i]} *</label><input value="${E(o)}" oninput="A.qf.o[${i}]=this.value">`).join('')}
+ <label class="lb">Correct answer *</label><select class="s" onchange="A.qf.c=+this.value">${[0,1,2,3].map(i=>`<option value="${i}" ${q.c===i?'selected':''}>Option ${L[i]}</option>`).join('')}</select>
+ <label class="lb">Short explanation *</label><textarea oninput="A.qf.e=this.value">${E(q.e)}</textarea>
+ ${A.msg?`<div class="err">${A.msg}</div>`:''}${A.ok?`<div class="okm">${A.ok}</div>`:''}
+ <div style="margin-top:12px"><button class="b p" onclick="addQ()">${upd?'Update question':'＋ Add question to test'}</button><button class="b" onclick="A.panel=null;A.msg=A.ok='';renderA()">Close</button></div></div>`}
+function addQ(){const q=A.qf;if(!q.t.trim()||q.o.some(x=>!x.trim())||!q.e.trim()){A.msg='Please fill the question, all 4 options and the explanation.';return renderA()}
+ A.msg='';const it={t:q.t.trim(),o:q.o.map(x=>x.trim()),c:q.c,e:q.e.trim(),subj:q.subj};
+ if(q.ai!=null){Object.assign(A.ai.items[q.ai],it);A.qf=blankQ();A.panel='ai'}
+ else if(q.idx!=null){A.ed.qs[q.idx]=Object.assign(A.ed.qs[q.idx],it);A.qf=blankQ();A.panel=null}
+ else{A.ed.qs.push({...it,src:'manual'});A.qf=Object.assign(blankQ(),{subj:q.subj});A.ok='Question '+A.ed.qs.length+' added. Add the next one below.'}
+ renderA()}
+function editQ(i){const x=A.ed.qs[i];A.qf={t:x.t,o:[...x.o],c:x.c,e:x.e,subj:x.subj||SUBJ[0],idx:i,ai:null};A.panel='manual';A.ok='';renderA()}
+
+function aiPanel(){const a=A.ai,pend=a.items.filter(x=>x.s==null).length;
+ return `<div class="pn"><b>📄 Generate questions from PDF</b><div class="muted">PDF text is extracted (PyMuPDF) and OpenAI returns questions with 4 options, the answer and a short explanation. <b>Nothing is added to the test until you approve it.</b></div>
+ <div class="row" style="margin-top:12px;flex-wrap:wrap"><input type="file" accept="application/pdf" style="flex:1;min-width:180px" onchange="A.ai.file=this.files[0]?this.files[0].name:'';renderA()"><button class="b" onclick="A.ai.file='sample-jk-gk.pdf';renderA()">Use sample PDF</button></div>
+ ${a.file?`<div class="muted" style="margin-top:6px">Selected: ${E(a.file)}</div>
+ <div class="pn" style="background:var(--surface);margin-top:12px"><b>🤖 How many questions should I extract from this PDF?</b>
+ <div class="chips" style="margin:10px 0">${[5,10,20,30,50].map(n=>`<div class="${a.n===n?'on':''}" onclick="A.ai.n=${n};renderA()">${n}</div>`).join('')}</div>
+ <div class="row"><span class="muted">Or type a number (1–50):</span><input type="number" min="1" max="50" value="${a.n}" style="width:90px" onchange="A.ai.n=Math.max(1,Math.min(50,+this.value||1));renderA()"></div></div>`:''}
+ <button class="btn" ${!a.file||a.busy?'disabled':''} onclick="aiGen()">${a.busy?'⏳ Extracting text &amp; generating '+a.n+' questions…':'✨ Generate '+a.n+' questions with AI'}</button>
+ ${a.items.length?`<div class="muted" style="margin-top:6px">Preview uses sample questions; the real AI creates ${a.n} unique questions from your PDF.</div><div class="row" style="margin:16px 0 4px"><b class="sp">Review queue (${pend} pending)</b><button class="b p" onclick="aiAll()">Approve all pending</button></div>`+a.items.map((x,i)=>`<div class="card" style="cursor:default;background:var(--surface)"><div class="row"><b class="sp" style="font-size:14px">${i+1}. ${E(x.t)}</b><span class="st ${x.s==null?'pend':x.s}">${x.s==null?'pending':x.s==='ok'?'approved':'rejected'}</span></div>
+ ${x.o.map((o,j)=>`<div style="font-size:13px;padding:3px 0;${j===x.c?'color:var(--ok);font-weight:700':''}">${L[j]}. ${E(o)}${j===x.c?' ✔':''}</div>`).join('')}<div class="muted" style="margin-top:4px">💡 ${E(x.e)}</div>
+ ${x.s==null?`<div style="margin-top:8px"><button class="b p" onclick="aiOk(${i})">Approve</button><button class="b" onclick="aiEdit(${i})">✏️ Edit</button><button class="b d" onclick="A.ai.items[${i}].s='no';renderA()">Reject</button></div>`:''}</div>`).join(''):''}</div>`}
+function aiGen(){const n=A.ai.n||10;A.ai.busy=true;renderA();setTimeout(()=>{A.ai.busy=false;A.ai.items=Array.from({length:n},(_,i)=>({...POOL[i%POOL.length],o:[...POOL[i%POOL.length].o],subj:'J&K General Knowledge',s:null}));renderA()},1800)}
+function aiOk(i){const x=A.ai.items[i];A.ed.qs.push({t:x.t,o:[...x.o],c:x.c,e:x.e,subj:x.subj,src:'ai'});x.s='ok';renderA()}
+function aiAll(){A.ai.items.forEach((x,i)=>{if(x.s==null)aiOk(i)})}
+function aiEdit(i){const x=A.ai.items[i];A.qf={t:x.t,o:[...x.o],c:x.c,e:x.e,subj:x.subj,idx:null,ai:i};A.panel='manual';renderA()}
+
+function saveTest(){const e=A.ed;A.err='';
+ const bad=!e.title.trim()?'Enter a test title.':e.exam==='__new'?'Type the new exam name and press Add.':e.cat==='__new'?'Type the new category name and press Add.':
+ e.status!=='draft'&&!e.qs.length?'Add at least one question, or keep the status as Draft.':
+ e.paid&&!(e.price>0)?'Enter the price in ₹, or choose Free.':
+ e.cat==='free'&&e.paid?'The Free Mock Tests category needs the price set to Free.':'';
+ if(bad){A.err=bad;return renderA()}
+ e.title=e.title.trim();const {isNew,...t}=e,i=S.tests.findIndex(x=>x.id===t.id);i>=0?S.tests[i]=t:S.tests.push(t);A.ed=null;A.panel=null;A.sec='tests';renderA()}
+function adminLoginView(){$('admin').innerHTML=`<div style="margin:auto;width:min(92%,380px);padding:20px"><div class="ctr big">🛠</div><h2 class="ctr">ExamPro Admin</h2><p class="muted ctr">Sign in to manage mock tests</p><label class="lb">Admin email or mobile</label><input id="aid" value="${E(A.lid||'')}" autocomplete="off"><label class="lb">Password</label><input id="apw" type="password" onkeydown="if(event.key==='Enter')adminLogin()">${A.lerr?`<div class="err">${A.lerr}</div>`:''}<button class="btn" onclick="adminLogin()">Login</button><button class="btn o" onclick="setMode('app')">← Back to student app</button></div>`}
+function adminLogin(){A.lid=$('aid').value.trim();const id=A.lid.toLowerCase(),pw=$('apw').value,u=S.users.find(x=>x.role==='admin'&&(x.email.toLowerCase()===id||x.phone===id)&&x.pw===pw);if(u){A.auth=true;A.lerr=''}else A.lerr='Wrong admin email/mobile or password';renderA()}
+addEventListener('hashchange',()=>{const m=location.hash==='#admin'?'admin':'app';if(m!==MODE)setMode(m)});
+setInterval(()=>{if(S.me&&S.me.role!=='admin'&&S.me.token!==S.sess)kick()},1000);
+setMode(location.hash==='#admin'?'admin':'app');
+</script>
+</body>
+</html>

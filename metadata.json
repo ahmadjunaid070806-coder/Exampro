@@ -1,0 +1,6 @@
+{
+  "name": "ExamPro",
+  "description": "Jammu & Kashmir Competitive Exam Mock Test Platform & Progressive Web App for JKSSB, JKPSC KAS, JKP & JKBOSE aspirants.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,3378 @@
+{
+  "tests": [
+    {
+      "id": 1,
+      "cat": "latest",
+      "exam": "JKSSB Junior Assistant",
+      "title": "JKSSB Junior Assistant Full Mock 01",
+      "testType": "full",
+      "paid": true,
+      "price": 99,
+      "dur": 60,
+      "neg": 0.25,
+      "sched": "2026-11-14T09:00",
+      "status": "live",
+      "desc": "Full-length CBT mock covering J&K GK, General English, Quantitative Aptitude, Reasoning, and Computer Awareness as per latest JKSSB syllabus.",
+      "syllabusTag": "J&K GK · English · Math · Computer",
+      "language": "English",
+      "attemptCount": 1420,
+      "bundleId": 1,
+      "qs": [
+        {
+          "id": "q-101",
+          "t": "Which river is known as the lifeline of the Kashmir Valley?",
+          "o": [
+            "Chenab",
+            "Jhelum",
+            "Ravi",
+            "Tawi"
+          ],
+          "c": 1,
+          "e": "The Jhelum (anciently Vitasta) originates at Verinag and flows through the Kashmir Valley.",
+          "subj": "J&K General Knowledge",
+          "src": "manual",
+          "examRef": [
+            "JKSSB 2024",
+            "JKP SI 2023"
+          ],
+          "previous_exams": [
+            "JKSSB 2024",
+            "JKP SI 2023"
+          ]
+        },
+        {
+          "id": "q-102",
+          "t": "Which mountain pass connects Srinagar with Leh in Ladakh?",
+          "o": [
+            "Banihal Pass",
+            "Zoji La",
+            "Khardung La",
+            "Pir Panjal Pass"
+          ],
+          "c": 1,
+          "e": "Zoji La is a high mountain pass on NH-1 connecting Kashmir Valley with Dras and Leh.",
+          "subj": "Geography",
+          "src": "manual",
+          "examRef": [
+            "JKSSB 2023"
+          ],
+          "previous_exams": [
+            "JKSSB 2023"
+          ]
+        },
+        {
+          "id": "q-103",
+          "t": "Who authored the 12th-century Sanskrit chronicle of Kashmir, Rajatarangini?",
+          "o": [
+            "Kalhana",
+            "Bilhana",
+            "Jonaraja",
+            "Abhinavagupta"
+          ],
+          "c": 0,
+          "e": "Kalhana composed Rajatarangini (\"River of Kings\") between 1148 and 1150 CE.",
+          "subj": "History",
+          "src": "manual",
+          "examRef": [
+            "JKPSC KAS 2023",
+            "JKSSB 2024"
+          ],
+          "previous_exams": [
+            "JKPSC KAS 2023",
+            "JKSSB 2024"
+          ]
+        },
+        {
+          "id": "q-104",
+          "t": "The Hangul (Kashmir Stag) is critically conserved in which National Park?",
+          "o": [
+            "Dachigam National Park",
+            "Kishtwar National Park",
+            "Salim Ali National Park",
+            "Kazinag National Park"
+          ],
+          "c": 0,
+          "e": "Dachigam National Park near Srinagar is the primary protected habitat of the Kashmir Stag.",
+          "subj": "J&K General Knowledge",
+          "src": "manual",
+          "examRef": [
+            "JKP Constable 2024"
+          ],
+          "previous_exams": [
+            "JKP Constable 2024"
+          ]
+        },
+        {
+          "id": "q-105",
+          "t": "In which year was the Jammu and Kashmir Reorganisation Act enacted by Parliament?",
+          "o": [
+            "2017",
+            "2018",
+            "2019",
+            "2020"
+          ],
+          "c": 2,
+          "e": "The J&K Reorganisation Act was passed in August 2019 and took effect on 31 October 2019.",
+          "subj": "Indian Polity",
+          "src": "manual",
+          "examRef": [
+            "JKSSB VLW 2024"
+          ],
+          "previous_exams": [
+            "JKSSB VLW 2024"
+          ]
+        },
+        {
+          "id": "q-106",
+          "t": "Choose the correct synonym of \"METICULOUS\":",
+          "o": [
+            "Careless",
+            "Thorough",
+            "Hasty",
+            "Vague"
+          ],
+          "c": 1,
+          "e": "\"Meticulous\" means showing great attention to detail; thorough and precise.",
+          "subj": "English",
+          "src": "manual",
+          "previous_exams": null,
+          "examRef": []
+        },
+        {
+          "id": "q-107",
+          "t": "If a train 180 m long passes a pole in 9 seconds, what is its speed in km/h?",
+          "o": [
+            "60 km/h",
+            "72 km/h",
+            "80 km/h",
+            "64 km/h"
+          ],
+          "c": 1,
+          "e": "Speed = 180 / 9 = 20 m/s = 20 × (18/5) = 72 km/h.",
+          "subj": "Math",
+          "src": "manual",
+          "examRef": [
+            "JKSSB FAA 2024"
+          ],
+          "previous_exams": [
+            "JKSSB FAA 2024"
+          ]
+        },
+        {
+          "id": "q-108",
+          "t": "Which shortcut key in MS Excel opens the \"Format Cells\" dialog box?",
+          "o": [
+            "Ctrl + 1",
+            "Ctrl + F",
+            "Ctrl + Shift + F",
+            "Alt + F1"
+          ],
+          "c": 0,
+          "e": "Pressing Ctrl + 1 opens the Format Cells dialog box in Microsoft Excel.",
+          "subj": "Computer",
+          "src": "manual",
+          "examRef": [
+            "JKSSB JA 2024"
+          ],
+          "previous_exams": [
+            "JKSSB JA 2024"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "cat": "popular",
+      "exam": "JKSSB Constable",
+      "title": "JKP Constable Recruitment Mock 03",
+      "testType": "full",
+      "paid": true,
+      "price": 79,
+      "dur": 45,
+      "neg": 0.25,
+      "sched": "2026-11-13T18:00",
+      "status": "live",
+      "desc": "High-yield J&K Police Constable paper with special focus on J&K Geography, History, and Numerical Ability.",
+      "syllabusTag": "GK · J&K Special · Reasoning",
+      "language": "English",
+      "attemptCount": 2150,
+      "bundleId": 3,
+      "qs": [
+        {
+          "id": "q-101",
+          "t": "Which river is known as the lifeline of the Kashmir Valley?",
+          "o": [
+            "Chenab",
+            "Jhelum",
+            "Ravi",
+            "Tawi"
+          ],
+          "c": 1,
+          "e": "The Jhelum (anciently Vitasta) originates at Verinag and flows through the Kashmir Valley.",
+          "subj": "J&K General Knowledge",
+          "src": "manual",
+          "examRef": [
+            "JKSSB 2024",
+            "JKP SI 2023"
+          ],
+          "previous_exams": [
+            "JKSSB 2024",
+            "JKP SI 2023"
+          ]
+        },
+        {
+          "id": "q-102",
+          "t": "Which mountain pass connects Srinagar with Leh in Ladakh?",
+          "o": [
+            "Banihal Pass",
+            "Zoji La",
+            "Khardung La",
+            "Pir Panjal Pass"
+          ],
+          "c": 1,
+          "e": "Zoji La is a high mountain pass on NH-1 connecting Kashmir Valley with Dras and Leh.",
+          "subj": "Geography",
+          "src": "manual",
+          "examRef": [
+            "JKSSB 2023"
+          ],
+          "previous_exams": [
+            "JKSSB 2023"
+          ]
+        },
+        {
+          "id": "q-103",
+          "t": "Who authored the 12th-century Sanskrit chronicle of Kashmir, Rajatarangini?",
+          "o": [
+            "Kalhana",
+            "Bilhana",
+            "Jonaraja",
+            "Abhinavagupta"
+          ],
+          "c": 0,
+          "e": "Kalhana composed Rajatarangini (\"River of Kings\") between 1148 and 1150 CE.",
+          "subj": "History",
+          "src": "manual",
+          "examRef": [
+            "JKPSC KAS 2023",
+            "JKSSB 2024"
+          ],
+          "previous_exams": [
+            "JKPSC KAS 2023",
+            "JKSSB 2024"
+          ]
+        },
+        {
+          "id": "q-104",
+          "t": "The Hangul (Kashmir Stag) is critically conserved in which National Park?",
+          "o": [
+            "Dachigam National Park",
+            "Kishtwar National Park",
+            "Salim Ali National Park",
+            "Kazinag National Park"
+          ],
+          "c": 0,
+          "e": "Dachigam National Park near Srinagar is the primary protected habitat of the Kashmir Stag.",
+          "subj": "J&K General Knowledge",
+          "src": "manual",
+          "examRef": [
+            "JKP Constable 2024"
+          ],
+          "previous_exams": [
+            "JKP Constable 2024"
+          ]
+        },
+        {
+          "id": "q-105",
+          "t": "In which year was the Jammu and Kashmir Reorganisation Act enacted by Parliament?",
+          "o": [
+            "2017",
+            "2018",
+            "2019",
+            "2020"
+          ],
+          "c": 2,
+          "e": "The J&K Reorganisation Act was passed in August 2019 and took effect on 31 October 2019.",
+          "subj": "Indian Polity",
+          "src": "manual",
+          "examRef": [
+            "JKSSB VLW 2024"
+          ],
+          "previous_exams": [
+            "JKSSB VLW 2024"
+          ]
+        },
+        {
+          "id": "q-106",
+          "t": "Choose the correct synonym of \"METICULOUS\":",
+          "o": [
+            "Careless",
+            "Thorough",
+            "Hasty",
+            "Vague"
+          ],
+          "c": 1,
+          "e": "\"Meticulous\" means showing great attention to detail; thorough and precise.",
+          "subj": "English",
+          "src": "manual",
+          "previous_exams": null,
+          "examRef": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "cat": "upcoming",
+      "exam": "JKPSC CCE (KAS)",
+      "title": "JKPSC KAS Prelims GS Paper I — Mega Mock",
+      "testType": "full",
+      "paid": true,
+      "price": 149,
+      "dur": 120,
+      "neg": 0.33,
+      "sched": "2026-11-22T10:00",
+      "status": "scheduled",
+      "desc": "Statewide All-J&K Prelims Mock following UPSC/JKPSC assertion-reason and analytical pattern.",
+      "syllabusTag": "Polity · History · Economy · J&K",
+      "language": "English",
+      "attemptCount": 890,
+      "bundleId": 2,
+      "qs": [
+        {
+          "id": "q-101",
+          "t": "Which river is known as the lifeline of the Kashmir Valley?",
+          "o": [
+            "Chenab",
+            "Jhelum",
+            "Ravi",
+            "Tawi"
+          ],
+          "c": 1,
+          "e": "The Jhelum (anciently Vitasta) originates at Verinag and flows through the Kashmir Valley.",
+          "subj": "J&K General Knowledge",
+          "src": "manual",
+          "examRef": [
+            "JKSSB 2024",
+            "JKP SI 2023"
+          ],
+          "previous_exams": [
+            "JKSSB 2024",
+            "JKP SI 2023"
+          ]
+        },
+        {
+          "id": "q-102",
+          "t": "Which mountain pass connects Srinagar with Leh in Ladakh?",
+          "o": [
+            "Banihal Pass",
+            "Zoji La",
+            "Khardung La",
+            "Pir Panjal Pass"
+          ],
+          "c": 1,
+          "e": "Zoji La is a high mountain pass on NH-1 connecting Kashmir Valley with Dras and Leh.",
+          "subj": "Geography",
+          "src": "manual",
+          "examRef": [
+            "JKSSB 2023"
+          ],
+          "previous_exams": [
+            "JKSSB 2023"
+          ]
+        },
+        {
+          "id": "q-103",
+          "t": "Who authored the 12th-century Sanskrit chronicle of Kashmir, Rajatarangini?",
+          "o": [
+            "Kalhana",
+            "Bilhana",
+            "Jonaraja",
+            "Abhinavagupta"
+          ],
+          "c": 0,
+          "e": "Kalhana composed Rajatarangini (\"River of Kings\") between 1148 and 1150 CE.",
+          "subj": "History",
+          "src": "manual",
+          "examRef": [
+            "JKPSC KAS 2023",
+            "JKSSB 2024"
+          ],
+          "previous_exams": [
+            "JKPSC KAS 2023",
+            "JKSSB 2024"
+          ]
+        },
+        {
+          "id": "q-104",
+          "t": "The Hangul (Kashmir Stag) is critically conserved in which National Park?",
+          "o": [
+            "Dachigam National Park",
+            "Kishtwar National Park",
+            "Salim Ali National Park",
+            "Kazinag National Park"
+          ],
+          "c": 0,
+          "e": "Dachigam National Park near Srinagar is the primary protected habitat of the Kashmir Stag.",
+          "subj": "J&K General Knowledge",
+          "src": "manual",
+          "examRef": [
+            "JKP Constable 2024"
+          ],
+          "previous_exams": [
+            "JKP Constable 2024"
+          ]
+        },
+        {
+          "id": "q-105",
+          "t": "In which year was the Jammu and Kashmir Reorganisation Act enacted by Parliament?",
+          "o": [
+            "2017",
+            "2018",
+            "2019",
+            "2020"
+          ],
+          "c": 2,
+          "e": "The J&K Reorganisation Act was passed in August 2019 and took effect on 31 October 2019.",
+          "subj": "Indian Polity",
+          "src": "manual",
+          "examRef": [
+            "JKSSB VLW 2024"
+          ],
+          "previous_exams": [
+            "JKSSB VLW 2024"
+          ]
+        },
+        {
+          "id": "q-106",
+          "t": "Choose the correct synonym of \"METICULOUS\":",
+          "o": [
+            "Careless",
+            "Thorough",
+            "Hasty",
+            "Vague"
+          ],
+          "c": 1,
+          "e": "\"Meticulous\" means showing great attention to detail; thorough and precise.",
+          "subj": "English",
+          "src": "manual",
+          "previous_exams": null,
+          "examRef": []
+        },
+        {
+          "id": "q-107",
+          "t": "If a train 180 m long passes a pole in 9 seconds, what is its speed in km/h?",
+          "o": [
+            "60 km/h",
+            "72 km/h",
+            "80 km/h",
+            "64 km/h"
+          ],
+          "c": 1,
+          "e": "Speed = 180 / 9 = 20 m/s = 20 × (18/5) = 72 km/h.",
+          "subj": "Math",
+          "src": "manual",
+          "examRef": [
+            "JKSSB FAA 2024"
+          ],
+          "previous_exams": [
+            "JKSSB FAA 2024"
+          ]
+        },
+        {
+          "id": "q-108",
+          "t": "Which shortcut key in MS Excel opens the \"Format Cells\" dialog box?",
+          "o": [
+            "Ctrl + 1",
+            "Ctrl + F",
+            "Ctrl + Shift + F",
+            "Alt + F1"
+          ],
+          "c": 0,
+          "e": "Pressing Ctrl + 1 opens the Format Cells dialog box in Microsoft Excel.",
+          "subj": "Computer",
+          "src": "manual",
+          "examRef": [
+            "JKSSB JA 2024"
+          ],
+          "previous_exams": [
+            "JKSSB JA 2024"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "cat": "mega",
+      "exam": "JKSSB Naib Tehsildar",
+      "title": "Sunday All-J&K Naib Tehsildar Live Mega Mock",
+      "testType": "full",
+      "paid": false,
+      "price": 0,
+      "dur": 90,
+      "neg": 0.25,
+      "sched": "2026-11-14T08:00",
+      "status": "live",
+      "desc": "Compete live with aspirants from all 20 districts of Jammu & Kashmir for District #1 Rank.",
+      "syllabusTag": "Revenue · J&K GK · Urdu/English",
+      "language": "English",
+      "attemptCount": 3480,
+      "bundleId": 1,
+      "qs": [
+        {
+          "id": "q-101",
+          "t": "Which river is known as the lifeline of the Kashmir Valley?",
+          "o": [
+            "Chenab",
+            "Jhelum",
+            "Ravi",
+            "Tawi"
+          ],
+          "c": 1,
+          "e": "The Jhelum (anciently Vitasta) originates at Verinag and flows through the Kashmir Valley.",
+          "subj": "J&K General Knowledge",
+          "src": "manual",
+          "examRef": [
+            "JKSSB 2024",
+            "JKP SI 2023"
+          ],
+          "previous_exams": [
+            "JKSSB 2024",
+            "JKP SI 2023"
+          ]
+        },
+        {
+          "id": "q-102",
+          "t": "Which mountain pass connects Srinagar with Leh in Ladakh?",
+          "o": [
+            "Banihal Pass",
+            "Zoji La",
+            "Khardung La",
+            "Pir Panjal Pass"
+          ],
+          "c": 1,
+          "e": "Zoji La is a high mountain pass on NH-1 connecting Kashmir Valley with Dras and Leh.",
+          "subj": "Geography",
+          "src": "manual",
+          "examRef": [
+            "JKSSB 2023"
+          ],
+          "previous_exams": [
+            "JKSSB 2023"
+          ]
+        },
+        {
+          "id": "q-103",
+          "t": "Who authored the 12th-century Sanskrit chronicle of Kashmir, Rajatarangini?",
+          "o": [
+            "Kalhana",
+            "Bilhana",
+            "Jonaraja",
+            "Abhinavagupta"
+          ],
+          "c": 0,
+          "e": "Kalhana composed Rajatarangini (\"River of Kings\") between 1148 and 1150 CE.",
+          "subj": "History",
+          "src": "manual",
+          "examRef": [
+            "JKPSC KAS 2023",
+            "JKSSB 2024"
+          ],
+          "previous_exams": [
+            "JKPSC KAS 2023",
+            "JKSSB 2024"
+          ]
+        },
+        {
+          "id": "q-104",
+          "t": "The Hangul (Kashmir Stag) is critically conserved in which National Park?",
+          "o": [
+            "Dachigam National Park",
+            "Kishtwar National Park",
+            "Salim Ali National Park",
+            "Kazinag National Park"
+          ],
+          "c": 0,
+          "e": "Dachigam National Park near Srinagar is the primary protected habitat of the Kashmir Stag.",
+          "subj": "J&K General Knowledge",
+          "src": "manual",
+          "examRef": [
+            "JKP Constable 2024"
+          ],
+          "previous_exams": [
+            "JKP Constable 2024"
+          ]
+        },
+        {
+          "id": "q-105",
+          "t": "In which year was the Jammu and Kashmir Reorganisation Act enacted by Parliament?",
+          "o": [
+            "2017",
+            "2018",
+            "2019",
+            "2020"
+          ],
+          "c": 2,
+          "e": "The J&K Reorganisation Act was passed in August 2019 and took effect on 31 October 2019.",
+          "subj": "Indian Polity",
+          "src": "manual",
+          "examRef": [
+            "JKSSB VLW 2024"
+          ],
+          "previous_exams": [
+            "JKSSB VLW 2024"
+          ]
+        },
+        {
+          "id": "q-106",
+          "t": "Choose the correct synonym of \"METICULOUS\":",
+          "o": [
+            "Careless",
+            "Thorough",
+            "Hasty",
+            "Vague"
+          ],
+          "c": 1,
+          "e": "\"Meticulous\" means showing great attention to detail; thorough and precise.",
+          "subj": "English",
+          "src": "manual",
+          "previous_exams": null,
+          "examRef": []
+        },
+        {
+          "id": "q-107",
+          "t": "If a train 180 m long passes a pole in 9 seconds, what is its speed in km/h?",
+          "o": [
+            "60 km/h",
+            "72 km/h",
+            "80 km/h",
+            "64 km/h"
+          ],
+          "c": 1,
+          "e": "Speed = 180 / 9 = 20 m/s = 20 × (18/5) = 72 km/h.",
+          "subj": "Math",
+          "src": "manual",
+          "examRef": [
+            "JKSSB FAA 2024"
+          ],
+          "previous_exams": [
+            "JKSSB FAA 2024"
+          ]
+        },
+        {
+          "id": "q-108",
+          "t": "Which shortcut key in MS Excel opens the \"Format Cells\" dialog box?",
+          "o": [
+            "Ctrl + 1",
+            "Ctrl + F",
+            "Ctrl + Shift + F",
+            "Alt + F1"
+          ],
+          "c": 0,
+          "e": "Pressing Ctrl + 1 opens the Format Cells dialog box in Microsoft Excel.",
+          "subj": "Computer",
+          "src": "manual",
+          "examRef": [
+            "JKSSB JA 2024"
+          ],
+          "previous_exams": [
+            "JKSSB JA 2024"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "cat": "free",
+      "exam": "JKSSB Junior Assistant",
+      "title": "J&K Heritage, Rivers & Passes Free Practice",
+      "testType": "sectional",
+      "subject": "J&K General Knowledge",
+      "paid": false,
+      "price": 0,
+      "dur": 15,
+      "neg": 0,
+      "sched": "2026-11-10T09:00",
+      "status": "live",
+      "desc": "Quick free practice test on Jammu & Kashmir physical geography, lakes, and mountain passes.",
+      "syllabusTag": "Geography & Heritage of J&K",
+      "language": "English",
+      "attemptCount": 1860,
+      "bundleId": 1,
+      "qs": [
+        {
+          "id": "q-101",
+          "t": "Which river is known as the lifeline of the Kashmir Valley?",
+          "o": [
+            "Chenab",
+            "Jhelum",
+            "Ravi",
+            "Tawi"
+          ],
+          "c": 1,
+          "e": "The Jhelum (anciently Vitasta) originates at Verinag and flows through the Kashmir Valley.",
+          "subj": "J&K General Knowledge",
+          "src": "manual",
+          "examRef": [
+            "JKSSB 2024",
+            "JKP SI 2023"
+          ],
+          "previous_exams": [
+            "JKSSB 2024",
+            "JKP SI 2023"
+          ]
+        },
+        {
+          "id": "q-102",
+          "t": "Which mountain pass connects Srinagar with Leh in Ladakh?",
+          "o": [
+            "Banihal Pass",
+            "Zoji La",
+            "Khardung La",
+            "Pir Panjal Pass"
+          ],
+          "c": 1,
+          "e": "Zoji La is a high mountain pass on NH-1 connecting Kashmir Valley with Dras and Leh.",
+          "subj": "Geography",
+          "src": "manual",
+          "examRef": [
+            "JKSSB 2023"
+          ],
+          "previous_exams": [
+            "JKSSB 2023"
+          ]
+        },
+        {
+          "id": "q-103",
+          "t": "Who authored the 12th-century Sanskrit chronicle of Kashmir, Rajatarangini?",
+          "o": [
+            "Kalhana",
+            "Bilhana",
+            "Jonaraja",
+            "Abhinavagupta"
+          ],
+          "c": 0,
+          "e": "Kalhana composed Rajatarangini (\"River of Kings\") between 1148 and 1150 CE.",
+          "subj": "History",
+          "src": "manual",
+          "examRef": [
+            "JKPSC KAS 2023",
+            "JKSSB 2024"
+          ],
+          "previous_exams": [
+            "JKPSC KAS 2023",
+            "JKSSB 2024"
+          ]
+        },
+        {
+          "id": "q-104",
+          "t": "The Hangul (Kashmir Stag) is critically conserved in which National Park?",
+          "o": [
+            "Dachigam National Park",
+            "Kishtwar National Park",
+            "Salim Ali National Park",
+            "Kazinag National Park"
+          ],
+          "c": 0,
+          "e": "Dachigam National Park near Srinagar is the primary protected habitat of the Kashmir Stag.",
+          "subj": "J&K General Knowledge",
+          "src": "manual",
+          "examRef": [
+            "JKP Constable 2024"
+          ],
+          "previous_exams": [
+            "JKP Constable 2024"
+          ]
+        },
+        {
+          "id": "q-105",
+          "t": "In which year was the Jammu and Kashmir Reorganisation Act enacted by Parliament?",
+          "o": [
+            "2017",
+            "2018",
+            "2019",
+            "2020"
+          ],
+          "c": 2,
+          "e": "The J&K Reorganisation Act was passed in August 2019 and took effect on 31 October 2019.",
+          "subj": "Indian Polity",
+          "src": "manual",
+          "examRef": [
+            "JKSSB VLW 2024"
+          ],
+          "previous_exams": [
+            "JKSSB VLW 2024"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "cat": "pyqs",
+      "exam": "JKSSB Accounts Assistant",
+      "title": "JKSSB FAA 2024 Official Memory-Based PYQ",
+      "testType": "full",
+      "paid": false,
+      "price": 0,
+      "dur": 45,
+      "neg": 0.25,
+      "sched": "2026-11-11T09:00",
+      "status": "live",
+      "desc": "Actual solved Previous Year Questions asked in JKSSB Finance Accounts Assistant with crisp explanations.",
+      "syllabusTag": "PYQ 2024 · J&K GK · Math · Computer",
+      "language": "English",
+      "attemptCount": 2740,
+      "bundleId": 1,
+      "qs": [
+        {
+          "id": "q-101",
+          "t": "Which river is known as the lifeline of the Kashmir Valley?",
+          "o": [
+            "Chenab",
+            "Jhelum",
+            "Ravi",
+            "Tawi"
+          ],
+          "c": 1,
+          "e": "The Jhelum (anciently Vitasta) originates at Verinag and flows through the Kashmir Valley.",
+          "subj": "J&K General Knowledge",
+          "src": "manual",
+          "examRef": [
+            "JKSSB 2024",
+            "JKP SI 2023"
+          ],
+          "previous_exams": [
+            "JKSSB 2024",
+            "JKP SI 2023"
+          ]
+        },
+        {
+          "id": "q-102",
+          "t": "Which mountain pass connects Srinagar with Leh in Ladakh?",
+          "o": [
+            "Banihal Pass",
+            "Zoji La",
+            "Khardung La",
+            "Pir Panjal Pass"
+          ],
+          "c": 1,
+          "e": "Zoji La is a high mountain pass on NH-1 connecting Kashmir Valley with Dras and Leh.",
+          "subj": "Geography",
+          "src": "manual",
+          "examRef": [
+            "JKSSB 2023"
+          ],
+          "previous_exams": [
+            "JKSSB 2023"
+          ]
+        },
+        {
+          "id": "q-103",
+          "t": "Who authored the 12th-century Sanskrit chronicle of Kashmir, Rajatarangini?",
+          "o": [
+            "Kalhana",
+            "Bilhana",
+            "Jonaraja",
+            "Abhinavagupta"
+          ],
+          "c": 0,
+          "e": "Kalhana composed Rajatarangini (\"River of Kings\") between 1148 and 1150 CE.",
+          "subj": "History",
+          "src": "manual",
+          "examRef": [
+            "JKPSC KAS 2023",
+            "JKSSB 2024"
+          ],
+          "previous_exams": [
+            "JKPSC KAS 2023",
+            "JKSSB 2024"
+          ]
+        },
+        {
+          "id": "q-104",
+          "t": "The Hangul (Kashmir Stag) is critically conserved in which National Park?",
+          "o": [
+            "Dachigam National Park",
+            "Kishtwar National Park",
+            "Salim Ali National Park",
+            "Kazinag National Park"
+          ],
+          "c": 0,
+          "e": "Dachigam National Park near Srinagar is the primary protected habitat of the Kashmir Stag.",
+          "subj": "J&K General Knowledge",
+          "src": "manual",
+          "examRef": [
+            "JKP Constable 2024"
+          ],
+          "previous_exams": [
+            "JKP Constable 2024"
+          ]
+        },
+        {
+          "id": "q-105",
+          "t": "In which year was the Jammu and Kashmir Reorganisation Act enacted by Parliament?",
+          "o": [
+            "2017",
+            "2018",
+            "2019",
+            "2020"
+          ],
+          "c": 2,
+          "e": "The J&K Reorganisation Act was passed in August 2019 and took effect on 31 October 2019.",
+          "subj": "Indian Polity",
+          "src": "manual",
+          "examRef": [
+            "JKSSB VLW 2024"
+          ],
+          "previous_exams": [
+            "JKSSB VLW 2024"
+          ]
+        },
+        {
+          "id": "q-106",
+          "t": "Choose the correct synonym of \"METICULOUS\":",
+          "o": [
+            "Careless",
+            "Thorough",
+            "Hasty",
+            "Vague"
+          ],
+          "c": 1,
+          "e": "\"Meticulous\" means showing great attention to detail; thorough and precise.",
+          "subj": "English",
+          "src": "manual",
+          "previous_exams": null,
+          "examRef": []
+        },
+        {
+          "id": "q-107",
+          "t": "If a train 180 m long passes a pole in 9 seconds, what is its speed in km/h?",
+          "o": [
+            "60 km/h",
+            "72 km/h",
+            "80 km/h",
+            "64 km/h"
+          ],
+          "c": 1,
+          "e": "Speed = 180 / 9 = 20 m/s = 20 × (18/5) = 72 km/h.",
+          "subj": "Math",
+          "src": "manual",
+          "examRef": [
+            "JKSSB FAA 2024"
+          ],
+          "previous_exams": [
+            "JKSSB FAA 2024"
+          ]
+        },
+        {
+          "id": "q-108",
+          "t": "Which shortcut key in MS Excel opens the \"Format Cells\" dialog box?",
+          "o": [
+            "Ctrl + 1",
+            "Ctrl + F",
+            "Ctrl + Shift + F",
+            "Alt + F1"
+          ],
+          "c": 0,
+          "e": "Pressing Ctrl + 1 opens the Format Cells dialog box in Microsoft Excel.",
+          "subj": "Computer",
+          "src": "manual",
+          "examRef": [
+            "JKSSB JA 2024"
+          ],
+          "previous_exams": [
+            "JKSSB JA 2024"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "cat": "jk_special",
+      "exam": "JKPSC CCE (KAS)",
+      "title": "History & Culture of Jammu & Kashmir (Rajatarangini to 1947)",
+      "testType": "sectional",
+      "subject": "History",
+      "paid": true,
+      "price": 49,
+      "dur": 25,
+      "neg": 0.25,
+      "sched": "2026-11-12T10:00",
+      "status": "live",
+      "desc": "Focused J&K History sectional test covering Karkota, Utpala, Shah Mir, Mughal, and Dogra dynasties.",
+      "syllabusTag": "J&K History · Art & Architecture",
+      "language": "English",
+      "attemptCount": 640,
+      "bundleId": 2,
+      "qs": [
+        {
+          "id": "q-101",
+          "t": "Which river is known as the lifeline of the Kashmir Valley?",
+          "o": [
+            "Chenab",
+            "Jhelum",
+            "Ravi",
+            "Tawi"
+          ],
+          "c": 1,
+          "e": "The Jhelum (anciently Vitasta) originates at Verinag and flows through the Kashmir Valley.",
+          "subj": "J&K General Knowledge",
+          "src": "manual",
+          "examRef": [
+            "JKSSB 2024",
+            "JKP SI 2023"
+          ],
+          "previous_exams": [
+            "JKSSB 2024",
+            "JKP SI 2023"
+          ]
+        },
+        {
+          "id": "q-102",
+          "t": "Which mountain pass connects Srinagar with Leh in Ladakh?",
+          "o": [
+            "Banihal Pass",
+            "Zoji La",
+            "Khardung La",
+            "Pir Panjal Pass"
+          ],
+          "c": 1,
+          "e": "Zoji La is a high mountain pass on NH-1 connecting Kashmir Valley with Dras and Leh.",
+          "subj": "Geography",
+          "src": "manual",
+          "examRef": [
+            "JKSSB 2023"
+          ],
+          "previous_exams": [
+            "JKSSB 2023"
+          ]
+        },
+        {
+          "id": "q-103",
+          "t": "Who authored the 12th-century Sanskrit chronicle of Kashmir, Rajatarangini?",
+          "o": [
+            "Kalhana",
+            "Bilhana",
+            "Jonaraja",
+            "Abhinavagupta"
+          ],
+          "c": 0,
+          "e": "Kalhana composed Rajatarangini (\"River of Kings\") between 1148 and 1150 CE.",
+          "subj": "History",
+          "src": "manual",
+          "examRef": [
+            "JKPSC KAS 2023",
+            "JKSSB 2024"
+          ],
+          "previous_exams": [
+            "JKPSC KAS 2023",
+            "JKSSB 2024"
+          ]
+        },
+        {
+          "id": "q-104",
+          "t": "The Hangul (Kashmir Stag) is critically conserved in which National Park?",
+          "o": [
+            "Dachigam National Park",
+            "Kishtwar National Park",
+            "Salim Ali National Park",
+            "Kazinag National Park"
+          ],
+          "c": 0,
+          "e": "Dachigam National Park near Srinagar is the primary protected habitat of the Kashmir Stag.",
+          "subj": "J&K General Knowledge",
+          "src": "manual",
+          "examRef": [
+            "JKP Constable 2024"
+          ],
+          "previous_exams": [
+            "JKP Constable 2024"
+          ]
+        },
+        {
+          "id": "q-105",
+          "t": "In which year was the Jammu and Kashmir Reorganisation Act enacted by Parliament?",
+          "o": [
+            "2017",
+            "2018",
+            "2019",
+            "2020"
+          ],
+          "c": 2,
+          "e": "The J&K Reorganisation Act was passed in August 2019 and took effect on 31 October 2019.",
+          "subj": "Indian Polity",
+          "src": "manual",
+          "examRef": [
+            "JKSSB VLW 2024"
+          ],
+          "previous_exams": [
+            "JKSSB VLW 2024"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "cat": "sectional",
+      "exam": "JKSSB Junior Assistant",
+      "title": "Computer Awareness & MS Office Sectional Drill",
+      "testType": "sectional",
+      "subject": "Computer",
+      "paid": true,
+      "price": 39,
+      "dur": 20,
+      "neg": 0.25,
+      "sched": "2026-11-12T12:00",
+      "status": "live",
+      "desc": "Master keyboard shortcuts, hardware, networking, and OS questions frequently asked in JKSSB.",
+      "syllabusTag": "MS Office · Networking · Shortcuts",
+      "language": "English",
+      "attemptCount": 910,
+      "bundleId": 1,
+      "qs": [
+        {
+          "id": "q-108",
+          "t": "Which shortcut key in MS Excel opens the \"Format Cells\" dialog box?",
+          "o": [
+            "Ctrl + 1",
+            "Ctrl + F",
+            "Ctrl + Shift + F",
+            "Alt + F1"
+          ],
+          "c": 0,
+          "e": "Pressing Ctrl + 1 opens the Format Cells dialog box in Microsoft Excel.",
+          "subj": "Computer",
+          "src": "manual",
+          "examRef": [
+            "JKSSB JA 2024"
+          ],
+          "previous_exams": [
+            "JKSSB JA 2024"
+          ]
+        },
+        {
+          "id": "q-105",
+          "t": "In which year was the Jammu and Kashmir Reorganisation Act enacted by Parliament?",
+          "o": [
+            "2017",
+            "2018",
+            "2019",
+            "2020"
+          ],
+          "c": 2,
+          "e": "The J&K Reorganisation Act was passed in August 2019 and took effect on 31 October 2019.",
+          "subj": "Indian Polity",
+          "src": "manual",
+          "examRef": [
+            "JKSSB VLW 2024"
+          ],
+          "previous_exams": [
+            "JKSSB VLW 2024"
+          ]
+        },
+        {
+          "id": "q-106",
+          "t": "Choose the correct synonym of \"METICULOUS\":",
+          "o": [
+            "Careless",
+            "Thorough",
+            "Hasty",
+            "Vague"
+          ],
+          "c": 1,
+          "e": "\"Meticulous\" means showing great attention to detail; thorough and precise.",
+          "subj": "English",
+          "src": "manual",
+          "previous_exams": null,
+          "examRef": []
+        },
+        {
+          "id": "q-107",
+          "t": "If a train 180 m long passes a pole in 9 seconds, what is its speed in km/h?",
+          "o": [
+            "60 km/h",
+            "72 km/h",
+            "80 km/h",
+            "64 km/h"
+          ],
+          "c": 1,
+          "e": "Speed = 180 / 9 = 20 m/s = 20 × (18/5) = 72 km/h.",
+          "subj": "Math",
+          "src": "manual",
+          "examRef": [
+            "JKSSB FAA 2024"
+          ],
+          "previous_exams": [
+            "JKSSB FAA 2024"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "cat": "sectional",
+      "exam": "JKP Sub-Inspector",
+      "title": "Quantitative Aptitude & Reasoning Booster",
+      "testType": "sectional",
+      "subject": "Math",
+      "paid": false,
+      "price": 0,
+      "dur": 20,
+      "neg": 0.25,
+      "sched": "2026-11-13T10:00",
+      "status": "live",
+      "desc": "Speed & accuracy drill on time-speed-distance, percentages, and number series.",
+      "syllabusTag": "Arithmetic · Number Series",
+      "language": "English",
+      "attemptCount": 1120,
+      "bundleId": 3,
+      "qs": [
+        {
+          "id": "q-107",
+          "t": "If a train 180 m long passes a pole in 9 seconds, what is its speed in km/h?",
+          "o": [
+            "60 km/h",
+            "72 km/h",
+            "80 km/h",
+            "64 km/h"
+          ],
+          "c": 1,
+          "e": "Speed = 180 / 9 = 20 m/s = 20 × (18/5) = 72 km/h.",
+          "subj": "Math",
+          "src": "manual",
+          "examRef": [
+            "JKSSB FAA 2024"
+          ],
+          "previous_exams": [
+            "JKSSB FAA 2024"
+          ]
+        },
+        {
+          "id": "dq-10",
+          "t": "Find the missing number in the series: 5, 11, 23, 47, ?",
+          "o": [
+            "91",
+            "94",
+            "95",
+            "96"
+          ],
+          "c": 2,
+          "e": "Pattern is ×2 + 1: 5×2+1=11, 11×2+1=23, 23×2+1=47, 47×2+1=95.",
+          "subj": "Reasoning",
+          "previous_exams": null,
+          "examRef": []
+        },
+        {
+          "id": "q-101",
+          "t": "Which river is known as the lifeline of the Kashmir Valley?",
+          "o": [
+            "Chenab",
+            "Jhelum",
+            "Ravi",
+            "Tawi"
+          ],
+          "c": 1,
+          "e": "The Jhelum (anciently Vitasta) originates at Verinag and flows through the Kashmir Valley.",
+          "subj": "J&K General Knowledge",
+          "src": "manual",
+          "examRef": [
+            "JKSSB 2024",
+            "JKP SI 2023"
+          ],
+          "previous_exams": [
+            "JKSSB 2024",
+            "JKP SI 2023"
+          ]
+        },
+        {
+          "id": "q-102",
+          "t": "Which mountain pass connects Srinagar with Leh in Ladakh?",
+          "o": [
+            "Banihal Pass",
+            "Zoji La",
+            "Khardung La",
+            "Pir Panjal Pass"
+          ],
+          "c": 1,
+          "e": "Zoji La is a high mountain pass on NH-1 connecting Kashmir Valley with Dras and Leh.",
+          "subj": "Geography",
+          "src": "manual",
+          "examRef": [
+            "JKSSB 2023"
+          ],
+          "previous_exams": [
+            "JKSSB 2023"
+          ]
+        }
+      ]
+    }
+  ],
+  "bundles": [
+    {
+      "id": 1,
+      "title": "JKSSB All-in-One Target Bundle 2026",
+      "exam": "JKSSB Junior Assistant",
+      "desc": "Complete preparation pack combining Full-Length JKSSB Mocks, Official PYQs, and Subject-wise Sectional Tests (J&K GK, Computer, English, Math).",
+      "price": 199,
+      "mrp": 499,
+      "validity": "6 Months",
+      "bundleOnly": false,
+      "testIds": [
+        1,
+        4,
+        5,
+        6,
+        8
+      ],
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "JKPSC KAS Prelims Master Series",
+      "exam": "JKPSC CCE (KAS)",
+      "desc": "High-standard GS Paper I Full-Length Mocks plus dedicated J&K History, Polity & Geography Sectional Tests.",
+      "price": 299,
+      "mrp": 699,
+      "validity": "12 Months",
+      "bundleOnly": false,
+      "testIds": [
+        3,
+        7
+      ],
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "J&K Police Constable & SI Power Pack",
+      "exam": "JKSSB Constable",
+      "desc": "Curated full mocks and Quantitative/Reasoning speed drills tailored for JKP Constable & SI aspirants.",
+      "price": 149,
+      "mrp": 349,
+      "validity": "6 Months",
+      "bundleOnly": false,
+      "testIds": [
+        2,
+        9
+      ],
+      "featured": false
+    }
+  ],
+  "exams": [
+    "JKSSB Junior Assistant",
+    "JKSSB Naib Tehsildar",
+    "JKSSB Constable",
+    "JKSSB Accounts Assistant",
+    "JKP Sub-Inspector",
+    "JKPSC CCE (KAS)",
+    "JK Bank",
+    "JKBOSE Class 12",
+    "NEET",
+    "JEE Main",
+    "CUET",
+    "Other"
+  ],
+  "subjects": [
+    "J&K General Knowledge",
+    "History",
+    "Geography",
+    "Indian Polity",
+    "English",
+    "Math",
+    "Reasoning",
+    "Computer",
+    "General Science",
+    "Current Affairs"
+  ],
+  "results": [
+    {
+      "id": "res-seed-1-0",
+      "testId": 1,
+      "userId": 2,
+      "name": "Aarif Mir",
+      "district": "Budgam",
+      "targetExam": "JKSSB Junior Assistant",
+      "score": 31,
+      "maxScore": 32,
+      "correct": 7,
+      "wrong": 0,
+      "skipped": 1,
+      "timeSec": 740,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        },
+        "History": {
+          "correct": 1,
+          "total": 1
+        },
+        "Geography": {
+          "correct": 1,
+          "total": 1
+        },
+        "English": {
+          "correct": 1,
+          "total": 1
+        },
+        "Math": {
+          "correct": 1,
+          "total": 1
+        },
+        "Computer": {
+          "correct": 1,
+          "total": 1
+        },
+        "Indian Polity": {
+          "correct": 1,
+          "total": 1
+        }
+      },
+      "date": "12 Nov 2026"
+    },
+    {
+      "id": "res-seed-1-1",
+      "testId": 1,
+      "userId": 3,
+      "name": "Sana Bhat",
+      "district": "Srinagar",
+      "targetExam": "JKPSC CCE (KAS)",
+      "score": 32,
+      "maxScore": 32,
+      "correct": 8,
+      "wrong": 1,
+      "skipped": 0,
+      "timeSec": 695,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        },
+        "History": {
+          "correct": 0,
+          "total": 1
+        },
+        "Geography": {
+          "correct": 1,
+          "total": 1
+        },
+        "English": {
+          "correct": 1,
+          "total": 1
+        },
+        "Math": {
+          "correct": 1,
+          "total": 1
+        },
+        "Computer": {
+          "correct": 1,
+          "total": 1
+        },
+        "Indian Polity": {
+          "correct": 1,
+          "total": 1
+        }
+      },
+      "date": "12 Nov 2026"
+    },
+    {
+      "id": "res-seed-1-2",
+      "testId": 1,
+      "userId": 4,
+      "name": "Rohit Sharma",
+      "district": "Jammu",
+      "targetExam": "JKP Sub-Inspector",
+      "score": 30,
+      "maxScore": 32,
+      "correct": 7,
+      "wrong": 2,
+      "skipped": 0,
+      "timeSec": 780,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        },
+        "History": {
+          "correct": 1,
+          "total": 1
+        },
+        "Geography": {
+          "correct": 1,
+          "total": 1
+        },
+        "English": {
+          "correct": 1,
+          "total": 1
+        },
+        "Math": {
+          "correct": 1,
+          "total": 1
+        },
+        "Computer": {
+          "correct": 1,
+          "total": 1
+        },
+        "Indian Polity": {
+          "correct": 1,
+          "total": 1
+        }
+      },
+      "date": "12 Nov 2026"
+    },
+    {
+      "id": "res-seed-1-3",
+      "testId": 1,
+      "userId": 5,
+      "name": "Mehvish Qadri",
+      "district": "Anantnag",
+      "targetExam": "JKSSB Naib Tehsildar",
+      "score": 29.5,
+      "maxScore": 32,
+      "correct": 7,
+      "wrong": 0,
+      "skipped": 1,
+      "timeSec": 810,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        },
+        "History": {
+          "correct": 0,
+          "total": 1
+        },
+        "Geography": {
+          "correct": 1,
+          "total": 1
+        },
+        "English": {
+          "correct": 1,
+          "total": 1
+        },
+        "Math": {
+          "correct": 1,
+          "total": 1
+        },
+        "Computer": {
+          "correct": 1,
+          "total": 1
+        },
+        "Indian Polity": {
+          "correct": 1,
+          "total": 1
+        }
+      },
+      "date": "12 Nov 2026"
+    },
+    {
+      "id": "res-seed-1-4",
+      "testId": 1,
+      "userId": 6,
+      "name": "Tanveer Ahmad",
+      "district": "Baramulla",
+      "targetExam": "JKSSB Constable",
+      "score": 28,
+      "maxScore": 32,
+      "correct": 7,
+      "wrong": 1,
+      "skipped": 0,
+      "timeSec": 850,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        },
+        "History": {
+          "correct": 1,
+          "total": 1
+        },
+        "Geography": {
+          "correct": 1,
+          "total": 1
+        },
+        "English": {
+          "correct": 1,
+          "total": 1
+        },
+        "Math": {
+          "correct": 1,
+          "total": 1
+        },
+        "Computer": {
+          "correct": 1,
+          "total": 1
+        },
+        "Indian Polity": {
+          "correct": 1,
+          "total": 1
+        }
+      },
+      "date": "12 Nov 2026"
+    },
+    {
+      "id": "res-seed-1-5",
+      "testId": 1,
+      "userId": 7,
+      "name": "Anjali Gupta",
+      "district": "Kathua",
+      "targetExam": "JK Bank",
+      "score": 27.5,
+      "maxScore": 32,
+      "correct": 6,
+      "wrong": 2,
+      "skipped": 0,
+      "timeSec": 870,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        },
+        "History": {
+          "correct": 0,
+          "total": 1
+        },
+        "Geography": {
+          "correct": 1,
+          "total": 1
+        },
+        "English": {
+          "correct": 1,
+          "total": 1
+        },
+        "Math": {
+          "correct": 1,
+          "total": 1
+        },
+        "Computer": {
+          "correct": 1,
+          "total": 1
+        },
+        "Indian Polity": {
+          "correct": 1,
+          "total": 1
+        }
+      },
+      "date": "12 Nov 2026"
+    },
+    {
+      "id": "res-seed-1-6",
+      "testId": 1,
+      "userId": 8,
+      "name": "Ishfaq Wani",
+      "district": "Pulwama",
+      "targetExam": "JKSSB Accounts Assistant",
+      "score": 27,
+      "maxScore": 32,
+      "correct": 6,
+      "wrong": 0,
+      "skipped": 2,
+      "timeSec": 910,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        },
+        "History": {
+          "correct": 1,
+          "total": 1
+        },
+        "Geography": {
+          "correct": 1,
+          "total": 1
+        },
+        "English": {
+          "correct": 1,
+          "total": 1
+        },
+        "Math": {
+          "correct": 0,
+          "total": 1
+        },
+        "Computer": {
+          "correct": 1,
+          "total": 1
+        },
+        "Indian Polity": {
+          "correct": 1,
+          "total": 1
+        }
+      },
+      "date": "12 Nov 2026"
+    },
+    {
+      "id": "res-seed-1-7",
+      "testId": 1,
+      "userId": 9,
+      "name": "Simran Kour",
+      "district": "Samba",
+      "targetExam": "JKSSB Junior Assistant",
+      "score": 26,
+      "maxScore": 32,
+      "correct": 6,
+      "wrong": 1,
+      "skipped": 1,
+      "timeSec": 930,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        },
+        "History": {
+          "correct": 0,
+          "total": 1
+        },
+        "Geography": {
+          "correct": 1,
+          "total": 1
+        },
+        "English": {
+          "correct": 1,
+          "total": 1
+        },
+        "Math": {
+          "correct": 0,
+          "total": 1
+        },
+        "Computer": {
+          "correct": 1,
+          "total": 1
+        },
+        "Indian Polity": {
+          "correct": 1,
+          "total": 1
+        }
+      },
+      "date": "12 Nov 2026"
+    },
+    {
+      "id": "res-seed-1-8",
+      "testId": 1,
+      "userId": 10,
+      "name": "Zubair Dar",
+      "district": "Kupwara",
+      "targetExam": "JKP Sub-Inspector",
+      "score": 25.5,
+      "maxScore": 32,
+      "correct": 6,
+      "wrong": 2,
+      "skipped": 0,
+      "timeSec": 960,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        },
+        "History": {
+          "correct": 1,
+          "total": 1
+        },
+        "Geography": {
+          "correct": 1,
+          "total": 1
+        },
+        "English": {
+          "correct": 1,
+          "total": 1
+        },
+        "Math": {
+          "correct": 0,
+          "total": 1
+        },
+        "Computer": {
+          "correct": 1,
+          "total": 1
+        },
+        "Indian Polity": {
+          "correct": 1,
+          "total": 1
+        }
+      },
+      "date": "12 Nov 2026"
+    },
+    {
+      "id": "res-seed-1-9",
+      "testId": 1,
+      "userId": 11,
+      "name": "Priya Raina",
+      "district": "Udhampur",
+      "targetExam": "JKPSC CCE (KAS)",
+      "score": 25,
+      "maxScore": 32,
+      "correct": 6,
+      "wrong": 0,
+      "skipped": 2,
+      "timeSec": 990,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        },
+        "History": {
+          "correct": 0,
+          "total": 1
+        },
+        "Geography": {
+          "correct": 1,
+          "total": 1
+        },
+        "English": {
+          "correct": 1,
+          "total": 1
+        },
+        "Math": {
+          "correct": 0,
+          "total": 1
+        },
+        "Computer": {
+          "correct": 1,
+          "total": 1
+        },
+        "Indian Polity": {
+          "correct": 1,
+          "total": 1
+        }
+      },
+      "date": "12 Nov 2026"
+    },
+    {
+      "id": "res-seed-1-10",
+      "testId": 1,
+      "userId": 12,
+      "name": "Umar Lone",
+      "district": "Bandipora",
+      "targetExam": "JKSSB Constable",
+      "score": 24,
+      "maxScore": 32,
+      "correct": 6,
+      "wrong": 1,
+      "skipped": 1,
+      "timeSec": 1010,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        },
+        "History": {
+          "correct": 1,
+          "total": 1
+        },
+        "Geography": {
+          "correct": 1,
+          "total": 1
+        },
+        "English": {
+          "correct": 1,
+          "total": 1
+        },
+        "Math": {
+          "correct": 0,
+          "total": 1
+        },
+        "Computer": {
+          "correct": 1,
+          "total": 1
+        },
+        "Indian Polity": {
+          "correct": 1,
+          "total": 1
+        }
+      },
+      "date": "12 Nov 2026"
+    },
+    {
+      "id": "res-seed-1-11",
+      "testId": 1,
+      "userId": 13,
+      "name": "Neha Kumari",
+      "district": "Reasi",
+      "targetExam": "JKBOSE Class 12",
+      "score": 23,
+      "maxScore": 32,
+      "correct": 5,
+      "wrong": 2,
+      "skipped": 1,
+      "timeSec": 1040,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        },
+        "History": {
+          "correct": 0,
+          "total": 1
+        },
+        "Geography": {
+          "correct": 1,
+          "total": 1
+        },
+        "English": {
+          "correct": 1,
+          "total": 1
+        },
+        "Math": {
+          "correct": 0,
+          "total": 1
+        },
+        "Computer": {
+          "correct": 1,
+          "total": 1
+        },
+        "Indian Polity": {
+          "correct": 1,
+          "total": 1
+        }
+      },
+      "date": "12 Nov 2026"
+    },
+    {
+      "id": "res-seed-1-12",
+      "testId": 1,
+      "userId": 14,
+      "name": "Faizan Malik",
+      "district": "Ganderbal",
+      "targetExam": "JKSSB Naib Tehsildar",
+      "score": 26.5,
+      "maxScore": 32,
+      "correct": 6,
+      "wrong": 0,
+      "skipped": 2,
+      "timeSec": 880,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        },
+        "History": {
+          "correct": 1,
+          "total": 1
+        },
+        "Geography": {
+          "correct": 1,
+          "total": 1
+        },
+        "English": {
+          "correct": 1,
+          "total": 1
+        },
+        "Math": {
+          "correct": 0,
+          "total": 1
+        },
+        "Computer": {
+          "correct": 1,
+          "total": 1
+        },
+        "Indian Polity": {
+          "correct": 1,
+          "total": 1
+        }
+      },
+      "date": "12 Nov 2026"
+    },
+    {
+      "id": "res-seed-1-13",
+      "testId": 1,
+      "userId": 15,
+      "name": "Shazia Akhter",
+      "district": "Shopian",
+      "targetExam": "JKSSB Junior Assistant",
+      "score": 24.5,
+      "maxScore": 32,
+      "correct": 6,
+      "wrong": 1,
+      "skipped": 1,
+      "timeSec": 950,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        },
+        "History": {
+          "correct": 0,
+          "total": 1
+        },
+        "Geography": {
+          "correct": 1,
+          "total": 1
+        },
+        "English": {
+          "correct": 1,
+          "total": 1
+        },
+        "Math": {
+          "correct": 0,
+          "total": 1
+        },
+        "Computer": {
+          "correct": 1,
+          "total": 1
+        },
+        "Indian Polity": {
+          "correct": 1,
+          "total": 1
+        }
+      },
+      "date": "12 Nov 2026"
+    },
+    {
+      "id": "res-seed-1-14",
+      "testId": 1,
+      "userId": 16,
+      "name": "Adil Rather",
+      "district": "Kulgam",
+      "targetExam": "JKSSB Constable",
+      "score": 22.5,
+      "maxScore": 32,
+      "correct": 5,
+      "wrong": 2,
+      "skipped": 1,
+      "timeSec": 1020,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        },
+        "History": {
+          "correct": 1,
+          "total": 1
+        },
+        "Geography": {
+          "correct": 1,
+          "total": 1
+        },
+        "English": {
+          "correct": 1,
+          "total": 1
+        },
+        "Math": {
+          "correct": 0,
+          "total": 1
+        },
+        "Computer": {
+          "correct": 1,
+          "total": 1
+        },
+        "Indian Polity": {
+          "correct": 1,
+          "total": 1
+        }
+      },
+      "date": "12 Nov 2026"
+    },
+    {
+      "id": "res-seed-4-0",
+      "testId": 4,
+      "userId": 2,
+      "name": "Aarif Mir",
+      "district": "Srinagar",
+      "targetExam": "JKSSB Junior Assistant",
+      "score": 30,
+      "maxScore": 32,
+      "correct": 7,
+      "wrong": 0,
+      "skipped": 0,
+      "timeSec": 640,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        }
+      },
+      "date": "14 Nov 2026"
+    },
+    {
+      "id": "res-seed-4-1",
+      "testId": 4,
+      "userId": 3,
+      "name": "Sana Bhat",
+      "district": "Budgam",
+      "targetExam": "JKPSC CCE (KAS)",
+      "score": 29,
+      "maxScore": 32,
+      "correct": 7,
+      "wrong": 1,
+      "skipped": 0,
+      "timeSec": 665,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        }
+      },
+      "date": "14 Nov 2026"
+    },
+    {
+      "id": "res-seed-4-2",
+      "testId": 4,
+      "userId": 4,
+      "name": "Rohit Sharma",
+      "district": "Baramulla",
+      "targetExam": "JKP Sub-Inspector",
+      "score": 28,
+      "maxScore": 32,
+      "correct": 7,
+      "wrong": 0,
+      "skipped": 0,
+      "timeSec": 690,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        }
+      },
+      "date": "14 Nov 2026"
+    },
+    {
+      "id": "res-seed-4-3",
+      "testId": 4,
+      "userId": 5,
+      "name": "Mehvish Qadri",
+      "district": "Anantnag",
+      "targetExam": "JKSSB Naib Tehsildar",
+      "score": 27,
+      "maxScore": 32,
+      "correct": 6,
+      "wrong": 1,
+      "skipped": 0,
+      "timeSec": 715,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        }
+      },
+      "date": "14 Nov 2026"
+    },
+    {
+      "id": "res-seed-4-4",
+      "testId": 4,
+      "userId": 6,
+      "name": "Tanveer Ahmad",
+      "district": "Ganderbal",
+      "targetExam": "JKSSB Constable",
+      "score": 26,
+      "maxScore": 32,
+      "correct": 6,
+      "wrong": 0,
+      "skipped": 0,
+      "timeSec": 740,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        }
+      },
+      "date": "14 Nov 2026"
+    },
+    {
+      "id": "res-seed-4-5",
+      "testId": 4,
+      "userId": 7,
+      "name": "Anjali Gupta",
+      "district": "Bandipora",
+      "targetExam": "JK Bank",
+      "score": 25,
+      "maxScore": 32,
+      "correct": 6,
+      "wrong": 1,
+      "skipped": 0,
+      "timeSec": 765,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        }
+      },
+      "date": "14 Nov 2026"
+    },
+    {
+      "id": "res-seed-4-6",
+      "testId": 4,
+      "userId": 8,
+      "name": "Ishfaq Wani",
+      "district": "Kupwara",
+      "targetExam": "JKSSB Accounts Assistant",
+      "score": 24,
+      "maxScore": 32,
+      "correct": 5,
+      "wrong": 0,
+      "skipped": 0,
+      "timeSec": 790,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        }
+      },
+      "date": "14 Nov 2026"
+    },
+    {
+      "id": "res-seed-4-7",
+      "testId": 4,
+      "userId": 9,
+      "name": "Simran Kour",
+      "district": "Pulwama",
+      "targetExam": "JKSSB Junior Assistant",
+      "score": 23,
+      "maxScore": 32,
+      "correct": 5,
+      "wrong": 1,
+      "skipped": 0,
+      "timeSec": 815,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        }
+      },
+      "date": "14 Nov 2026"
+    },
+    {
+      "id": "res-seed-4-8",
+      "testId": 4,
+      "userId": 10,
+      "name": "Zubair Dar",
+      "district": "Shopian",
+      "targetExam": "JKP Sub-Inspector",
+      "score": 22,
+      "maxScore": 32,
+      "correct": 5,
+      "wrong": 0,
+      "skipped": 0,
+      "timeSec": 840,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        }
+      },
+      "date": "14 Nov 2026"
+    },
+    {
+      "id": "res-seed-4-9",
+      "testId": 4,
+      "userId": 11,
+      "name": "Priya Raina",
+      "district": "Kulgam",
+      "targetExam": "JKPSC CCE (KAS)",
+      "score": 21,
+      "maxScore": 32,
+      "correct": 4,
+      "wrong": 1,
+      "skipped": 0,
+      "timeSec": 865,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        }
+      },
+      "date": "14 Nov 2026"
+    },
+    {
+      "id": "res-seed-4-10",
+      "testId": 4,
+      "userId": 12,
+      "name": "Umar Lone",
+      "district": "Jammu",
+      "targetExam": "JKSSB Constable",
+      "score": 20,
+      "maxScore": 32,
+      "correct": 4,
+      "wrong": 0,
+      "skipped": 0,
+      "timeSec": 890,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        }
+      },
+      "date": "14 Nov 2026"
+    },
+    {
+      "id": "res-seed-4-11",
+      "testId": 4,
+      "userId": 13,
+      "name": "Neha Kumari",
+      "district": "Samba",
+      "targetExam": "JKBOSE Class 12",
+      "score": 19,
+      "maxScore": 32,
+      "correct": 4,
+      "wrong": 1,
+      "skipped": 0,
+      "timeSec": 915,
+      "subjectBreakdown": {
+        "J&K General Knowledge": {
+          "correct": 2,
+          "total": 2
+        }
+      },
+      "date": "14 Nov 2026"
+    }
+  ],
+  "archivedResults": [],
+  "lastResultCycleKey": "2026-10",
+  "coupons": [
+    {
+      "id": "cp-1",
+      "code": "JKFREE100",
+      "type": "free",
+      "value": 100,
+      "maxUses": 100,
+      "usedCount": 4,
+      "expiryDate": "2026-12-31",
+      "active": true
+    },
+    {
+      "id": "cp-2",
+      "code": "KAS50",
+      "type": "percent",
+      "value": 50,
+      "maxUses": 200,
+      "usedCount": 12,
+      "expiryDate": "2026-12-31",
+      "active": true
+    },
+    {
+      "id": "cp-3",
+      "code": "SAVE30",
+      "type": "flat",
+      "value": 30,
+      "maxUses": 500,
+      "usedCount": 18,
+      "expiryDate": "2026-12-31",
+      "active": true
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay-1794727649988",
+      "orderNumber": "EXP-723983",
+      "userId": 2,
+      "userName": "Aarif Mir",
+      "userPhone": "9800000000",
+      "itemType": "test",
+      "itemId": 1,
+      "itemTitle": "JKSSB Junior Assistant Full Mock 01",
+      "originalAmount": 99,
+      "discountAmount": 0,
+      "finalAmount": 99,
+      "razorpayOrderId": "order_U0MtwvBl1KbXSI",
+      "paymentMethod": "RAZORPAY",
+      "status": "FAILED",
+      "createdAt": "15 Nov 2026, 7:27 am"
+    },
+    {
+      "id": "pay-1794727507217",
+      "orderNumber": "EXP-150354",
+      "userId": 2,
+      "userName": "Aarif Mir",
+      "userPhone": "9800000000",
+      "itemType": "test",
+      "itemId": 1,
+      "itemTitle": "JKSSB Junior Assistant Full Mock 01",
+      "originalAmount": 99,
+      "discountAmount": 0,
+      "finalAmount": 99,
+      "razorpayOrderId": "order_U0MrR4hMrZQiUU",
+      "paymentMethod": "RAZORPAY",
+      "status": "FAILED",
+      "createdAt": "15 Nov 2026, 7:25 am"
+    },
+    {
+      "id": "pay-1794725364518",
+      "orderNumber": "EXP-605666",
+      "userId": 2,
+      "userName": "Aarif Mir",
+      "userPhone": "9800000000",
+      "itemType": "test",
+      "itemId": 1,
+      "itemTitle": "JKSSB Junior Assistant Full Mock 01",
+      "originalAmount": 99,
+      "discountAmount": 0,
+      "finalAmount": 99,
+      "razorpayOrderId": "order_U0MFiEWX4TJKLy",
+      "paymentMethod": "RAZORPAY",
+      "status": "CREATED",
+      "createdAt": "15 Nov 2026, 6:49 am"
+    },
+    {
+      "id": "pay-1794725301957",
+      "orderNumber": "EXP-608618",
+      "userId": 17,
+      "userName": "Ajjajj",
+      "userPhone": "9149847345",
+      "itemType": "bundle",
+      "itemId": 1,
+      "itemTitle": "JKSSB All-in-One Target Bundle 2026",
+      "originalAmount": 199,
+      "discountAmount": 0,
+      "finalAmount": 199,
+      "razorpayOrderId": "order_U0MEbx7BDgpLUS",
+      "paymentMethod": "RAZORPAY",
+      "status": "CREATED",
+      "createdAt": "15 Nov 2026, 6:48 am"
+    },
+    {
+      "id": "pay-1794725281305",
+      "orderNumber": "EXP-491705",
+      "userId": 17,
+      "userName": "Ajjajj",
+      "userPhone": "9149847345",
+      "itemType": "bundle",
+      "itemId": 1,
+      "itemTitle": "JKSSB All-in-One Target Bundle 2026",
+      "originalAmount": 199,
+      "discountAmount": 0,
+      "finalAmount": 199,
+      "razorpayOrderId": "order_U0MEFQ7pE7ooCh",
+      "paymentMethod": "RAZORPAY",
+      "status": "CREATED",
+      "createdAt": "15 Nov 2026, 6:48 am"
+    },
+    {
+      "id": "pay-1794725275280",
+      "orderNumber": "EXP-478381",
+      "userId": 17,
+      "userName": "Ajjajj",
+      "userPhone": "9149847345",
+      "itemType": "bundle",
+      "itemId": 1,
+      "itemTitle": "JKSSB All-in-One Target Bundle 2026",
+      "originalAmount": 199,
+      "discountAmount": 0,
+      "finalAmount": 199,
+      "razorpayOrderId": "order_U0ME8pAQxbbJIN",
+      "paymentMethod": "RAZORPAY",
+      "status": "CREATED",
+      "createdAt": "15 Nov 2026, 6:47 am"
+    },
+    {
+      "id": "pay-1794724877477",
+      "orderNumber": "EXP-448150",
+      "userId": 2,
+      "userName": "Aarif Mir",
+      "userPhone": "9800000000",
+      "itemType": "test",
+      "itemId": 1,
+      "itemTitle": "JKSSB Junior Assistant Full Mock 01",
+      "originalAmount": 99,
+      "discountAmount": 0,
+      "finalAmount": 99,
+      "razorpayOrderId": "order_U0M77a2AGWe9PT",
+      "paymentMethod": "RAZORPAY",
+      "status": "CREATED",
+      "createdAt": "15 Nov 2026, 6:41 am"
+    },
+    {
+      "id": "pay-1794720887157",
+      "orderNumber": "EXP-662060",
+      "userId": 2,
+      "userName": "Aarif Mir",
+      "userPhone": "9800000000",
+      "itemType": "bundle",
+      "itemId": 2,
+      "itemTitle": "JKPSC KAS Prelims Master Series",
+      "originalAmount": 299,
+      "discountAmount": 0,
+      "finalAmount": 299,
+      "razorpayOrderId": "order_test_d22613605ebc50",
+      "paymentMethod": "RAZORPAY",
+      "status": "PAID",
+      "createdAt": "15 Nov 2026, 5:34 am",
+      "razorpayPaymentId": "pay_test_1a65e2003e91fe",
+      "razorpaySignature": "adf5a94a342c0aa54a215a00f2bc7fafc3acb8edaa4423679a086c171aa8ab3a",
+      "verifiedAt": "15 Nov 2026, 5:34 am"
+    },
+    {
+      "id": "pay-1794720872752",
+      "orderNumber": "EXP-635333",
+      "userId": 2,
+      "userName": "Aarif Mir",
+      "userPhone": "9800000000",
+      "itemType": "bundle",
+      "itemId": 3,
+      "itemTitle": "J&K Police Constable & SI Power Pack",
+      "originalAmount": 149,
+      "discountAmount": 0,
+      "finalAmount": 149,
+      "razorpayOrderId": "order_test_e9c9d8a264a8ca",
+      "paymentMethod": "RAZORPAY",
+      "status": "PAID",
+      "createdAt": "15 Nov 2026, 5:34 am",
+      "razorpayPaymentId": "pay_test_f77c5744fd7ac2",
+      "razorpaySignature": "b4752146780446bac7042bc042d40f6bf22342b65c7d7b709e6df448dea602a2",
+      "verifiedAt": "15 Nov 2026, 5:34 am"
+    },
+    {
+      "id": "pay-1",
+      "orderNumber": "EXP-8412",
+      "userId": 2,
+      "userName": "Aarif Mir",
+      "userPhone": "9800000000",
+      "itemType": "test",
+      "itemId": 2,
+      "itemTitle": "JKP Constable Recruitment Mock 03",
+      "originalAmount": 79,
+      "discountAmount": 0,
+      "finalAmount": 79,
+      "utrNumber": "431829405112",
+      "paymentMethod": "UPI",
+      "status": "PAID",
+      "createdAt": "10 Nov 2026, 6:20 PM",
+      "verifiedAt": "10 Nov 2026, 6:24 PM"
+    },
+    {
+      "id": "pay-2",
+      "orderNumber": "EXP-8499",
+      "userId": 4,
+      "userName": "Rohit Sharma",
+      "userPhone": "9814246912",
+      "itemType": "bundle",
+      "itemId": 1,
+      "itemTitle": "JKSSB All-in-One Target Bundle 2026",
+      "originalAmount": 199,
+      "discountAmount": 30,
+      "finalAmount": 169,
+      "couponCode": "SAVE30",
+      "utrNumber": "431955018274",
+      "paymentMethod": "UPI",
+      "status": "PENDING_VERIFICATION",
+      "createdAt": "14 Nov 2026, 9:40 AM"
+    }
+  ],
+  "announcements": [
+    {
+      "id": 1,
+      "admin_id": 1,
+      "adminName": "ExamPro Admin",
+      "title": "All-J&K Sunday Live Mega Mock Registration Open!",
+      "message": "Join this Sunday’s Live All-J&K Mega Mock for JKSSB & JKPSC aspirants. District-wise rank list will be published at 8:00 PM sharp.",
+      "created_at": "14 Nov 2026, 10:30 am",
+      "updated_at": "14 Nov 2026, 10:30 am"
+    },
+    {
+      "id": 2,
+      "admin_id": 1,
+      "adminName": "ExamPro Admin",
+      "title": "New Previous Year Question Tags Added",
+      "message": "Questions now display up to 3 previous exam reference badges (JKBOSE, JKSSB, JKPSC KAS, JKP SI) in both the Mock Test Engine and Solution Review.",
+      "created_at": "14 Nov 2026, 09:15 am",
+      "updated_at": "14 Nov 2026, 09:15 am"
+    }
+  ],
+  "syllabi": [
+    {
+      "id": "syl-1",
+      "exam": "JKSSB Junior Assistant",
+      "title": "JKSSB Junior Assistant Official CBT Syllabus (80 Marks)",
+      "summary": "General English (20), General Awareness with special reference to J&K (20), Numerical & Reasoning Ability (20), Basic Concepts of Computers (20).",
+      "pdfUrl": "data:application/pdf;base64,JVBERi0xLjQKMSAwIG9iaiA8PCAvVHlwZSAvQ2F0YWxvZyAvUGFnZXMgMiAwIFIgPj4gZW5kb2JqCjIgMCBvYmogPDwgL1R5cGUgL1BhZ2VzIC9LaWRzIFszIDAgUl0gL0NvdW50IDEgPj4gZW5kb2JqCjMgMCBvYmogPDwgL1R5cGUgL1BhZ2UgL1BhcmVudCAyIDAgUiAvTWVkaWFCb3ggWzAgMCA2MTIgNzkyXSAvQ29udGVudHMgNCAwIFIgL1Jlc291cmNlcyA8PCAvRm9udCA8PCAvRjEgNSAwIFIgPj4gPj4gPj4gZW5kb2JqCjQgMCBvYmogPDwgL0xlbmd0aCA1MTMgPj4gc3RyZWFtCkJUIC9GMSAxNSBUZiA1MCA3NTAgVGQgKEpLU1NCIEp1bmlvciBBc3Npc3RhbnQgU3lsbGFidXMpIFRqIEVUCkJUIC9GMSAxMSBUZiA1MCA3MjYgVGQgKEV4YW06IEpLU1NCIEp1bmlvciBBc3Npc3RhbnQpIFRqIEVUCkJUIC9GMSAxMSBUZiA1MCA3MDIgVGQgKE9mZmljaWFsIFN5bGxhYnVzIFN1bW1hcnk6KSBUaiBFVApCVCAvRjEgMTEgVGYgNTAgNjc4IFRkICgxLiBHZW5lcmFsIEVuZ2xpc2ggJiBDb21wcmVoZW5zaW9uIC0gMjAgTWFya3MpIFRqIEVUCkJUIC9GMSAxMSBUZiA1MCA2NTQgVGQgKDIuIEdlbmVyYWwgQXdhcmVuZXNzIHdpdGggU3BlY2lhbCBSZWZlcmVuY2UgdG8gSiZLIFVUIC0gMjAgTWFya3MpIFRqIEVUCkJUIC9GMSAxMSBUZiA1MCA2MzAgVGQgKDMuIE51bWVyaWNhbCAmIFJlYXNvbmluZyBBYmlsaXR5IC0gMjAgTWFya3MpIFRqIEVUCkJUIC9GMSAxMSBUZiA1MCA2MDYgVGQgKDQuIEJhc2ljIENvbmNlcHRzIG9mIENvbXB1dGVycyAmIE1TIE9mZmljZSAtIDIwIE1hcmtzKSBUaiBFVAplbmRzdHJlYW0gZW5kb2JqCjUgMCBvYmogPDwgL1R5cGUgL0ZvbnQgL1N1YnR5cGUgL1R5cGUxIC9CYXNlRm9udCAvSGVsdmV0aWNhID4+IGVuZG9iagp4cmVmCjAgNgowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwMDkgMDAwMDAgbiAKMDAwMDAwMDA1OCAwMDAwMCBuIAowMDAwMDAwMTE1IDAwMDAwIG4gCjAwMDAwMDAyNDEgMDAwMDAgbiAKMDAwMDAwMDgwNSAwMDAwMCBuIAp0cmFpbGVyIDw8IC9TaXplIDYgL1Jvb3QgMSAwIFIgPj4Kc3RhcnR4cmVmCjg3NQolJUVPRg==",
+      "fileName": "JKSSB_Junior_Assistant_Syllabus.pdf",
+      "uploadedAt": "05 Nov 2026"
+    },
+    {
+      "id": "syl-2",
+      "exam": "JKPSC CCE (KAS)",
+      "title": "JKPSC Combined Competitive Prelims (GS Paper I & II)",
+      "summary": "Current Events, History of India & J&K, Indian & World Geography, Indian Polity, Economic & Social Development, Ecology & CSAT.",
+      "pdfUrl": "data:application/pdf;base64,JVBERi0xLjQKMSAwIG9iaiA8PCAvVHlwZSAvQ2F0YWxvZyAvUGFnZXMgMiAwIFIgPj4gZW5kb2JqCjIgMCBvYmogPDwgL1R5cGUgL1BhZ2VzIC9LaWRzIFszIDAgUl0gL0NvdW50IDEgPj4gZW5kb2JqCjMgMCBvYmogPDwgL1R5cGUgL1BhZ2UgL1BhcmVudCAyIDAgUiAvTWVkaWFCb3ggWzAgMCA2MTIgNzkyXSAvQ29udGVudHMgNCAwIFIgL1Jlc291cmNlcyA8PCAvRm9udCA8PCAvRjEgNSAwIFIgPj4gPj4gPj4gZW5kb2JqCjQgMCBvYmogPDwgL0xlbmd0aCA1MzEgPj4gc3RyZWFtCkJUIC9GMSAxNSBUZiA1MCA3NTAgVGQgKEpLUFNDIENDRSBLQVMgUHJlbGltcyBTeWxsYWJ1cykgVGogRVQKQlQgL0YxIDExIFRmIDUwIDcyNiBUZCAoRXhhbTogSktQU0MgQ0NFIFwoS0FTXCkpIFRqIEVUCkJUIC9GMSAxMSBUZiA1MCA3MDIgVGQgKE9mZmljaWFsIFN5bGxhYnVzIFN1bW1hcnk6KSBUaiBFVApCVCAvRjEgMTEgVGYgNTAgNjc4IFRkICgxLiBDdXJyZW50IEV2ZW50cyBvZiBOYXRpb25hbCAmIEludGVybmF0aW9uYWwgSW1wb3J0YW5jZSkgVGogRVQKQlQgL0YxIDExIFRmIDUwIDY1NCBUZCAoMi4gSGlzdG9yeSBvZiBJbmRpYSwgSW5kaWFuIE5hdGlvbmFsIE1vdmVtZW50ICYgSiZLIEhlcml0YWdlKSBUaiBFVApCVCAvRjEgMTEgVGYgNTAgNjMwIFRkICgzLiBJbmRpYW4gJiBXb3JsZCBHZW9ncmFwaHkgKyBQaHlzaWNhbCBHZW9ncmFwaHkgb2YgSiZLKSBUaiBFVApCVCAvRjEgMTEgVGYgNTAgNjA2IFRkICg0LiBJbmRpYW4gUG9saXR5LCBHb3Zlcm5hbmNlLCBDb25zdGl0dXRpb24gJiBQdWJsaWMgUG9saWN5KSBUaiBFVAplbmRzdHJlYW0gZW5kb2JqCjUgMCBvYmogPDwgL1R5cGUgL0ZvbnQgL1N1YnR5cGUgL1R5cGUxIC9CYXNlRm9udCAvSGVsdmV0aWNhID4+IGVuZG9iagp4cmVmCjAgNgowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwMDkgMDAwMDAgbiAKMDAwMDAwMDA1OCAwMDAwMCBuIAowMDAwMDAwMTE1IDAwMDAwIG4gCjAwMDAwMDAyNDEgMDAwMDAgbiAKMDAwMDAwMDgyMyAwMDAwMCBuIAp0cmFpbGVyIDw8IC9TaXplIDYgL1Jvb3QgMSAwIFIgPj4Kc3RhcnR4cmVmCjg5MwolJUVPRg==",
+      "fileName": "JKPSC_KAS_Prelims_Syllabus.pdf",
+      "uploadedAt": "02 Nov 2026"
+    },
+    {
+      "id": "syl-3",
+      "exam": "JKSSB Constable",
+      "title": "J&K Police Constable Written Exam Syllabus",
+      "summary": "General Knowledge & J&K Special Paper, Elementary Mathematics, Analytical Aptitude & Reasoning.",
+      "pdfUrl": "data:application/pdf;base64,JVBERi0xLjQKMSAwIG9iaiA8PCAvVHlwZSAvQ2F0YWxvZyAvUGFnZXMgMiAwIFIgPj4gZW5kb2JqCjIgMCBvYmogPDwgL1R5cGUgL1BhZ2VzIC9LaWRzIFszIDAgUl0gL0NvdW50IDEgPj4gZW5kb2JqCjMgMCBvYmogPDwgL1R5cGUgL1BhZ2UgL1BhcmVudCAyIDAgUiAvTWVkaWFCb3ggWzAgMCA2MTIgNzkyXSAvQ29udGVudHMgNCAwIFIgL1Jlc291cmNlcyA8PCAvRm9udCA8PCAvRjEgNSAwIFIgPj4gPj4gPj4gZW5kb2JqCjQgMCBvYmogPDwgL0xlbmd0aCA0NjEgPj4gc3RyZWFtCkJUIC9GMSAxNSBUZiA1MCA3NTAgVGQgKEpLUCBDb25zdGFibGUgU3lsbGFidXMpIFRqIEVUCkJUIC9GMSAxMSBUZiA1MCA3MjYgVGQgKEV4YW06IEpLU1NCIENvbnN0YWJsZSkgVGogRVQKQlQgL0YxIDExIFRmIDUwIDcwMiBUZCAoT2ZmaWNpYWwgU3lsbGFidXMgU3VtbWFyeTopIFRqIEVUCkJUIC9GMSAxMSBUZiA1MCA2NzggVGQgKDEuIEdlbmVyYWwgS25vd2xlZGdlICYgQ3VycmVudCBBZmZhaXJzIFwoSiZLIFNwZWNpYWxcKSkgVGogRVQKQlQgL0YxIDExIFRmIDUwIDY1NCBUZCAoMi4gRWxlbWVudGFyeSBNYXRoZW1hdGljcyAmIE1lbnN1cmF0aW9uKSBUaiBFVApCVCAvRjEgMTEgVGYgNTAgNjMwIFRkICgzLiBBbmFseXRpY2FsIEFwdGl0dWRlICYgTG9naWNhbCBSZWFzb25pbmcpIFRqIEVUCkJUIC9GMSAxMSBUZiA1MCA2MDYgVGQgKDQuIEdlbmVyYWwgU2NpZW5jZSAmIEJhc2ljIEVuZ2xpc2gpIFRqIEVUCmVuZHN0cmVhbSBlbmRvYmoKNSAwIG9iaiA8PCAvVHlwZSAvRm9udCAvU3VidHlwZSAvVHlwZTEgL0Jhc2VGb250IC9IZWx2ZXRpY2EgPj4gZW5kb2JqCnhyZWYKMCA2CjAwMDAwMDAwMDAgNjU1MzUgZiAKMDAwMDAwMDAwOSAwMDAwMCBuIAowMDAwMDAwMDU4IDAwMDAwIG4gCjAwMDAwMDAxMTUgMDAwMDAgbiAKMDAwMDAwMDI0MSAwMDAwMCBuIAowMDAwMDAwNzUzIDAwMDAwIG4gCnRyYWlsZXIgPDwgL1NpemUgNiAvUm9vdCAxIDAgUiA+PgpzdGFydHhyZWYKODIzCiUlRU9G",
+      "fileName": "JKP_Constable_Syllabus.pdf",
+      "uploadedAt": "01 Nov 2026"
+    }
+  ],
+  "supportTickets": [
+    {
+      "id": "tic-1",
+      "userId": 4,
+      "userName": "Rohit Sharma",
+      "userPhone": "9814246912",
+      "userEmail": "rohit.sharma@gmail.com",
+      "orderId": "EXP-8499",
+      "subject": "UPI UTR Submitted for JKSSB Bundle",
+      "message": "Paid ₹169 via GPay using coupon SAVE30. Please verify UTR 431955018274 and unlock the bundle.",
+      "status": "pending",
+      "createdAt": "14 Nov 2026, 9:42 AM"
+    }
+  ],
+  "reportedQuestions": [
+    {
+      "id": "rep-1",
+      "testId": 1,
+      "testTitle": "JKSSB Junior Assistant Full Mock 01",
+      "questionId": "q-105",
+      "questionText": "In which year was the Jammu and Kashmir Reorganisation Act enacted by Parliament?",
+      "reporterId": 2,
+      "reporterName": "Aarif Mir",
+      "reason": "Please add exact effective date (31 October 2019) in explanation as well.",
+      "status": "pending",
+      "createdAt": "13 Nov 2026, 4:15 PM"
+    }
+  ],
+  "extraction_results": [
+    {
+      "id": "ai-1794727524632-0-0",
+      "t": "Which river feeds the Wular Lake, one of the largest freshwater lakes in Asia located in Jammu & Kashmir?",
+      "o": [
+        "Chenab",
+        "Jhelum",
+        "Ravi",
+        "Tawi"
+      ],
+      "c": 1,
+      "e": "Wular Lake in Bandipora district of Jammu & Kashmir is fed by the Jhelum River, which flows through it.",
+      "subj": "Geography",
+      "previous_exams": null,
+      "examRef": [],
+      "reviewState": "pending",
+      "createdAt": "15 Nov 2026, 7:25 am"
+    },
+    {
+      "id": "ai-1794727524632-1-1",
+      "t": "Who built the famous Martand Sun Temple in Jammu & Kashmir?",
+      "o": [
+        "Lalitaditya Muktapida",
+        "Avantivarman",
+        "Maharaja Gulab Singh",
+        "Zain-ul-Abidin"
+      ],
+      "c": 0,
+      "e": "The Martand Sun Temple near Anantnag was built by Lalitaditya Muktapida of the Karkota dynasty in the 8th century CE.",
+      "subj": "History",
+      "previous_exams": null,
+      "examRef": [],
+      "reviewState": "pending",
+      "createdAt": "15 Nov 2026, 7:25 am"
+    },
+    {
+      "id": "ai-1794727524632-2-2",
+      "t": "Under the Jammu and Kashmir Reorganisation Act, 2019, the erstwhile state was bifurcated into which two Union Territories?",
+      "o": [
+        "Jammu and Kashmir",
+        "Jammu & Kashmir and Ladakh",
+        "Kashmir and Ladakh",
+        "Jammu and Ladakh"
+      ],
+      "c": 1,
+      "e": "The Jammu and Kashmir Reorganisation Act, 2019 bifurcated the state into the Union Territory of Jammu & Kashmir and the Union Territory of Ladakh.",
+      "subj": "Indian Polity",
+      "previous_exams": null,
+      "examRef": [],
+      "reviewState": "pending",
+      "createdAt": "15 Nov 2026, 7:25 am"
+    },
+    {
+      "id": "ai-1794727524632-3-3",
+      "t": "Dachigam National Park in Jammu & Kashmir is primarily famous for conserving which endangered species?",
+      "o": [
+        "Snow Leopard",
+        "Hangul (Kashmir Stag)",
+        "One-horned Rhinoceros",
+        "Bengal Tiger"
+      ],
+      "c": 1,
+      "e": "Dachigam National Park near Srinagar is the primary habitat and conservation area for the critically endangered Hangul, or Kashmir Stag.",
+      "subj": "J&K General Knowledge",
+      "previous_exams": null,
+      "examRef": [],
+      "reviewState": "pending",
+      "createdAt": "15 Nov 2026, 7:25 am"
+    },
+    {
+      "id": "ai-1794727524632-4-4",
+      "t": "In Microsoft Word, which keyboard shortcut is used to undo the last action?",
+      "o": [
+        "Ctrl + Y",
+        "Ctrl + Z",
+        "Ctrl + X",
+        "Ctrl + V"
+      ],
+      "c": 1,
+      "e": "Pressing Ctrl + Z in Microsoft Word and other MS Office applications undoes the most recent action.",
+      "subj": "Computer",
+      "previous_exams": null,
+      "examRef": [],
+      "reviewState": "pending",
+      "createdAt": "15 Nov 2026, 7:25 am"
+    }
+  ],
+  "settings": {
+    "adminEmail": "jumee89@gmail.com",
+    "adminPhone": "9906101048",
+    "whatsappSupportNumber": "919906101048",
+    "whatsappSupportMessage": "Hi ExamPro Team, I need help with my mock test account.",
+    "shareMessage": "Prepare for JKSSB, JKPSC KAS & JKP exams with ExamPro! Free Daily J&K Quiz, District Ranks & Exam-Pattern Mocks:",
+    "shareAppUrl": "https://ais-dev-hiljquwgw6s42lhc3lse5n-183951854463.asia-east1.run.app",
+    "social": {
+      "wa": {
+        "on": true,
+        "url": "https://wa.me/919906101048"
+      },
+      "fb": {
+        "on": false,
+        "url": ""
+      },
+      "ig": {
+        "on": false,
+        "url": ""
+      },
+      "yt": {
+        "on": false,
+        "url": ""
+      },
+      "cp": {
+        "on": true
+      }
+    },
+    "upi": {
+      "upiId": "exampro@upi",
+      "payeeName": "ExamPro",
+      "qrImageUrl": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20208%20208%22%20width%3D%22208%22%20height%3D%22208%22%3E%3Crect%20width%3D%22208%22%20height%3D%22208%22%20rx%3D%2212%22%20fill%3D%22%23ffffff%22%2F%3E%3Crect%20x%3D%2220%22%20y%3D%2220%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2228%22%20y%3D%2220%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2236%22%20y%3D%2220%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2244%22%20y%3D%2220%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2252%22%20y%3D%2220%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2260%22%20y%3D%2220%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2268%22%20y%3D%2220%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22116%22%20y%3D%2220%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22124%22%20y%3D%2220%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22132%22%20y%3D%2220%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22140%22%20y%3D%2220%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22148%22%20y%3D%2220%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22156%22%20y%3D%2220%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22164%22%20y%3D%2220%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22172%22%20y%3D%2220%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22180%22%20y%3D%2220%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2220%22%20y%3D%2228%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2268%22%20y%3D%2228%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2276%22%20y%3D%2228%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2284%22%20y%3D%2228%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2292%22%20y%3D%2228%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22116%22%20y%3D%2228%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22132%22%20y%3D%2228%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22180%22%20y%3D%2228%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2220%22%20y%3D%2236%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2236%22%20y%3D%2236%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2244%22%20y%3D%2236%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2252%22%20y%3D%2236%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2268%22%20y%3D%2236%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2276%22%20y%3D%2236%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22100%22%20y%3D%2236%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22116%22%20y%3D%2236%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22132%22%20y%3D%2236%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22148%22%20y%3D%2236%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22156%22%20y%3D%2236%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22164%22%20y%3D%2236%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22180%22%20y%3D%2236%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2220%22%20y%3D%2244%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2236%22%20y%3D%2244%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2244%22%20y%3D%2244%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2252%22%20y%3D%2244%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2268%22%20y%3D%2244%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22132%22%20y%3D%2244%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22148%22%20y%3D%2244%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22156%22%20y%3D%2244%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22164%22%20y%3D%2244%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22180%22%20y%3D%2244%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2220%22%20y%3D%2252%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2236%22%20y%3D%2252%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2244%22%20y%3D%2252%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2252%22%20y%3D%2252%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2268%22%20y%3D%2252%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2276%22%20y%3D%2252%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2284%22%20y%3D%2252%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2292%22%20y%3D%2252%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22132%22%20y%3D%2252%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22148%22%20y%3D%2252%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22156%22%20y%3D%2252%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22164%22%20y%3D%2252%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22180%22%20y%3D%2252%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2220%22%20y%3D%2260%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2268%22%20y%3D%2260%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2292%22%20y%3D%2260%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22100%22%20y%3D%2260%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22124%22%20y%3D%2260%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22132%22%20y%3D%2260%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22180%22%20y%3D%2260%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2220%22%20y%3D%2268%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2228%22%20y%3D%2268%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2236%22%20y%3D%2268%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2244%22%20y%3D%2268%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2252%22%20y%3D%2268%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2260%22%20y%3D%2268%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2268%22%20y%3D%2268%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2284%22%20y%3D%2268%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22100%22%20y%3D%2268%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22116%22%20y%3D%2268%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22132%22%20y%3D%2268%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22140%22%20y%3D%2268%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22148%22%20y%3D%2268%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22156%22%20y%3D%2268%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22164%22%20y%3D%2268%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22172%22%20y%3D%2268%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22180%22%20y%3D%2268%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2220%22%20y%3D%2276%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2260%22%20y%3D%2276%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2292%22%20y%3D%2276%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22108%22%20y%3D%2276%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22116%22%20y%3D%2276%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22148%22%20y%3D%2276%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2220%22%20y%3D%2284%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2236%22%20y%3D%2284%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2252%22%20y%3D%2284%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2260%22%20y%3D%2284%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2268%22%20y%3D%2284%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2276%22%20y%3D%2284%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2284%22%20y%3D%2284%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2292%22%20y%3D%2284%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22100%22%20y%3D%2284%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22108%22%20y%3D%2284%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22116%22%20y%3D%2284%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22132%22%20y%3D%2284%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22148%22%20y%3D%2284%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22172%22%20y%3D%2284%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2220%22%20y%3D%2292%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2244%22%20y%3D%2292%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2260%22%20y%3D%2292%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2292%22%20y%3D%2292%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22100%22%20y%3D%2292%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22116%22%20y%3D%2292%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22124%22%20y%3D%2292%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22156%22%20y%3D%2292%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22164%22%20y%3D%2292%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22180%22%20y%3D%2292%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2236%22%20y%3D%22100%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2244%22%20y%3D%22100%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2252%22%20y%3D%22100%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2268%22%20y%3D%22100%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2284%22%20y%3D%22100%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22108%22%20y%3D%22100%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22116%22%20y%3D%22100%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22132%22%20y%3D%22100%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22140%22%20y%3D%22100%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2228%22%20y%3D%22108%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2252%22%20y%3D%22108%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2276%22%20y%3D%22108%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2284%22%20y%3D%22108%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2292%22%20y%3D%22108%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22108%22%20y%3D%22108%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22156%22%20y%3D%22108%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2228%22%20y%3D%22116%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2268%22%20y%3D%22116%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2276%22%20y%3D%22116%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2284%22%20y%3D%22116%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2292%22%20y%3D%22116%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22100%22%20y%3D%22116%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22116%22%20y%3D%22116%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22132%22%20y%3D%22116%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22148%22%20y%3D%22116%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22180%22%20y%3D%22116%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2220%22%20y%3D%22124%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2236%22%20y%3D%22124%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2244%22%20y%3D%22124%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2252%22%20y%3D%22124%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2276%22%20y%3D%22124%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2284%22%20y%3D%22124%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2292%22%20y%3D%22124%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22100%22%20y%3D%22124%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22116%22%20y%3D%22124%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22124%22%20y%3D%22124%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22140%22%20y%3D%22124%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22148%22%20y%3D%22124%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2220%22%20y%3D%22132%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2228%22%20y%3D%22132%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2236%22%20y%3D%22132%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2244%22%20y%3D%22132%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2252%22%20y%3D%22132%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2260%22%20y%3D%22132%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2268%22%20y%3D%22132%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22132%22%20y%3D%22132%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22140%22%20y%3D%22132%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22156%22%20y%3D%22132%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22172%22%20y%3D%22132%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2220%22%20y%3D%22140%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2268%22%20y%3D%22140%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22100%22%20y%3D%22140%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22124%22%20y%3D%22140%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22140%22%20y%3D%22140%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22148%22%20y%3D%22140%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2220%22%20y%3D%22148%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2236%22%20y%3D%22148%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2244%22%20y%3D%22148%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2252%22%20y%3D%22148%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2268%22%20y%3D%22148%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2276%22%20y%3D%22148%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2284%22%20y%3D%22148%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2292%22%20y%3D%22148%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22108%22%20y%3D%22148%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22116%22%20y%3D%22148%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22132%22%20y%3D%22148%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22140%22%20y%3D%22148%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22156%22%20y%3D%22148%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22172%22%20y%3D%22148%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2220%22%20y%3D%22156%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2236%22%20y%3D%22156%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2244%22%20y%3D%22156%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2252%22%20y%3D%22156%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2268%22%20y%3D%22156%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2276%22%20y%3D%22156%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2292%22%20y%3D%22156%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22100%22%20y%3D%22156%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22132%22%20y%3D%22156%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22140%22%20y%3D%22156%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22148%22%20y%3D%22156%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22156%22%20y%3D%22156%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22164%22%20y%3D%22156%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22172%22%20y%3D%22156%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22180%22%20y%3D%22156%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2220%22%20y%3D%22164%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2236%22%20y%3D%22164%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2244%22%20y%3D%22164%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2252%22%20y%3D%22164%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2268%22%20y%3D%22164%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2292%22%20y%3D%22164%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22108%22%20y%3D%22164%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22140%22%20y%3D%22164%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22148%22%20y%3D%22164%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2220%22%20y%3D%22172%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2268%22%20y%3D%22172%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2276%22%20y%3D%22172%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2284%22%20y%3D%22172%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22116%22%20y%3D%22172%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22140%22%20y%3D%22172%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22156%22%20y%3D%22172%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22164%22%20y%3D%22172%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2220%22%20y%3D%22180%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2228%22%20y%3D%22180%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2236%22%20y%3D%22180%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2244%22%20y%3D%22180%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2252%22%20y%3D%22180%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2260%22%20y%3D%22180%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2268%22%20y%3D%22180%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2284%22%20y%3D%22180%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%2292%22%20y%3D%22180%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22100%22%20y%3D%22180%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22108%22%20y%3D%22180%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22124%22%20y%3D%22180%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22132%22%20y%3D%22180%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22164%22%20y%3D%22180%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3Crect%20x%3D%22180%22%20y%3D%22180%22%20width%3D%228%22%20height%3D%228%22%20fill%3D%22%230f172a%22%2F%3E%3C%2Fsvg%3E"
+    },
+    "razorpay": {
+      "keyId": "",
+      "keySecret": ""
+    },
+    "promoBanner": {
+      "is_banner_active": false,
+      "title": "ExamPro Special Offer",
+      "subtitle": "Unlock full-length CBT mock tests & detailed solutions.",
+      "ctaLabel": "Explore Upgrades",
+      "imageUrl": "",
+      "targetScreen": "upgrade",
+      "targetUrl": ""
+    },
+    "maintenance": {
+      "enabled": false,
+      "message": "ExamPro is currently undergoing scheduled maintenance to improve performance. Please check back shortly."
+    },
+    "flashNotice": {
+      "enabled": false,
+      "text": ""
+    }
+  },
+  "users": [
+    {
+      "id": 1,
+      "email": "jumee89@gmail.com",
+      "phone": "9906101048",
+      "name": "Ahmad Junaid (Admin)",
+      "district": "Srinagar",
+      "exam": "JKPSC CCE (KAS)",
+      "role": "admin",
+      "password": "scrypt$c7d54509ca9e9f0e3b12d8ba7ea19b2a$8262f160906ec92738a80805b6068514b23e5fcff878debc2600567663b8d4831c17678b68f29393c2be656a79306faf4cb5ef1126026111a070bd4f10999dc2",
+      "sessionToken": null,
+      "ownedTestIds": [
+        1,
+        2,
+        3,
+        7,
+        8
+      ],
+      "ownedBundleIds": [
+        1,
+        2,
+        3
+      ],
+      "mistakes": [],
+      "bookmarks": [],
+      "attempts": [],
+      "joinedAt": "2026-10-01",
+      "lastActiveDate": "2026-11-15"
+    },
+    {
+      "id": 2,
+      "email": "aarif.mir@gmail.com",
+      "phone": "9800000000",
+      "name": "Aarif Mir",
+      "district": "Budgam",
+      "exam": "JKSSB Junior Assistant",
+      "role": "student",
+      "password": "student123",
+      "sessionToken": "02772bdee58d0ae4bf9efd28ba5eb474",
+      "ownedTestIds": [
+        2,
+        9,
+        3,
+        7
+      ],
+      "ownedBundleIds": [
+        3,
+        2
+      ],
+      "mistakes": [
+        {
+          "id": "m-seed-1",
+          "t": "Who authored the 12th-century Sanskrit chronicle of Kashmir, Rajatarangini?",
+          "o": [
+            "Kalhana",
+            "Bilhana",
+            "Jonaraja",
+            "Abhinavagupta"
+          ],
+          "c": 0,
+          "sel": 2,
+          "e": "Kalhana composed Rajatarangini (\"River of Kings\") between 1148 and 1150 CE.",
+          "subj": "History",
+          "testTitle": "JKSSB Junior Assistant Full Mock 01",
+          "examRef": [
+            "JKPSC KAS 2023",
+            "JKSSB 2024"
+          ],
+          "addedAt": "12 Nov 2026",
+          "previous_exams": [
+            "JKPSC KAS 2023",
+            "JKSSB 2024"
+          ]
+        }
+      ],
+      "bookmarks": [],
+      "attempts": [
+        {
+          "id": "att-seed-0",
+          "testId": 1,
+          "testTitle": "JKSSB Junior Assistant Full Mock 01",
+          "score": 31,
+          "maxScore": 32,
+          "correct": 7,
+          "wrong": 0,
+          "skipped": 1,
+          "rank": 1,
+          "totalParticipants": 15,
+          "districtRank": 1,
+          "districtTotal": 1,
+          "percentile": 100,
+          "date": "12 Nov 2026"
+        }
+      ],
+      "joinedAt": "2026-11-02",
+      "lastActiveDate": "2026-11-15"
+    },
+    {
+      "id": 3,
+      "email": "sana.bhat@gmail.com",
+      "phone": "9807123456",
+      "name": "Sana Bhat",
+      "district": "Srinagar",
+      "exam": "JKPSC CCE (KAS)",
+      "role": "student",
+      "password": "student123",
+      "sessionToken": null,
+      "ownedTestIds": [
+        1,
+        7
+      ],
+      "ownedBundleIds": [],
+      "mistakes": [],
+      "bookmarks": [],
+      "attempts": [
+        {
+          "id": "att-seed-1",
+          "testId": 1,
+          "testTitle": "JKSSB Junior Assistant Full Mock 01",
+          "score": 32,
+          "maxScore": 32,
+          "correct": 8,
+          "wrong": 1,
+          "skipped": -1,
+          "rank": 2,
+          "totalParticipants": 15,
+          "districtRank": 1,
+          "districtTotal": 1,
+          "percentile": 93,
+          "date": "12 Nov 2026"
+        }
+      ],
+      "joinedAt": "2026-11-02",
+      "lastActiveDate": "2026-11-15"
+    },
+    {
+      "id": 4,
+      "email": "rohit.sharma@gmail.com",
+      "phone": "9814246912",
+      "name": "Rohit Sharma",
+      "district": "Jammu",
+      "exam": "JKP Sub-Inspector",
+      "role": "student",
+      "password": "student123",
+      "sessionToken": null,
+      "ownedTestIds": [],
+      "ownedBundleIds": [],
+      "mistakes": [],
+      "bookmarks": [],
+      "attempts": [
+        {
+          "id": "att-seed-2",
+          "testId": 1,
+          "testTitle": "JKSSB Junior Assistant Full Mock 01",
+          "score": 30,
+          "maxScore": 32,
+          "correct": 7,
+          "wrong": 2,
+          "skipped": -1,
+          "rank": 3,
+          "totalParticipants": 15,
+          "districtRank": 1,
+          "districtTotal": 1,
+          "percentile": 87,
+          "date": "12 Nov 2026"
+        }
+      ],
+      "joinedAt": "2026-11-02",
+      "lastActiveDate": "2026-11-15"
+    },
+    {
+      "id": 5,
+      "email": "mehvish.qadri@gmail.com",
+      "phone": "9821370368",
+      "name": "Mehvish Qadri",
+      "district": "Anantnag",
+      "exam": "JKSSB Naib Tehsildar",
+      "role": "student",
+      "password": "student123",
+      "sessionToken": null,
+      "ownedTestIds": [],
+      "ownedBundleIds": [],
+      "mistakes": [],
+      "bookmarks": [],
+      "attempts": [
+        {
+          "id": "att-seed-3",
+          "testId": 1,
+          "testTitle": "JKSSB Junior Assistant Full Mock 01",
+          "score": 29.5,
+          "maxScore": 32,
+          "correct": 7,
+          "wrong": 0,
+          "skipped": 1,
+          "rank": 4,
+          "totalParticipants": 15,
+          "districtRank": 1,
+          "districtTotal": 1,
+          "percentile": 80,
+          "date": "12 Nov 2026"
+        }
+      ],
+      "joinedAt": "2026-11-02",
+      "lastActiveDate": "2026-11-15"
+    },
+    {
+      "id": 6,
+      "email": "tanveer.ahmad@gmail.com",
+      "phone": "9828493824",
+      "name": "Tanveer Ahmad",
+      "district": "Baramulla",
+      "exam": "JKSSB Constable",
+      "role": "student",
+      "password": "student123",
+      "sessionToken": null,
+      "ownedTestIds": [],
+      "ownedBundleIds": [],
+      "mistakes": [],
+      "bookmarks": [],
+      "attempts": [
+        {
+          "id": "att-seed-4",
+          "testId": 1,
+          "testTitle": "JKSSB Junior Assistant Full Mock 01",
+          "score": 28,
+          "maxScore": 32,
+          "correct": 7,
+          "wrong": 1,
+          "skipped": 0,
+          "rank": 5,
+          "totalParticipants": 15,
+          "districtRank": 1,
+          "districtTotal": 1,
+          "percentile": 73,
+          "date": "12 Nov 2026"
+        }
+      ],
+      "joinedAt": "2026-11-02",
+      "lastActiveDate": "2026-11-15"
+    },
+    {
+      "id": 7,
+      "email": "anjali.gupta@gmail.com",
+      "phone": "9835617280",
+      "name": "Anjali Gupta",
+      "district": "Kathua",
+      "exam": "JK Bank",
+      "role": "student",
+      "password": "student123",
+      "sessionToken": null,
+      "ownedTestIds": [],
+      "ownedBundleIds": [],
+      "mistakes": [],
+      "bookmarks": [],
+      "attempts": [
+        {
+          "id": "att-seed-5",
+          "testId": 1,
+          "testTitle": "JKSSB Junior Assistant Full Mock 01",
+          "score": 27.5,
+          "maxScore": 32,
+          "correct": 6,
+          "wrong": 2,
+          "skipped": 0,
+          "rank": 6,
+          "totalParticipants": 15,
+          "districtRank": 1,
+          "districtTotal": 1,
+          "percentile": 67,
+          "date": "12 Nov 2026"
+        }
+      ],
+      "joinedAt": "2026-11-02",
+      "lastActiveDate": "2026-11-15"
+    },
+    {
+      "id": 8,
+      "email": "ishfaq.wani@gmail.com",
+      "phone": "9842740736",
+      "name": "Ishfaq Wani",
+      "district": "Pulwama",
+      "exam": "JKSSB Accounts Assistant",
+      "role": "student",
+      "password": "student123",
+      "sessionToken": null,
+      "ownedTestIds": [],
+      "ownedBundleIds": [],
+      "mistakes": [],
+      "bookmarks": [],
+      "attempts": [
+        {
+          "id": "att-seed-6",
+          "testId": 1,
+          "testTitle": "JKSSB Junior Assistant Full Mock 01",
+          "score": 27,
+          "maxScore": 32,
+          "correct": 6,
+          "wrong": 0,
+          "skipped": 2,
+          "rank": 7,
+          "totalParticipants": 15,
+          "districtRank": 1,
+          "districtTotal": 1,
+          "percentile": 60,
+          "date": "12 Nov 2026"
+        }
+      ],
+      "joinedAt": "2026-11-02",
+      "lastActiveDate": "2026-11-15"
+    },
+    {
+      "id": 9,
+      "email": "simran.kour@gmail.com",
+      "phone": "9849864192",
+      "name": "Simran Kour",
+      "district": "Samba",
+      "exam": "JKSSB Junior Assistant",
+      "role": "student",
+      "password": "student123",
+      "sessionToken": null,
+      "ownedTestIds": [],
+      "ownedBundleIds": [],
+      "mistakes": [],
+      "bookmarks": [],
+      "attempts": [
+        {
+          "id": "att-seed-7",
+          "testId": 1,
+          "testTitle": "JKSSB Junior Assistant Full Mock 01",
+          "score": 26,
+          "maxScore": 32,
+          "correct": 6,
+          "wrong": 1,
+          "skipped": 1,
+          "rank": 8,
+          "totalParticipants": 15,
+          "districtRank": 1,
+          "districtTotal": 1,
+          "percentile": 53,
+          "date": "12 Nov 2026"
+        }
+      ],
+      "joinedAt": "2026-11-02",
+      "lastActiveDate": "2026-11-15"
+    },
+    {
+      "id": 10,
+      "email": "zubair.dar@gmail.com",
+      "phone": "9856987648",
+      "name": "Zubair Dar",
+      "district": "Kupwara",
+      "exam": "JKP Sub-Inspector",
+      "role": "student",
+      "password": "student123",
+      "sessionToken": null,
+      "ownedTestIds": [],
+      "ownedBundleIds": [],
+      "mistakes": [],
+      "bookmarks": [],
+      "attempts": [
+        {
+          "id": "att-seed-8",
+          "testId": 1,
+          "testTitle": "JKSSB Junior Assistant Full Mock 01",
+          "score": 25.5,
+          "maxScore": 32,
+          "correct": 6,
+          "wrong": 2,
+          "skipped": 0,
+          "rank": 9,
+          "totalParticipants": 15,
+          "districtRank": 1,
+          "districtTotal": 1,
+          "percentile": 47,
+          "date": "12 Nov 2026"
+        }
+      ],
+      "joinedAt": "2026-11-02",
+      "lastActiveDate": "2026-11-15"
+    },
+    {
+      "id": 11,
+      "email": "priya.raina@gmail.com",
+      "phone": "9864111104",
+      "name": "Priya Raina",
+      "district": "Udhampur",
+      "exam": "JKPSC CCE (KAS)",
+      "role": "student",
+      "password": "student123",
+      "sessionToken": null,
+      "ownedTestIds": [],
+      "ownedBundleIds": [],
+      "mistakes": [],
+      "bookmarks": [],
+      "attempts": [
+        {
+          "id": "att-seed-9",
+          "testId": 1,
+          "testTitle": "JKSSB Junior Assistant Full Mock 01",
+          "score": 25,
+          "maxScore": 32,
+          "correct": 6,
+          "wrong": 0,
+          "skipped": 2,
+          "rank": 10,
+          "totalParticipants": 15,
+          "districtRank": 1,
+          "districtTotal": 1,
+          "percentile": 40,
+          "date": "12 Nov 2026"
+        }
+      ],
+      "joinedAt": "2026-11-02",
+      "lastActiveDate": "2026-11-10"
+    },
+    {
+      "id": 12,
+      "email": "umar.lone@gmail.com",
+      "phone": "9871234560",
+      "name": "Umar Lone",
+      "district": "Bandipora",
+      "exam": "JKSSB Constable",
+      "role": "student",
+      "password": "student123",
+      "sessionToken": null,
+      "ownedTestIds": [],
+      "ownedBundleIds": [],
+      "mistakes": [],
+      "bookmarks": [],
+      "attempts": [
+        {
+          "id": "att-seed-10",
+          "testId": 1,
+          "testTitle": "JKSSB Junior Assistant Full Mock 01",
+          "score": 24,
+          "maxScore": 32,
+          "correct": 6,
+          "wrong": 1,
+          "skipped": 1,
+          "rank": 11,
+          "totalParticipants": 15,
+          "districtRank": 1,
+          "districtTotal": 1,
+          "percentile": 33,
+          "date": "12 Nov 2026"
+        }
+      ],
+      "joinedAt": "2026-11-02",
+      "lastActiveDate": "2026-11-10"
+    },
+    {
+      "id": 13,
+      "email": "neha.kumari@gmail.com",
+      "phone": "9878358016",
+      "name": "Neha Kumari",
+      "district": "Reasi",
+      "exam": "JKBOSE Class 12",
+      "role": "student",
+      "password": "student123",
+      "sessionToken": null,
+      "ownedTestIds": [],
+      "ownedBundleIds": [],
+      "mistakes": [],
+      "bookmarks": [],
+      "attempts": [
+        {
+          "id": "att-seed-11",
+          "testId": 1,
+          "testTitle": "JKSSB Junior Assistant Full Mock 01",
+          "score": 23,
+          "maxScore": 32,
+          "correct": 5,
+          "wrong": 2,
+          "skipped": 1,
+          "rank": 12,
+          "totalParticipants": 15,
+          "districtRank": 1,
+          "districtTotal": 1,
+          "percentile": 27,
+          "date": "12 Nov 2026"
+        }
+      ],
+      "joinedAt": "2026-11-02",
+      "lastActiveDate": "2026-11-10"
+    },
+    {
+      "id": 14,
+      "email": "faizan.malik@gmail.com",
+      "phone": "9885481472",
+      "name": "Faizan Malik",
+      "district": "Ganderbal",
+      "exam": "JKSSB Naib Tehsildar",
+      "role": "student",
+      "password": "student123",
+      "sessionToken": null,
+      "ownedTestIds": [],
+      "ownedBundleIds": [],
+      "mistakes": [],
+      "bookmarks": [],
+      "attempts": [
+        {
+          "id": "att-seed-12",
+          "testId": 1,
+          "testTitle": "JKSSB Junior Assistant Full Mock 01",
+          "score": 26.5,
+          "maxScore": 32,
+          "correct": 6,
+          "wrong": 0,
+          "skipped": 2,
+          "rank": 13,
+          "totalParticipants": 15,
+          "districtRank": 1,
+          "districtTotal": 1,
+          "percentile": 20,
+          "date": "12 Nov 2026"
+        }
+      ],
+      "joinedAt": "2026-11-02",
+      "lastActiveDate": "2026-11-10"
+    },
+    {
+      "id": 15,
+      "email": "shazia.akhter@gmail.com",
+      "phone": "9892604928",
+      "name": "Shazia Akhter",
+      "district": "Shopian",
+      "exam": "JKSSB Junior Assistant",
+      "role": "student",
+      "password": "student123",
+      "sessionToken": null,
+      "ownedTestIds": [],
+      "ownedBundleIds": [],
+      "mistakes": [],
+      "bookmarks": [],
+      "attempts": [
+        {
+          "id": "att-seed-13",
+          "testId": 1,
+          "testTitle": "JKSSB Junior Assistant Full Mock 01",
+          "score": 24.5,
+          "maxScore": 32,
+          "correct": 6,
+          "wrong": 1,
+          "skipped": 1,
+          "rank": 14,
+          "totalParticipants": 15,
+          "districtRank": 1,
+          "districtTotal": 1,
+          "percentile": 13,
+          "date": "12 Nov 2026"
+        }
+      ],
+      "joinedAt": "2026-11-02",
+      "lastActiveDate": "2026-11-10"
+    },
+    {
+      "id": 16,
+      "email": "adil.rather@gmail.com",
+      "phone": "9899728384",
+      "name": "Adil Rather",
+      "district": "Kulgam",
+      "exam": "JKSSB Constable",
+      "role": "student",
+      "password": "student123",
+      "sessionToken": null,
+      "ownedTestIds": [],
+      "ownedBundleIds": [],
+      "mistakes": [],
+      "bookmarks": [],
+      "attempts": [
+        {
+          "id": "att-seed-14",
+          "testId": 1,
+          "testTitle": "JKSSB Junior Assistant Full Mock 01",
+          "score": 22.5,
+          "maxScore": 32,
+          "correct": 5,
+          "wrong": 2,
+          "skipped": 1,
+          "rank": 15,
+          "totalParticipants": 15,
+          "districtRank": 1,
+          "districtTotal": 1,
+          "percentile": 7,
+          "date": "12 Nov 2026"
+        }
+      ],
+      "joinedAt": "2026-11-02",
+      "lastActiveDate": "2026-11-10"
+    },
+    {
+      "id": 17,
+      "email": "ahmadjunaid070806@gmail.com",
+      "phone": "9149847345",
+      "name": "Ajjajj",
+      "district": "Ganderbal",
+      "exam": "Jkssb",
+      "role": "student",
+      "sessionToken": "6220204b9cd7337b93cd5557dc530749",
+      "ownedTestIds": [],
+      "ownedBundleIds": [],
+      "mistakes": [],
+      "bookmarks": [],
+      "attempts": [],
+      "joinedAt": "2026-11-15",
+      "lastActiveDate": "2026-11-15"
+    }
+  ],
+  "visitorIds": [
+    "seed-1",
+    "v-e7ll5zodr1-mwgs5rce"
+  ],
+  "totalVisitors": 1285,
+  "otpRecords": []
+}
